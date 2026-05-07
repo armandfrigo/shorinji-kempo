@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - Shorinji Kempo">
+  <div class="max-w-2xl mx-auto px-4 py-20">
+    <h1 class="text-4xl font-light text-center mb-12">Contact Us</h1>
+    <form class="space-y-6">
+      <input type="text" placeholder="Name" class="w-full border-b-2 border-gray-300 py-3 focus:outline-none focus:border-yellow-600" />
+      <input type="email" placeholder="Email" class="w-full border-b-2 border-gray-300 py-3 focus:outline-none focus:border-yellow-600" />
+      <input type="tel" placeholder="Phone" class="w-full border-b-2 border-gray-300 py-3 focus:outline-none focus:border-yellow-600" />
+      <textarea placeholder="Message" rows="5" class="w-full border-b-2 border-gray-300 py-3 focus:outline-none focus:border-yellow-600 font-light"></textarea>
+      <button class="w-full bg-black text-white py-3 font-light hover:bg-gray-800 transition">Send</button>
+    </form>
+  </div>
+</Layout>

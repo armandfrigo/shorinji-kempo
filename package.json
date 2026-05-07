@@ -1,0 +1,19 @@
+{
+  "name": "shorinji-kempo-astro",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Shorinji Kempo Switzerland Official Website",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "^5.0.4",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^6.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.0"
+  }
+}

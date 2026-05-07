@@ -1,0 +1,26 @@
+---
+import { content } from '../data/content';
+const t = content.en;
+---
+
+<header class="bg-black text-white sticky top-0 z-50 shadow-2xl">
+  <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="text-3xl font-bold">拳士</div>
+      <div class="hidden sm:block">
+        <div class="text-lg font-light">Shorinji Kempo</div>
+        <div class="text-xs opacity-60">Switzerland</div>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="/" class="pb-1 hover:text-gray-300 transition">Home</a>
+      <a href="/philosophy/" class="pb-1 hover:text-gray-300 transition">Philosophy</a>
+      <a href="/about/" class="pb-1 hover:text-gray-300 transition">About</a>
+      <a href="/dojos/" class="pb-1 hover:text-gray-300 transition">Dojos</a>
+      <a href="/contact/" class="pb-1 hover:text-gray-300 transition">Contact</a>
+    </nav>
+
+    <button class="px-3 py-2 text-xs font-bold bg-yellow-600 hover:bg-yellow-700 transition rounded">EN</button>
+  </div>
+</header>

@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { content } from '../data/content';
+
+const t = content.en;
+---
+
+<Layout title="About - Shorinji Kempo">
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="mb-20">
+      <h2 class="text-4xl font-light text-center mb-12">Our History</h2>
+      <div class="space-y-8">
+        {t.timeline.map((e, i) => (
+          <div class="flex gap-6">
+            <div class="w-20 flex-shrink-0">
+              <p class="text-3xl font-bold text-yellow-600">{e.year}</p>
+            </div>
+            <div class="flex-grow">
+              <h3 class="text-xl font-light mb-1">{e.title}</h3>
+              <p class="text-gray-600 font-light">{e.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-light text-center mb-12">Our Masters</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {t.instructors.map(instr => (
+          <div class="text-center">
+            <div class="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-6 flex items-center justify-center text-5xl">👤</div>
+            <h3 class="text-xl font-light mb-1">{instr.name}</h3>
+            <p class="text-yellow-600 font-bold text-sm mb-2">{instr.dan}</p>
+            <p class="text-gray-600 font-light text-sm">{instr.exp}</p>
+            <p class="text-gray-700 font-light text-sm mt-3">{instr.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
