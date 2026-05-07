@@ -3,7 +3,8 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://shorinjikempo.ch',
+  site: 'https://armandfrigo.github.io',
+  base: '/shorinji-kempo',
   i18n: {
     defaultLocale: 'de',
     locales: ['de', 'fr', 'en', 'it'],
