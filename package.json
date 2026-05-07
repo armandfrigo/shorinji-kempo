@@ -8,6 +8,10 @@
     "build": "astro build",
     "preview": "astro preview"
   },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=9.6.5"
+  },
   "dependencies": {
     "@astrojs/react": "^5.0.4",
     "astro": "^6.3.1",
