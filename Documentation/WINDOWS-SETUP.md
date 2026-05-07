@@ -1,4 +1,4 @@
-# 🥋 Shorinji Kempo Astro - Windows Setup Guide
+# 🥋 Shorinji Kempo - Windows Setup Guide
 
 ## ⚡ Quick Start (5 minutes)
 
@@ -86,7 +86,7 @@ In VS Code Terminal:
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/shorinji-kempo-astro.git
+git remote add origin https://github.com/armandfrigoE/shorinji-kempo.git
 git branch -M main
 git push -u origin main
 ```
@@ -94,7 +94,7 @@ git push -u origin main
 ### Step 3: Update config
 In `astro.config.mjs`, change:
 ```javascript
-site: 'https://YOUR_USERNAME.github.io',
+site: 'https://armandfrigo.github.io',
 ```
 
 Replace `YOUR_USERNAME` with your actual GitHub username.
@@ -108,7 +108,7 @@ git push
 
 ### Step 5: GitHub deploys automatically
 - Wait 2-3 minutes
-- Go to: `https://YOUR_USERNAME.github.io/shorinji-kempo-astro`
+- Go to: `https://armandfrigo.github.io/shorinji-kempo`
 - Website is live! ✅
 
 GitHub Actions handles everything automatically on each push.

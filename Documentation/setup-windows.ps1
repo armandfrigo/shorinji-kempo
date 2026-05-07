@@ -1,7 +1,7 @@
 # PowerShell Script for Windows - Shorinji Kempo Astro Setup
 # Run in PowerShell: powershell -ExecutionPolicy Bypass -File setup-windows.ps1
 
-$projectName = "shorinji-kempo-astro"
+$projectName = "shorinji-kempo"
 Write-Host "🥋 Creating $projectName..." -ForegroundColor Cyan
 
 # Create directories
