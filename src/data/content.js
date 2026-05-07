@@ -32,7 +32,7 @@ export const content = {
     instructors: [
       { name: 'Marco Pellegrino', dan: '5th Dan', location: 'Basel', exp: '25 years', bio: 'Specialist in self-defense and modern training methods' },
       { name: 'Roberto Comino', dan: '4th Dan', location: 'Aubonne', exp: '20 years', bio: 'Focus on philosophical instruction and personal development' },
-      { name: 'Tomoko Muth', dan: '4th Dan', location: 'Muri', exp: '18 years', bio: 'Specialist in children''s training and motor development' }
+      { name: 'Tomoko Muth', dan: '4th Dan', location: 'Muri', exp: '18 years', bio: 'Specialist in children\'s training and motor development' }
     ],
     philosophy: [
       { name: 'Ken Zen Ichinyo', sub: 'Body & Mind', text: 'Inseparable unity, equally developed.' },
