@@ -3,8 +3,8 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://yourusername.github.io',
-  base: '/shorinji-kempo-astro',
+  site: 'https://armandfrigo.github.io',
+  base: '/shorinji-kempo',
   integrations: [react(), tailwind({ applyBaseStyles: false })],
   output: 'static'
 });
