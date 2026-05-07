@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import InstagramFeed from '../../components/InstagramFeed.jsx';
+import { ui } from '../../i18n/ui.ts';
+
+const t = ui.en || ui.de;
+---
+
+<Layout lang='en'>
+    <div class="container">
+        <h1>Dojos</h1>
+        
+        <h2>Basel</h2>
+        <div class="dojo-card">
+            <img src="/images/IMG_0737-rotated.jpg" alt="Basel Dojo" />
+            <div class="dojo-info">
+                <p><strong>Training Location and Time</strong></p>
+                <p>Winkelriedplatz 6<br>CH-4053 Basel</p>
+                <p>Tuesday 7:00 PM – 9:00 PM</p>
+                <p><strong>Instructor:</strong> Marco Pellegrino (5th Dan)</p>
+                <p><strong>Phone:</strong> +41 79 636 56 82</p>
+                <p><strong>Email:</strong> marco.pellegrino@shorinjikempo.ch</p>
+                <p><strong>Fees:</strong><br>
+                Adults CHF 90/month<br>
+                Students CHF 60/month<br>
+                Children CHF 50/month</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.basel/" client:visible />
+
+        <h2>Aubonne</h2>
+        <div class="dojo-card">
+            <img src="/images/IMG_7175.jpeg" alt="Aubonne Dojo" />
+            <div class="dojo-info">
+                <p><strong>Address and Hours</strong></p>
+                <p>Collège du Chêne, Salle de rythmique,<br>
+                Avenue du Mont-Blanc 53<br>
+                CH-1170 Aubonne</p>
+                <p>Hours:<br>- Tuesdays 7:00 PM – 8:30 PM</p>
+                <p><strong>Instructor:</strong> Roberto Comino (4th Dan)</p>
+                <p><strong>Email:</strong> comino.roberto@gmail.com</p>
+                <p><strong>Contributions:</strong><br>
+                Adults and teens (from 10 years): 2 weeks free trial<br>
+                CHF 150 per quarter</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.aubonne/" client:visible />
+
+        <h2>Muri (Children Training)</h2>
+        <div class="dojo-card">
+            <img src="/images/Dojo-Muri-landscape.jpeg" alt="Muri Dojo" />
+            <div class="dojo-info">
+                <p><strong>Training Location and Time for Children</strong></p>
+                <p>MüZe Family and Education Center<br>
+                Kranichweg 10<br>
+                3074 Muri near Bern</p>
+                <p>Thursday 4:20-5:00 PM</p>
+                <p>Training is for children.<br>
+                No training during school holidays in Muri-Gümligen</p>
+                <p><strong>Instructor:</strong> Tomoko Muth-Akao (4th Dan)</p>
+                <p><strong>Email:</strong> tomoko.muth@shorinjikempo.ch</p>
+                <p><strong>Fees:</strong><br>
+                Billed quarterly<br>
+                For MüZe members: CHF 14 per class<br>
+                For non-members: CHF 18 per class</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.muri/" client:visible />
+    </div>
+</Layout>
+
+<style>
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 20px;
+    }
+    h1, h2 {
+        margin-bottom: 1rem;
+        color: #111;
+    }
+    h2 {
+        margin-top: 2rem;
+    }
+    .dojo-card {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .dojo-card img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .dojo-info {
+        padding: 1rem;
+    }
+</style>

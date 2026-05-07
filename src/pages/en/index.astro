@@ -1,20 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import InstagramFeed from '../components/InstagramFeed.jsx';
-import { defaultLang, ui } from '../i18n/ui.ts';
+import Layout from '../../layouts/Layout.astro';
+import InstagramFeed from '../../components/InstagramFeed.jsx';
+import { defaultLang, ui } from '../../i18n/ui.ts';
 
-const { lang = defaultLang } = Astro.props;
-const t = ui[lang] || ui.de;
+const t = ui.en || ui.de;
 ---
 
-<Layout lang={lang}>
+<Layout lang='en'>
     <div class="hero">
         <div class="container">
             <h1>{t['hero.title']}</h1>
-            <p class="hero-text">
-                {t['hero.text']}
-            </p>
-            <a href={lang === 'de' ? '/dojo' : `/${lang}/dojo`} class="btn">{t['hero.cta']}</a>
+            <p class="hero-text">{t['hero.text']}</p>
+            <a href="/en/dojo" class="btn">{t['hero.cta']}</a>
         </div>
     </div>
 

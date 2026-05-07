@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ui } from '../../i18n/ui.ts';
+
+const t = ui.en || ui.de;
+---
+
+<Layout lang='en'>
+    <div class="container">
+        <h1>News</h1>
+        
+        <article class="news-item">
+            <img src="/images/ATT44591.jpg" alt="Black Belt Training 2026" />
+            <div class="news-content">
+                <h2>Black Belt Trainings 2026</h2>
+                <p class="meta">By Silvan Buchecker | November 3, 2025</p>
+                <p>The black belt trainings will take place on the following dates in 2026: Attention! We have moved. The Basel Dojo is now located at Winkelriedplatz 6, 4053 Basel. Black belt trainings cost CHF 20 per practitioner.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="/images/IMG-20250602-WA0018-1-1024x768.jpg" alt="Taikai Portugal" />
+            <div class="news-content">
+                <h2>Swiss Delegation at Taikai in Portugal</h2>
+                <p class="meta">By Silvan Buchecker | November 3, 2025</p>
+                <p>A Swiss delegation participated in the Taikai from October 23-25 in Lisbon. The three-day training event was held to celebrate the 50th anniversary of Shorinji Kempo Portugal.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="/images/Gruppe_5-1-768x512.jpg" alt="Japanfest Bern" />
+            <div class="news-content">
+                <h2>Japanfest Bern 22.05.2022</h2>
+                <p class="meta">By Silvan Buchecker | May 24, 2022</p>
+                <p>On May 22, 2022, Dojo Muri, with support from Dojo Basel and Dojo Aubonne, had the opportunity to present at the Japanfest (Historisches Museum Bern) through a workshop.</p>
+            </div>
+        </article>
+    </div>
+</Layout>
+
+<style>
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 20px;
+    }
+    h1 {
+        margin-bottom: 2rem;
+        color: #111;
+    }
+    .news-item {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 2rem;
+    }
+    .news-item img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .news-content h2 {
+        margin: 0 0 0.5rem 0;
+        color: #c00;
+    }
+    .meta {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+</style>

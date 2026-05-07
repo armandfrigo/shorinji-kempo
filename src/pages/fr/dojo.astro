@@ -1,0 +1,91 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import InstagramFeed from '../../components/InstagramFeed.jsx';
+import { ui } from '../../i18n/ui.ts';
+
+const t = ui.fr || ui.de;
+---
+
+<Layout lang='fr'>
+    <div class="container">
+        <h1>Dojos</h1>
+        
+        <h2>Basel</h2>
+        <div class="dojo-card">
+            <img src="/images/IMG_0737-rotated.jpg" alt="Dojo Basel" />
+            <div class="dojo-info">
+                <p><strong>Lieu et horaire d'entraînement</strong></p>
+                <p>Winkelriedplatz 6<br>CH-4053 Bâle</p>
+                <p>Mardi 19h00 – 21h00</p>
+                <p><strong>Instructeur:</strong> Marco Pellegrino (5ème Dan)</p>
+                <p><strong>Téléphone:</strong> +41 79 636 56 82</p>
+                <p><strong>Email:</strong> marco.pellegrino@shorinjikempo.ch</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.basel/" client:visible />
+
+        <h2>Aubonne</h2>
+        <div class="dojo-card">
+            <img src="/images/IMG_7175.jpeg" alt="Dojo Aubonne" />
+            <div class="dojo-info">
+                <p><strong>Adresse et horaire</strong></p>
+                <p>Collège du Chêne, Salle de rythmique,<br>
+                Avenue du Mont-Blanc 53<br>
+                CH-1170 Aubonne</p>
+                <p>Horaire:<br>- les mardis de 19h00 à 20h30</p>
+                <p><strong>Instructeur:</strong> Roberto Comino (4ème Dan)</p>
+                <p><strong>Email:</strong> comino.roberto@gmail.com</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.aubonne/" client:visible />
+
+        <h2>Muri (enfants)</h2>
+        <div class="dojo-card">
+            <img src="/images/Dojo-Muri-landscape.jpeg" alt="Dojo Muri" />
+            <div class="dojo-info">
+                <p><strong>Lieu et horaire pour enfants</strong></p>
+                <p>MüZe Familien- und Weiterbildungszentrum<br>
+                Kranichweg 10<br>
+                3074 Muri près de Berne</p>
+                <p>Jeudi 16h20-17h00</p>
+                <p><strong>Instructrice:</strong> Tomoko Muth-Akao (4ème Dan)</p>
+                <p><strong>Email:</strong> tomoko.muth@shorinjikempo.ch</p>
+            </div>
+        </div>
+
+        <InstagramFeed url="https://www.instagram.com/shorinjikempo.muri/" client:visible />
+    </div>
+</Layout>
+
+<style>
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 20px;
+    }
+    h1, h2 {
+        margin-bottom: 1rem;
+        color: #111;
+    }
+    h2 {
+        margin-top: 2rem;
+    }
+    .dojo-card {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .dojo-card img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .dojo-info {
+        padding: 1rem;
+    }
+</style>

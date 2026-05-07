@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ui } from '../../i18n/ui.ts';
+
+const t = ui.fr || ui.de;
+---
+
+<Layout lang='fr'>
+    <div class="container">
+        <h1>Shorinji Kempo</h1>
+        
+        <h2>Les six caractéristiques du SHORINJI KEMPO</h2>
+        <p>La philosophie du Shorinji Kempo repose sur six piliers fondamentaux :</p>
+        
+        <h3>1) Ken Zen Ichinyo (Unité de Ken et Zen)</h3>
+        <p>Ken signifie corps et Zen signifie esprit. Corps et esprit sont indissociablement liés et forment une unité qui s'influencent mutuellement. Dans le Shorinji Kempo, le corps et l'esprit sont travaillés de manière équilibrée, non pas de manière unilatérale.</p>
+        
+        <h3>2) Riki Ai Funi (Force et Amour en Harmonie)</h3>
+        <p>Même si vous êtes plein de compassion et avez un grand sens de la justice, sans force vous ne pouvez aider personne. Autant de force que vous ayez, sans fierté et conviction vous ne pouvez pas l'appliquer correctement. L'harmonie de la force et de l'amour, ainsi que de la raison et de la compassion, est la ligne directrice de nos actions.</p>
+        
+        <h3>3) Shushu Koju (Défense avant Attaque)</h3>
+        <p>Les techniques de combat du Shorinji Kempo servent à se protéger de la violence injuste. Il s'agit donc d'un système où la défense vient d'abord, suivie du contre-attaque. En prenant une position défensive sûre, on peut attendre l'attaque de l'adversaire et exécuter un contre-attaque efficace.</p>
+        
+        <h3>4) Fusatsu Katsujin (Protéger les gens sans les blesser)</h3>
+        <p>Les techniques de Shorinji Kempo sont développées de telle sorte que personne ne se blesse, mais plutôt pour se protéger soi-même et les autres et leur permettre de vivre. Nous pratiquons les techniques de Shorinji Kempo pour découvrir le potentiel de développement des gens et nous réjouir de leurs progrès.</p>
+        
+        <h3>5) Go Ju Ittai (Dur et Doux ensemble)</h3>
+        <p>Les techniques de Shorinji Kempo consistent en des "techniques dures" (Goho) comme le blocage, l'évitement et le contre-attaque avec le corps contre coups de poing et coups de pied, ainsi que des "techniques souples" (Juho) comme l'évitement, les projections, les saisies, les leviers ou les mouvements rotatoires aux articulations contre un attaquant qui saisit le poignet ou la vêtement. Par la combinaison habile de techniques dures et souples, leur efficacité peut être doublée.</p>
+        
+        <h3>6) Kumite Shutai (Accent sur le Partenariat)</h3>
+        <p>Dans le Shorinji Kempo, l'entraînement avec un partenaire est la règle. Cela permet de pratiquer des techniques pratiques pour pouvoir réagir de manière appropriée et flexible aux mouvements du partenaire. Ce n'est que par la coopération des deux partenaires que les progrès peuvent être atteints.</p>
+    </div>
+</Layout>
+
+<style>
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 4rem 20px;
+    }
+    h1, h2, h3 {
+        margin-bottom: 1rem;
+        color: #111;
+    }
+    h2 {
+        margin-top: 2rem;
+    }
+</style>

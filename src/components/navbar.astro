@@ -1,0 +1,169 @@
+---
+import { languages, ui, defaultLang } from '../i18n/ui.ts';
+
+const { lang = defaultLang, currentPath = '/' } = Astro.props;
+
+const t = ui[lang] || ui.de;
+
+const getCleanPath = (path: string): string => {
+    return path.replace(/^\/(fr|en|it)\//, '/').replace(/^\/(fr|en|it)$/, '/');
+};
+
+const cleanPath = getCleanPath(currentPath);
+---
+
+<nav class="navbar">
+    <div class="container">
+        <a href={lang === 'de' ? '/' : `/${lang}`} class="logo">
+            拳士 Shorinji Kempo
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <a href={lang === 'de' ? '/' : `/${lang}`} class="nav-item">
+                {t['nav.home']}
+            </a>
+            <a href={lang === 'de' ? '/shorinji-kempo' : `/${lang}/shorinji-kempo`} class="nav-item">
+                {t['nav.shorinji']}</a>
+            <a href={lang === 'de' ? '/dojo' : `/${lang}/dojo`} class="nav-item">
+                {t['nav.dojo']}</a>
+            <a href={lang === 'de' ? '/aktuell' : `/${lang}/aktuell`} class="nav-item">
+                {t['nav.news']}</a>
+            <a href={lang === 'de' ? '/links' : `/${lang}/links`} class="nav-item">
+                {t['nav.links']}</a>
+        </div>
+
+        <div class="language-switcher">
+            {Object.entries(languages).map(([code]) => {
+                const href = code === 'de' 
+                    ? cleanPath 
+                    : `/${code}${cleanPath === '/' ? '' : cleanPath}`;
+                return (
+                    <a 
+                        href={href}
+                        class={`lang-btn ${lang === code ? 'active' : ''}`}
+                    >
+                        {code.toUpperCase()}
+                    </a>
+                );
+            })}
+        </div>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        background: #111;
+        color: white;
+        padding: 0.75rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    .mobile-menu-btn span {
+        width: 24px;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+    }
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .nav-item {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    .nav-item:hover {
+        color: #c00;
+    }
+    .language-switcher {
+        display: flex;
+        gap: 4px;
+    }
+    .lang-btn {
+        padding: 4px 8px;
+        border: 1px solid #555;
+        color: white;
+        text-decoration: none;
+        font-size: 0.75rem;
+        border-radius: 3px;
+    }
+    .lang-btn:hover, .lang-btn.active {
+        background: #c00;
+        border-color: #c00;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        .mobile-menu-btn {
+            display: flex;
+        }
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 1rem;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            border-top: 1px solid #333;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        .language-switcher {
+            margin-top: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            border-top: 1px solid #333;
+            padding-top: 0.5rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn?.addEventListener('click', () => {
+            navLinks?.classList.toggle('active');
+        });
+    });
+</script>

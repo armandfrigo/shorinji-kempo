@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ui } from '../../i18n/ui.ts';
+
+const t = ui.it || ui.de;
+---
+
+<Layout lang='it'>
+    <div class="container">
+        <h1>Notizie</h1>
+        
+        <article class="news-item">
+            <img src="/images/ATT44591.jpg" alt="Allenamenti cintura nera 2026" />
+            <div class="news-content">
+                <h2>Allenamenti cintura nera 2026</h2>
+                <p class="meta">Di Silvan Buchecker | 3 novembre 2025</p>
+                <p>Gli allenamenti per cinture nere si terranno nelle seguenti date nel 2026: Attenzione! Ci siamo trasferiti. Il Dojo di Basilea si trova ora in Winkelriedplatz 6, 4053 Basilea. Gli allenamenti costano 20 CHF a persona.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="/images/IMG-20250602-WA0018-1-1024x768.jpg" alt="Taikai Portogallo" />
+            <div class="news-content">
+                <h2>Delegazione svizzera al Taikai in Portogallo</h2>
+                <p class="meta">Di Silvan Buchecker | 3 novembre 2025</p>
+                <p>Una delegazione svizzera ha partecipato al Taikai dal 23 al 25 ottobre a Lisbona. L'evento di tre giorni è stato organizzato per celebrare il 50° anniversario di Shorinji Kempo Portogallo.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="/images/Gruppe_5-1-768x512.jpg" alt="Japanfest Berna" />
+            <div class="news-content">
+                <h2>Japanfest Berna 22.05.2022</h2>
+                <p class="meta">Di Silvan Buchecker | 24 maggio 2022</p>
+                <p>Il 22 maggio 2022, il Dojo Muri, con il supporto dei Dojo di Basilea e Aubonne, ha avuto l'opportunità di partecipare al Japanfest (Museo storico di Berna) attraverso un workshop.</p>
+            </div>
+        </article>
+    </div>
+</Layout>
+
+<style>
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 20px;
+    }
+    h1 {
+        margin-bottom: 2rem;
+        color: #111;
+    }
+    .news-item {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 2rem;
+    }
+    .news-item img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .news-content h2 {
+        margin: 0 0 0.5rem 0;
+        color: #c00;
+    }
+    .meta {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+</style>

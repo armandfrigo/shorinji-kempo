@@ -1,1 +1,64 @@
-<footer class="bg-black text-white text-center py-8 border-t border-gray-800 mt-12"><p class="text-xs font-light opacity-60">© 2025 Shorinji Kempo Switzerland</p></footer>
+---
+import { defaultLang, ui } from '../i18n/ui.ts';
+
+const { lang = defaultLang } = Astro.props;
+const t = ui[lang] || ui.de;
+---
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p><strong>Schweizerische Shorinji Kempo Föderation</strong></p>
+            <p>Marco Pellegrino — Präsident</p>
+            <p>
+                <a href="tel:+41796365682">+41 79 636 56 82</a> — 
+                <a href="mailto:marco.pellegrino@shorinjikempo.ch">marco.pellegrino@shorinjikempo.ch</a>
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://www.shorinjikempo.or.jp/wsko/" target="_blank">WSKO</a>
+            <a href="https://www.facebook.com/ShorinjiKempoSchweiz/" target="_blank">Facebook</a>
+            <!-- Instagram à ajouter plus tard -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Schweizerische Shorinji Kempo Föderation</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background: #111;
+        color: #ddd;
+        padding: 3rem 0 1.5rem;
+        margin-top: 4rem;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .footer-content p {
+        margin: 0.4rem 0;
+    }
+    .footer-links {
+        margin: 2rem 0;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .footer-links a {
+        color: #ddd;
+        text-decoration: none;
+    }
+    .footer-links a:hover {
+        color: #c00;
+    }
+    .footer-bottom {
+        border-top: 1px solid #333;
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+</style>
