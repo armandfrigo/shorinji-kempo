@@ -19,6 +19,10 @@ export const ui = {
     'hero.cta': 'Gratis Probetraining',
     'section.about': 'Shorinji Kempo',
     'section.philosophy': 'Ken zen ichinyo — Körper und Geist sind eine Einheit.',
+    'section.entstehung': 'Entstehung',
+    'section.gruender': 'Gründer',
+    'section.techniken': 'Techniken',
+    'section.vorstand': 'Vorstand',
   },
   fr: {
     'nav.home': 'Accueil',
@@ -31,6 +35,10 @@ export const ui = {
     'hero.cta': 'Cours d\'essai gratuit',
     'section.about': 'Shorinji Kempo',
     'section.philosophy': 'Ken zen ichinyo — Corps et esprit sont unis.',
+    'section.entstehung': 'Origine',
+    'section.gruender': 'Fondateur',
+    'section.techniken': 'Techniques',
+    'section.vorstand': 'Conseil d\'administration',
   },
   en: {
     'nav.home': 'Home',
@@ -43,6 +51,10 @@ export const ui = {
     'hero.cta': 'Free Trial Class',
     'section.about': 'Shorinji Kempo',
     'section.philosophy': 'Ken zen ichinyo — Body and mind are one.',
+    'section.entstehung': 'Origin',
+    'section.gruender': 'Founder',
+    'section.techniken': 'Techniques',
+    'section.vorstand': 'Board',
   },
   it: {
     'nav.home': 'Home',

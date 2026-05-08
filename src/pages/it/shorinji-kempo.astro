@@ -7,28 +7,41 @@ const t = ui.it || ui.de;
 
 <Layout lang='it'>
     <div class="container">
-        <h1>Shorinji Kempo</h1>
-        
+        <h1>Filosofia</h1>
+
         <h2>Le sei caratteristiche del SHORINJI KEMPO</h2>
         <p>La filosofia del Shorinji Kempo si basa su sei pilastri fondamentali :</p>
-        
+
+        <ul class="principles-list">
+            <li><strong>Ken Zen Ichinyo (Unità di Ken e Zen)</strong></li>
+            <li><strong>Riki Ai Funi (Forza e Amore in Armonia)</strong></li>
+            <li><strong>Shushu Koju (Difesa prima dell'Attacco)</strong></li>
+            <li><strong>Fusatsu Katsujin (Proteggi le persone senza ferirle)</strong></li>
+            <li><strong>Go Ju Ittai (Duro e Morbido insieme)</strong></li>
+            <li><strong>Kumite Shutai (Enfasi sulla Partnership)</strong></li>
+        </ul>
+
         <h3>1) Ken Zen Ichinyo (Unità di Ken e Zen)</h3>
         <p>Ken significa corpo e Zen significa mente. Corpo e mente sono inseparabilmente connessi e formano un'unità che si influenzano a vicenda. Nello Shorinji Kempo, corpo e mente vengono praticati in modo bilanciato, non in modo unilaterale.</p>
-        
+
         <h3>2) Riki Ai Funi (Forza e Amore in Armonia)</h3>
         <p>Anche se sei pieno di compassione e hai un grande senso di giustizia, senza forza non puoi aiutare nessuno. Tanta forza hai, senza orgoglio e convinzione non puoi usarla correttamente. L'armonia tra forza e amore, così come tra ragione e compassione, è il principio guida delle nostre azioni.</p>
-        
+
         <h3>3) Shushu Koju (Difesa prima dell'Attacco)</h3>
         <p>Le tecniche di combattimento dello Shorinji Kempo servono a proteggersi dalla violenza ingiusta. Pertanto, è un sistema dove la difesa viene prima, seguita dal contrattacco. Prendendo una posizione difensiva sicura, si può attendere l'attacco dell'avversario ed eseguire un contrattacco efficace.</p>
-        
+
         <h3>4) Fusatsu Katsujin (Proteggi le persone senza ferirle)</h3>
         <p>Le tecniche dello Shorinji Kempo sono sviluppate in modo che nessuno venga ferito, ma piuttosto per proteggere sé stessi e gli altri e lasciar loro vivere. Praticare le tecniche dello Shorinji Kempo permette di scoprire il potenziale di sviluppo delle persone e di gioire dei loro progressi.</p>
-        
+
         <h3>5) Go Ju Ittai (Duro e Morbido insieme)</h3>
         <p>Le tecniche dello Shorinji Kempo consistono in "tecniche dure" (Goho) come bloccare, schivare e contrattaccare con il corpo contro pugni e calci, così come in "tecniche morbide" (Juho) come schivare, lanciare, afferrare, appignucchiare o movimenti rotatori alle articolazioni contro un aggressore che afferra il polso o l'abitudine. Attraverso la combinazione abile di tecniche dure e morbide, la loro efficacia può raddoppiare.</p>
-        
+
         <h3>6) Kumite Shutai (Enfasi sulla Partnership)</h3>
         <p>Nello Shorinji Kempo, l'addestramento con un compagno è la regola. Questo serve per praticare tecniche praticabili per poter reagire in modo appropriato e flessibile ai movimenti del compagno. È solo attraverso la cooperazione dei due compagni che si possono ottenere progressi.</p>
+
+        <div class="philosophy-image">
+            <img src="images/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg" alt="Filosofia del Shorinji Kempo" />
+        </div>
     </div>
 </Layout>
 
@@ -44,5 +57,35 @@ const t = ui.it || ui.de;
     }
     h2 {
         margin-top: 2rem;
+    }
+    .principles-list {
+        background: #f8f9fa;
+        border-left: 4px solid #c00;
+        padding: 1.5rem 2rem;
+        margin: 1.5rem 0 2rem 0;
+        list-style: none;
+    }
+    .principles-list li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+    .principles-list li:last-child {
+        margin-bottom: 0;
+    }
+    h3 {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+        color: #c00;
+    }
+    .philosophy-image {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .philosophy-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 </style>
