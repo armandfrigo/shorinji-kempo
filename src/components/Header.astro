@@ -1,5 +1,7 @@
 ---
 import { content } from '../data/content';
+import { withBase } from '../utils/paths.ts';
+
 const t = content.en;
 ---
 
@@ -14,11 +16,11 @@ const t = content.en;
     </div>
 
     <nav class="hidden md:flex gap-8 text-sm font-medium">
-      <a href="/" class="pb-1 hover:text-gray-300 transition">Home</a>
-      <a href="/philosophy/" class="pb-1 hover:text-gray-300 transition">Philosophy</a>
-      <a href="/about/" class="pb-1 hover:text-gray-300 transition">About</a>
-      <a href="/dojos/" class="pb-1 hover:text-gray-300 transition">Dojos</a>
-      <a href="/contact/" class="pb-1 hover:text-gray-300 transition">Contact</a>
+      <a href={withBase('/')} class="pb-1 hover:text-gray-300 transition">Home</a>
+      <a href={withBase('/philosophy/')} class="pb-1 hover:text-gray-300 transition">Philosophy</a>
+      <a href={withBase('/about/')} class="pb-1 hover:text-gray-300 transition">About</a>
+      <a href={withBase('/dojos/')} class="pb-1 hover:text-gray-300 transition">Dojos</a>
+      <a href={withBase('/contact/')} class="pb-1 hover:text-gray-300 transition">Contact</a>
     </nav>
 
     <button class="px-3 py-2 text-xs font-bold bg-yellow-600 hover:bg-yellow-700 transition rounded">EN</button>
