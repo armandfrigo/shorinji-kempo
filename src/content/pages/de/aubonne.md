@@ -6,32 +6,32 @@ title: Aubonne
 
 ![Dojo Aubonne](/uploads/2026/05/IMG_7175.jpeg)
 
-Le Dojo est dans la salle de rythmique de l’école D'Aubonne, au premier étage de l’établissement en face du terrain de foot.
+Das Dojo befindet sich im Rhythmiksaal der Schule von Aubonne, im ersten Stock des Gebäudes gegenüber dem Fussballplatz.
 
-## Adresse et horaire
+## Adresse und Trainingszeit
 
 **Collège du Chêne, Salle de rythmique**  
 Avenue du Mont-Blanc 53  
 CH-1170 Aubonne  
 
-**Horaire:** les mardis de 19h00 à 20h30
+**Trainingszeit:** Dienstag 19:00–20:30 Uhr
 
-## Instructeur
+## Instruktor
 
 ![Roberto Comino](/uploads/bb-plugin/cache/Roberto-Comino-2-square-1cd01aa2cbd6b3d9901ebb66186579b2-5da58c07d7b0c.jpg)
 
-**Roberto Comino (4ème Dan)**
+**Roberto Comino (4. Dan)**
 
 - E-Mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
 
-## Cotisation
+## Beiträge
 
-Adultes et ados (dès 10 ans): 2 semaines d'essai gratuit.
+Erwachsene und Jugendliche (ab 10 Jahren): 2 Wochen gratis Probetraining.
 
-**CHF 150.-** pour chaque trimestre (**CHF 100.-** par trimestre pour les mineurs de 13 ans):
+**CHF 150.–** pro Quartal (**CHF 100.–** pro Quartal für Jugendliche unter 13 Jahren).
 
-La cotisation est réduite (**CHF 100.-** si >13 ans, **CHF 50.-** si < 13 ans) à partir du 2ème membre d’une même famille.
+Ab dem zweiten Mitglied derselben Familie reduziert sich der Beitrag (**CHF 100.–** ab 13 Jahren, **CHF 50.–** unter 13 Jahren).
 
-## Description du dojo
+## Beschreibung des Dojos
 
-La siège d'Aubonne a étée ouverte en Septembre 2018 par le présent instructeur, Roberto Comino, qui a commencé la pratique du Shorinji Kempo en 1993 dans le COMO ITALIA Branch en Italie, et qui a obtenu son degré actuel (4me Dan) en 2023.
+Das Dojo Aubonne wurde im September 2018 vom aktuellen Instruktor Roberto Comino eröffnet. Er hat 1993 mit dem Shorinji Kempo im COMO ITALIA Branch in Italien begonnen und im Jahr 2023 seinen aktuellen Grad (4. Dan) erreicht.

@@ -1,17 +1,17 @@
 ---
 lang: en
 routeSlug: entstehung
-title: Entstehung
+title: Origin
 ---
 
-## Motivation und Ziele der Begründung von SHORINJI KEMPO
+## Motivation and aims behind the founding of SHORINJI KEMPO
 
-Der Gründer des Shorinji Kempo, So Doshin, ist im Chaos der Nachkriegszeit anhand seiner eigenen Erfahrungen zur Erkenntnis gelangt, dass sich die Zielsetzung und der Charakter einer Gruppe oder Gesellschaft je nach Qualität der Führungsperson deutlich verändern. So hat er aufgezeigt, dass Führungsverhalten auf Optimismus, Gerechtigkeit und Handlungsfähigkeit beruht.
+The founder of Shorinji Kempo, So Doshin, came to realise during the chaos of the post-war years — based on his own experiences — that the goals and character of a group or society change markedly depending on the quality of its leaders. He showed in this way that good leadership rests on optimism, a sense of justice and the ability to act.
 
-So Doshin war überzeugt, dass er Menschen mit echten Führungsqualitäten ausbilden sollte, damit Menschen friedlich und glücklich miteinander leben können.
+So Doshin was convinced that he had to train people with genuine leadership qualities so that human beings could live together peacefully and happily.
 
-So Doshin hat begonnen, den Jugendlichen, die im Nachkriegschaos sich selbst zu verlieren schienen, einen Weg zu zeigen, der zu einem glücklichen Leben führen kann. Er hat den Jugendlichen Kampftechniken gelehrt, durch welche sie wieder Selbstvertrauen erlangen konnten.
+So Doshin began to show the young people who seemed to be losing themselves in the post-war chaos a path that could lead to a happy life. He taught them fighting techniques through which they could regain their self-confidence.
 
-Im Laufe des Trainings hat So Doshin ihnen den richtigen Weg demonstriert und dadurch ihre Selbstsicherheit und den Glauben an sich selbst geweckt. Darüber hinaus hat er den Schülern die Entwicklungsmöglichkeiten dargelegt, welche von Geburt an in uns stecken. Dadurch wurden Persönlichkeiten geformt, die Selbstvertrauen, Mut und Handlungsfähigkeit besitzen und einen Beitrag in unserer Gesellschaft leisten.
+In the course of training, So Doshin demonstrated the right way to them and thereby awakened their self-assurance and belief in themselves. Beyond that, he revealed to his students the potential for development that lies within each of us from birth. In this way, personalities were shaped that possess self-confidence, courage and the ability to act — and who contribute to our society.
 
 ![Shorinji Kempo](/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg)

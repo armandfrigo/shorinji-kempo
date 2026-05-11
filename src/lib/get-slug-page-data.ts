@@ -15,14 +15,11 @@ export type SlugPageResult =
 
 export async function resolveSlugPage(slug: string, lang: SiteLang): Promise<SlugPageResult> {
   const sitePages = await getCollection('pages');
-  const pageEntry =
-    sitePages.find((p) => p.data.routeSlug === slug && p.data.lang === lang) ??
-    sitePages.find((p) => p.data.routeSlug === slug && p.data.lang === 'de');
+  /** No fallback to `de`: prefixed routes (`/fr/...`) must not render another locale's markdown. */
+  const pageEntry = sitePages.find((p) => p.data.routeSlug === slug && p.data.lang === lang);
 
   const posts = await getCollection('news');
-  const postEntry =
-    posts.find((p) => p.data.lang === lang && p.data.wpSlug === slug) ??
-    posts.find((p) => p.data.lang === 'de' && p.data.wpSlug === slug);
+  const postEntry = posts.find((p) => p.data.lang === lang && p.data.wpSlug === slug);
 
   if (!pageEntry && !postEntry) {
     return { redirect: withBase('/') };

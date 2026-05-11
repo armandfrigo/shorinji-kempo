@@ -1,17 +1,17 @@
 ---
 lang: en
 routeSlug: gruender
-title: Gründer
+title: Founder
 ---
 
-## Lebenslauf des Gründers von SHORINJI KEMPO, So Doshin
+## Biography of the founder of SHORINJI KEMPO, So Doshin
 
-Der Gründer ist im Februar 1911 in der Gemeinde Sakuto, Präfektur Okayama (heute die Stadt Mimasaka) geboren. Im Alter von 17 Jahren hat er China intensiv bereist. Dabei ist er Schüler von Wen Laoshi der Songshan Shaolinsi geworden und hat diverse Kampftechniken erlernt. Das Ende des Krieges hat er im Nordosten von China (Mandschurei) unter der sowjetischen Besatzungsmacht miterlebt.
+The founder was born in February 1911 in the municipality of Sakuto, Okayama Prefecture (today the city of Mimasaka). At the age of 17 he travelled extensively through China. There he became a student of Wen Laoshi at the Songshan Shaolin Temple and learned various martial techniques. He experienced the end of the war in north-eastern China (Manchuria) under the Soviet occupation.
 
-Im Tumult der unmittelbaren Nachkriegszeit hat er mit eigenen Augen auf extremste Weise erlebt, zu was für Handlungen Menschen fähig sein können. Das hat ihn davon überzeugt, dass Gesetz, Militär und Politik von der „menschlichen Qualität“ der Führungspersonen abhängen. Er hat sich deshalb entschlossen, für das Erreichen von wahrem Frieden Menschen mit Güte, Mut und starkem Gerechtigkeitssinn heranzubilden.
+In the turmoil of the immediate post-war period he witnessed with his own eyes, in the most extreme manner, what human beings are capable of doing. This convinced him that law, the military and politics depend on the “human quality” of those who lead. He therefore decided, in order to achieve true peace, to train people endowed with kindness, courage and a strong sense of justice.
 
-Nach seiner Rückkehr nach Japan hat er ein System entwickelt, das, wie erwähnt, Menschen zu für die Gesellschaft nützlichen Persönlichkeiten formt. Zum Einen ist das die Lehre des Riki Ai Funi (Kraft und Liebe in Harmonie) und zum Anderen sind das die Kampftechniken um Selbstvertrauen zu erlangen und die gemachten Fortschritte als Erfolg zu erleben.
+After returning to Japan, he developed a system that — as mentioned — shapes individuals into personalities useful to society. On the one hand there is the teaching of Riki Ai Funi (strength and love in harmony), and on the other hand the fighting techniques through which one gains self-confidence and can experience progress as success.
 
-Im Oktober 1947 hat er unter dem Prinzip des „Ken Zen Ichinyo“ (Einheit von Körper und Geist) das „Shorinji Kempo“ gegründet. Im Mai 1980 ist er verstorben.
+In October 1947, under the principle of *Ken Zen Ichinyo* (the unity of body and mind), he founded *Shorinji Kempo*. He passed away in May 1980.
 
 ![So Doshin](/uploads/2019/09/img-716102751-0001-723x1024.jpg)

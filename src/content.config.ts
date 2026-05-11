@@ -16,7 +16,7 @@ const news = defineCollection({
   }),
 });
 
-/** Top-level site pages (Shorinji / Dojo locations), imported from `shorinjikempo.ch/startseite/<slug>/`. */
+/** Top-level site pages (Shorinji / Dojo locations). `scripts/import-static-pages.mjs` copies one HTML body into every `lang` folder — do not assume per-locale prose without manual edits. */
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: new URL('./content/pages', import.meta.url) }),
   schema: z.object({

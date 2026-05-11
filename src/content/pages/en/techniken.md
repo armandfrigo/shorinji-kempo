@@ -1,21 +1,21 @@
 ---
 lang: en
 routeSlug: techniken
-title: Techniken
+title: Techniques
 ---
 
 ## Goho — 剛法
 
-**Goho – Methoden** sind technische Methoden zum Ablenken oder Blocken von Schlägen, Tritten oder ähnlichen Angriffen eines Gegners, um ihn dann mit einem eigenen Gegenangriff, wiederum basierend auf Schlägen, Tritten o.ä. zu überwältigen.
+**Goho methods** are technical methods for deflecting or blocking strikes, kicks or similar attacks from an opponent, in order to then overcome them with a counter-attack of one’s own — again based on strikes, kicks and the like.
 
 ![Goho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
 
 ## Juho — 柔法
 
-**Juho – Methoden** sind Techniken für den Fall, dass ein Gegner den eigenen Arm oder die Kleidung greift. Dabei befreit man sich aus dem Griff, wendet einen Hebel an oder wirft den Gegner.
+**Juho methods** are techniques used when an opponent grabs one’s arm or clothing. They allow you to free yourself from the grip, apply a lever or throw the opponent.
 
 ![Juho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
 
-## Zusammenfassend
+## In summary
 
-Goho und Juho können auf diese Art und Weise unterschieden werden, aber mit fortschreitendem Training entwickeln sich Goho und Juho zunehmend zu einem gemeinsamen Satz von Techniken. Der Grund dafür liegt in der Natur der Selbstverteidigung. Um seinen Gegner unter Kontrolle zu bringen, muss man auf seine Bewegungen und die spezifische Situation reagieren. Dazu muss man sowohl die harten als auch die weichen Techniken beherrschen und anpassen, um sie effektiv anwenden zu können.
+Goho and Juho can be distinguished in this way, but as training progresses they increasingly merge into a single set of techniques. The reason lies in the very nature of self-defence: in order to bring an opponent under control, you have to react to his movements and to the specific situation. To do so, you need to master both the hard and the soft techniques and adapt them so that they can be applied effectively.

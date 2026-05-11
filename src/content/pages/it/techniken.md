@@ -1,21 +1,21 @@
 ---
 lang: it
 routeSlug: techniken
-title: Techniken
+title: Tecniche
 ---
 
 ## Goho — 剛法
 
-**Goho – Methoden** sind technische Methoden zum Ablenken oder Blocken von Schlägen, Tritten oder ähnlichen Angriffen eines Gegners, um ihn dann mit einem eigenen Gegenangriff, wiederum basierend auf Schlägen, Tritten o.ä. zu überwältigen.
+I **metodi Goho** sono tecniche destinate a deviare o bloccare pugni, calci o attacchi simili dell’avversario, per poi sopraffarlo con un contrattacco basato a sua volta su pugni, calci e simili.
 
 ![Goho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
 
 ## Juho — 柔法
 
-**Juho – Methoden** sind Techniken für den Fall, dass ein Gegner den eigenen Arm oder die Kleidung greift. Dabei befreit man sich aus dem Griff, wendet einen Hebel an oder wirft den Gegner.
+I **metodi Juho** sono le tecniche da utilizzare quando l’avversario afferra il braccio o l’abbigliamento. Permettono di liberarsi dalla presa, applicare una leva o proiettare l’avversario.
 
 ![Juho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
 
-## Zusammenfassend
+## In sintesi
 
-Goho und Juho können auf diese Art und Weise unterschieden werden, aber mit fortschreitendem Training entwickeln sich Goho und Juho zunehmend zu einem gemeinsamen Satz von Techniken. Der Grund dafür liegt in der Natur der Selbstverteidigung. Um seinen Gegner unter Kontrolle zu bringen, muss man auf seine Bewegungen und die spezifische Situation reagieren. Dazu muss man sowohl die harten als auch die weichen Techniken beherrschen und anpassen, um sie effektiv anwenden zu können.
+Goho e Juho possono essere distinti in questo modo, ma con il progredire dell’allenamento tendono a confluire in un unico insieme di tecniche. La ragione risiede nella natura stessa dell’autodifesa: per controllare l’avversario è necessario reagire ai suoi movimenti e alla situazione specifica. Per farlo bisogna padroneggiare e adattare sia le tecniche dure sia quelle morbide, in modo da poterle applicare in modo efficace.

@@ -1,24 +1,24 @@
 ---
 lang: en
 routeSlug: basel
-title: Dojo Basel
+title: Basel
 ---
 
 ![Dojo Basel](/uploads/2025/01/IMG_0737-rotated.jpg)
 
-## Trainingsort und -zeit
+## Location and training time
 
 Winkelriedplatz 6  
 CH-4053 Basel  
 
-**Dienstag 19:00 Uhr – 21:00 Uhr**
+**Tuesday, 7:00 p.m. – 9:00 p.m.**
 
-## Instruktor
+## Instructor
 
-**Marco Pellegrino (5. Dan)**
+**Marco Pellegrino (5th Dan)**
 
-- Telefon Mobile: [+41 79 636 56 82](tel:+41796365682)
-- E-Mail: [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
+- Mobile: [+41 79 636 56 82](tel:+41796365682)
+- E-mail: [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
 
 <div class="basel-instructor-photo">
 
@@ -26,14 +26,14 @@ CH-4053 Basel
 
 </div>
 
-## Beiträge
+## Fees
 
-- Erwachsene CHF 90.– pro Monat
-- Lehrlinge/Studenten CHF 60.– pro Monat
-- Schüler/Kinder CHF 50.– pro Monat
+- Adults CHF 90.– per month
+- Apprentices/students CHF 60.– per month
+- School pupils/children CHF 50.– per month
 
-## Beschreibung des Dojos
+## About the dojo
 
-Wir sind gezügelt! Das alte Dojo in der Budo-Akademie bei der Heuwaage wurde aufgegeben. Das neue Dojo befindet sich am Winkelriedplatz 6, 4053 Basel – direkt beim Bahnhof Basel SBB im Gundeldingerquartier. Es ist also hervorragend mit dem öffentlichen Verkehr erreichbar. Parkplätze sind im Quartier sowie im Parkhaus Bahnhof Süd in der Nähe verfügbar.
+We have moved! The old dojo at the Budo Academy near the Heuwaage has been given up. The new dojo is located at Winkelriedplatz 6, 4053 Basel — right by Basel SBB station in the Gundeldingen neighbourhood. It is therefore excellently accessible by public transport. Parking is available in the neighbourhood and at the nearby Bahnhof Süd car park.
 
-Das neue Dojo ist vollständig mit Matten ausgestattet, verfügt über große Fenster, eine Lüftungsanlage sowie Sonnenstoren. Zusätzlich gibt es separate Duschen und Umkleidekabinen.
+The new dojo is fully equipped with mats and features large windows, a ventilation system and sun blinds. There are also separate showers and changing rooms.

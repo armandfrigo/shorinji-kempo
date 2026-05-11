@@ -1,24 +1,24 @@
 ---
 lang: fr
 routeSlug: basel
-title: Dojo Basel
+title: Bâle
 ---
 
-![Dojo Basel](/uploads/2025/01/IMG_0737-rotated.jpg)
+![Dojo Bâle](/uploads/2025/01/IMG_0737-rotated.jpg)
 
-## Trainingsort und -zeit
+## Lieu et horaire d’entraînement
 
 Winkelriedplatz 6  
-CH-4053 Basel  
+CH-4053 Bâle  
 
-**Dienstag 19:00 Uhr – 21:00 Uhr**
+**Mardi 19h00 – 21h00**
 
 ## Instructeur
 
-**Marco Pellegrino (5. Dan)**
+**Marco Pellegrino (5e Dan)**
 
-- Telefon Mobile: [+41 79 636 56 82](tel:+41796365682)
-- E-Mail: [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
+- Téléphone mobile : [+41 79 636 56 82](tel:+41796365682)
+- E-mail : [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
 
 <div class="basel-instructor-photo">
 
@@ -26,14 +26,14 @@ CH-4053 Basel
 
 </div>
 
-## Beiträge
+## Cotisations
 
-- Erwachsene CHF 90.– pro Monat
-- Lehrlinge/Studenten CHF 60.– pro Monat
-- Schüler/Kinder CHF 50.– pro Monat
+- Adultes : CHF 90.– par mois
+- Apprenti·e·s/étudiant·e·s : CHF 60.– par mois
+- Écolier·ère·s/enfants : CHF 50.– par mois
 
-## Beschreibung des Dojos
+## Description du dojo
 
-Wir sind gezügelt! Das alte Dojo in der Budo-Akademie bei der Heuwaage wurde aufgegeben. Das neue Dojo befindet sich am Winkelriedplatz 6, 4053 Basel – direkt beim Bahnhof Basel SBB im Gundeldingerquartier. Es ist also hervorragend mit dem öffentlichen Verkehr erreichbar. Parkplätze sind im Quartier sowie im Parkhaus Bahnhof Süd in der Nähe verfügbar.
+Nous avons déménagé ! L’ancien dojo, situé à la Budo-Akademie près de la Heuwaage, a été abandonné. Le nouveau dojo se trouve au Winkelriedplatz 6, 4053 Bâle — juste à côté de la gare de Bâle CFF, dans le quartier du Gundeldingen. Il est donc parfaitement accessible en transports publics. Des places de stationnement sont disponibles dans le quartier ainsi qu’au parking « Bahnhof Süd » à proximité.
 
-Das neue Dojo ist vollständig mit Matten ausgestattet, verfügt über große Fenster, eine Lüftungsanlage sowie Sonnenstoren. Zusätzlich gibt es separate Duschen und Umkleidekabinen.
+Le nouveau dojo est entièrement équipé de tatamis et dispose de grandes fenêtres, d’un système de ventilation et de stores. Il comprend également des douches et des vestiaires séparés.

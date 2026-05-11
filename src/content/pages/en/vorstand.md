@@ -1,51 +1,51 @@
 ---
 lang: en
 routeSlug: vorstand
-title: Vorstand
+title: Board
 ---
 
 ## Marco Pellegrino
 
 ![Marco Pellegrino](/uploads/2019/09/IMG_4654.jpg)
 
-**PRÄSIDENT / Seikenshi (5. Dan)**
+**PRESIDENT / Seikenshi (5th Dan)**
 
-Im Alter von 24 Jahren absolvierte er sein erstes Training in einem Dojo wo Shorinji Kempo unterrichtet wurde. Die Atmosphäre im damaligen Dojo, der Umgang der Kenshis miteinander und natürlich die faszinierenden Techniken, hatten ihn sofort begeistert und so begann er selber mit dem Ausüben von Shorinji Kempo und trainierte regelmässig.
+At the age of 24 he attended his first training session in a dojo where Shorinji Kempo was taught. The atmosphere of the dojo at the time, the way the kenshis interacted with one another and, of course, the fascinating techniques captivated him immediately, so he took up Shorinji Kempo himself and trained regularly.
 
-Im Dezember 1993 erwarb er den 1. DAN, die erste Stufe des schwarzen Gurtes. Er half mit bei der Gründung der Shorinji Kempo Föderation in der Schweiz und wurde im Jahr 2002, als die S.S.K.F. (Schweizerische Shorinji Kempo Föderation) von der W.S.K.O. (World Shorinji Kempo Organization) offiziell anerkannt wurde, deren Präsident. Mit dem Erwerb des 4. DAN im Juni 2009 hatte er dann den Lehrerstatus erreicht und im April 2014 eröffnete er sein eigenes Dojo in Basel.
+In December 1993 he obtained the 1st Dan, the first level of the black belt. He helped to establish the Shorinji Kempo Federation in Switzerland and, in 2002, when the S.S.K.F. (Swiss Shorinji Kempo Federation) was officially recognised by the W.S.K.O. (World Shorinji Kempo Organization), he became its president. With the 4th Dan obtained in June 2009 he reached the rank of instructor, and in April 2014 he opened his own dojo in Basel.
 
-Im März 2016 bestand er am Hauptsitz der Shorinji Kempo Föderation in Japan die Prüfungen für den 5. DAN Seikenshi. Auch nach über 30 Jahren regelmässigen Trainings und vielen Aus- und Weiterbildungsseminaren an zahlreichen internationalen Stagen und am Hauptsitz in Japan, bereitet ihm dieses Lehrsystem immer noch die gleiche Freude wie am ersten Tag. Mit viel Motivation unterrichtet er nun seine Schüler und hilft somit bei der Weiterverbreitung von Shorinji Kempo in der Schweiz.
+In March 2016 he passed the examinations for the 5th Dan Seikenshi at the headquarters of the Shorinji Kempo Federation in Japan. After more than 30 years of regular training and many seminars at numerous international stages and at the headquarters in Japan, this teaching system still gives him the same joy as on the very first day. He now teaches his students with great motivation and thus contributes to spreading Shorinji Kempo throughout Switzerland.
 
 ## Manfred Schärer
 
 ![Manfred Schärer](/uploads/2019/09/IMG_4651.jpg)
 
-**KASSIER / Daikenshi (5. Dan)**
+**TREASURER / Daikenshi (5th Dan)**
 
-Im Jahre 1978 hatte ich den ersten Kontakt mit Shorinji Kempo. Sowohl die Techniken aber auch die Philosophie haben mich von Anfang an begeistert. Da es zu dieser Zeit in der Schweiz aber noch keine autorisierten Lehrer gab, ging ich über 10 Jahre lang monatlich zu Aosaka Sensei (9. Dan) nach Paris, um diese Kampfkunst von Grund auf beim besten Lehrer in Europa zu erlernen.
+I first came into contact with Shorinji Kempo in 1978. Both the techniques and the philosophy fascinated me from the beginning. Since there were no authorised teachers in Switzerland at the time, for more than 10 years I travelled monthly to Aosaka Sensei (9th Dan) in Paris in order to learn this martial art from the ground up under the best teacher in Europe.
 
-Im Januar 1984 konnte ich, nach einer anspruchsvollen Prüfung, den 1. DAN, d.h. den ersten schwarzen Gurt erwerben. Ich absolvierte auch immer wieder internationale Seminare sowohl in Europa als auch am Hauptsitz (Hombu) des Shorinji Kempo in Japan.
+In January 1984, after a demanding examination, I was able to obtain the 1st Dan — the first black belt. Again and again I attended international seminars, both in Europe and at the headquarters (Hombu) of Shorinji Kempo in Japan.
 
-Nachdem ich den Lehrerstatus erreicht hatte, eröffnete ich im Jahr 1996 in Reinach BL meine erste eigene Schule, um die interessanten Techniken und die Philosophie des Shorinji Kempo auch anderen Menschen weiterzugeben.
+After reaching the rank of instructor, I opened my own first school in 1996 in Reinach BL, in order to pass on the interesting techniques and the philosophy of Shorinji Kempo to other people as well.
 
-Nach über 40 Jahren regelmässigen Trainings macht mir das Ausüben des Shorinji Kempo immer noch so viel Freude wie am Anfang. Auch der Austausch mit anderen Lehrern an internationalen Seminaren ist immer wieder ein wunderbares Erlebnis. Über die Jahre entstanden so langjährige und tolle Freundschaften.
+After more than 40 years of regular training, the practice of Shorinji Kempo still brings me as much joy as it did at the start. The exchange with other instructors at international seminars is also a wonderful experience time and again. Over the years many long-standing and great friendships have grown out of it.
 
 ## Tomoko Muth (-Akao)
 
 ![Tomoko Muth (-Akao)](/uploads/2019/09/IMG_4653.jpg)
 
-**GENERALSEKRETÄRIN / Seikenshi (4. Dan)**
+**SECRETARY GENERAL / Seikenshi (4th Dan)**
 
-Ich komme aus Japan, dem Heimatland von Shorinji Kempo. Da ich mich seit langem für Kampfkunst interessiert hatte, fing ich 2002 an, Shorinji Kempo an der Universität Tokyo zu trainieren. Es faszinierte mich sofort, vor allem das Studium des Embu – ein Abfolge von verschiedenen Techniken, abgestimmt mit einem oder mehreren Trainingspartnern, und als Kampf simuliert dargestellt – da sowohl Leidenschaft wie auch Ruhe enthalten ist.
+I come from Japan, the home country of Shorinji Kempo. As I had been interested in martial arts for a long time, I began training Shorinji Kempo at the University of Tokyo in 2002. It fascinated me immediately, especially the study of Embu — a sequence of various techniques performed in coordination with one or more training partners and presented as a simulated fight — because both passion and calmness are contained in it.
 
-Embu werden an so genannten Taikai (Wettbewerb) vorgeführt, von denen ich auch einige gewann. Nach einer kurzen Pause setzte ich das Training bei Sanada-Sensei, 8. Dan, der mich zu meinem aktuell 4. Dan ausbildete, fort. Seit meinem Zuzug in die Schweiz im März 2016 werde ich durch Marco Pellegrino, 5. Dan, und Manfred Schärer, 5. Dan, von Branch Basel unterstützt. Durch einen weiteren Wohnortwechsel (von Basel nach Muri bei Bern), aufgrund meiner Tätigkeit als Journalistin / Übersetzerin stand ich vor der Entscheidung, Shorinji Kempo aufzugeben oder einen neuen Standort zu gründen. Deshalb entschloss ich mich im Januar 2018 mit meinem Mann, Stefan (2. Dan), Dojo Muri zu gründen.
+Embu are performed at so-called Taikai (competitions), some of which I also won. After a short break, I continued my training under Sanada Sensei, 8th Dan, who trained me up to my current 4th Dan. Since moving to Switzerland in March 2016 I have been supported by Marco Pellegrino, 5th Dan, and Manfred Schärer, 5th Dan, of Branch Basel. With another change of residence (from Basel to Muri bei Bern) due to my work as a journalist and translator, I was faced with the decision either to give up Shorinji Kempo or to set up a new branch. That is why, in January 2018, my husband Stefan (2nd Dan) and I decided to found Dojo Muri.
 
 ## Silvan Buchecker
 
 ![Silvan Buchecker](/uploads/2019/09/IMG_4658.jpg)
 
-**VIZEPRÄSIDENT / Shokenshi (2. Dan)**
+**VICE-PRESIDENT / Shokenshi (2nd Dan)**
 
-Im Alter von dreizehn Jahren habe ich mit Shorinji Kempo begonnen. Heute bin ich 27 Jahre alt. Die Kampfkunst hat mich also über die Hälfte meines Lebens begleitet und mir auf unterschiedlichen Ebenen vieles mitgegeben und mich geprägt. Ursprünglich habe ich mit Shorinji Kempo angefangen, da ich einen ausgewogenen Kampfsport ausüben wollte. Mir war es wichtig, einerseits Würfe sowie Hebel zu erlernen und andererseits Schlag- und Tritttechniken zu üben. Dazu war Shorinji Kempo die ideale Wahl. Zurzeit trainiere ich im Dojo Basel.
+I started Shorinji Kempo at the age of thirteen. Today I am 27 years old. The martial art has therefore accompanied me for more than half of my life and has given me a great deal on many different levels — it has shaped me. I originally took up Shorinji Kempo because I wanted to practise a well-rounded martial sport. It was important to me to learn throws and joint locks on the one hand and to practise striking and kicking techniques on the other. For that, Shorinji Kempo was the ideal choice. I currently train at Dojo Basel.
 
-Im Privatleben absolviere ich momentan meinen Master in European Global Studies an der Universität Basel. Ausserdem arbeite ich als Journalist bei Prime News, einem Basler Online-Portal.
+In my private life I am currently completing my Master’s degree in European Global Studies at the University of Basel. I also work as a journalist at Prime News, a Basel-based online portal.

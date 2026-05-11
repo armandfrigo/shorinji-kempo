@@ -6,32 +6,32 @@ title: Aubonne
 
 ![Dojo Aubonne](/uploads/2026/05/IMG_7175.jpeg)
 
-Le Dojo est dans la salle de rythmique de l’école D'Aubonne, au premier étage de l’établissement en face du terrain de foot.
+Il dojo si trova nella sala di ritmica della scuola di Aubonne, al primo piano dell’edificio di fronte al campo di calcio.
 
-## Adresse et horaire
+## Indirizzo e orario
 
 **Collège du Chêne, Salle de rythmique**  
 Avenue du Mont-Blanc 53  
 CH-1170 Aubonne  
 
-**Horaire:** les mardis de 19h00 à 20h30
+**Orario:** martedì dalle 19:00 alle 20:30
 
-## Instructeur
+## Istruttore
 
 ![Roberto Comino](/uploads/bb-plugin/cache/Roberto-Comino-2-square-1cd01aa2cbd6b3d9901ebb66186579b2-5da58c07d7b0c.jpg)
 
-**Roberto Comino (4ème Dan)**
+**Roberto Comino (4° Dan)**
 
-- E-Mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
+- E-mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
 
-## Cotisation
+## Quote
 
-Adultes et ados (dès 10 ans): 2 semaines d'essai gratuit.
+Adulti e ragazzi (a partire dai 10 anni): 2 settimane di prova gratuita.
 
-**CHF 150.-** pour chaque trimestre (**CHF 100.-** par trimestre pour les mineurs de 13 ans):
+**CHF 150.–** a trimestre (**CHF 100.–** a trimestre per i minori di 13 anni).
 
-La cotisation est réduite (**CHF 100.-** si >13 ans, **CHF 50.-** si < 13 ans) à partir du 2ème membre d’une même famille.
+A partire dal secondo membro di una stessa famiglia, la quota è ridotta (**CHF 100.–** per gli over 13, **CHF 50.–** per gli under 13).
 
-## Description du dojo
+## Descrizione del dojo
 
-La siège d'Aubonne a étée ouverte en Septembre 2018 par le présent instructeur, Roberto Comino, qui a commencé la pratique du Shorinji Kempo en 1993 dans le COMO ITALIA Branch en Italie, et qui a obtenu son degré actuel (4me Dan) en 2023.
+La sede di Aubonne è stata aperta nel settembre 2018 dall’attuale istruttore Roberto Comino, che ha iniziato a praticare lo Shorinji Kempo nel 1993 presso il COMO ITALIA Branch in Italia e ha conseguito il grado attuale (4° Dan) nel 2023.

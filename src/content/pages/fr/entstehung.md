@@ -1,17 +1,17 @@
 ---
 lang: fr
 routeSlug: entstehung
-title: Entstehung
+title: Origine
 ---
 
-## Motivation und Ziele der Begründung von SHORINJI KEMPO
+## Motivation et objectifs à l’origine de la fondation du SHORINJI KEMPO
 
-Der Gründer des Shorinji Kempo, So Doshin, ist im Chaos der Nachkriegszeit anhand seiner eigenen Erfahrungen zur Erkenntnis gelangt, dass sich die Zielsetzung und der Charakter einer Gruppe oder Gesellschaft je nach Qualität der Führungsperson deutlich verändern. So hat er aufgezeigt, dass Führungsverhalten auf Optimismus, Gerechtigkeit und Handlungsfähigkeit beruht.
+Le fondateur du Shorinji Kempo, So Doshin, a pris conscience, au cœur du chaos de l’après-guerre et à partir de ses propres expériences, que les objectifs et le caractère d’un groupe ou d’une société changent profondément selon la qualité de celles et ceux qui les dirigent. Il a ainsi montré qu’un comportement de leader repose sur l’optimisme, le sens de la justice et la capacité d’agir.
 
-So Doshin war überzeugt, dass er Menschen mit echten Führungsqualitäten ausbilden sollte, damit Menschen friedlich und glücklich miteinander leben können.
+So Doshin était convaincu qu’il devait former des personnes dotées de véritables qualités de leadership afin que les êtres humains puissent vivre ensemble dans la paix et le bonheur.
 
-So Doshin hat begonnen, den Jugendlichen, die im Nachkriegschaos sich selbst zu verlieren schienen, einen Weg zu zeigen, der zu einem glücklichen Leben führen kann. Er hat den Jugendlichen Kampftechniken gelehrt, durch welche sie wieder Selbstvertrauen erlangen konnten.
+So Doshin a commencé à montrer aux jeunes qui semblaient se perdre dans le chaos de l’après-guerre une voie pouvant mener à une vie heureuse. Il leur a enseigné des techniques de combat grâce auxquelles ils ont pu retrouver confiance en eux.
 
-Im Laufe des Trainings hat So Doshin ihnen den richtigen Weg demonstriert und dadurch ihre Selbstsicherheit und den Glauben an sich selbst geweckt. Darüber hinaus hat er den Schülern die Entwicklungsmöglichkeiten dargelegt, welche von Geburt an in uns stecken. Dadurch wurden Persönlichkeiten geformt, die Selbstvertrauen, Mut und Handlungsfähigkeit besitzen und einen Beitrag in unserer Gesellschaft leisten.
+Au fil de l’entraînement, So Doshin leur a montré la juste voie, éveillant ainsi leur assurance et leur foi en eux-mêmes. Il a en outre exposé à ses élèves les possibilités de développement qui sommeillent en chacun de nous dès la naissance. De cette manière se sont formées des personnalités dotées de confiance en soi, de courage et de capacité d’action, qui apportent leur contribution à notre société.
 
 ![Shorinji Kempo](/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg)

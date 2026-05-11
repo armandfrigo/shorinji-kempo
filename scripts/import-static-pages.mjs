@@ -4,6 +4,7 @@ import * as cheerio from 'cheerio';
 import TurndownService from 'turndown';
 
 const ROOT = path.resolve('shorinjikempo.ch');
+/** Locales written for each imported page — body is always from the German `startseite/<slug>/` HTML. Re-running overwrites any hand-written translations in `fr`/`en`/`it`. */
 const PAGE_LANGS = ['de', 'fr', 'en', 'it'];
 const PAGES_BASE = path.resolve('src/content/pages');
 

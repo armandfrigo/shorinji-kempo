@@ -1,37 +1,37 @@
 ---
 lang: fr
 routeSlug: muri
-title: Kindertraining Muri
+title: Muri
 ---
 
 ![Dojo Muri](/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f06ff5d56f08f7f0bb52a757e-5d849ada2e833.jpeg)
 
-## Trainingsort und -zeit Kindertraining
+## Lieu et horaire — cours pour enfants
 
-**MüZe Familien- und Weiterbildungszentrum**  
+**MüZe — centre familial et de formation continue**  
 Kranichweg 10  
 3074 Muri bei Bern  
 
-**Donnerstag 16:20–17:00**
+**Jeudi 16h20 – 17h00**
 
-Das Training richtet sich an Kinder.  
-Kein Training in den Schulferien in Muri-Gümligen.
+Le cours s’adresse aux enfants.  
+Pas d’entraînement pendant les vacances scolaires de Muri-Gümligen.
 
-## Instruktorin
+## Instructrice
 
 ![Tomoko Muth-Akao](/uploads/bb-plugin/cache/IMG_4653-200x300-square-ba8f4c46405b5ebe3b2f31ac4499d7a9-5da58bd706bc4.jpg)
 
-**Tomoko Muth-Akao (4. Dan)**
+**Tomoko Muth-Akao (4e Dan)**
 
-- E-Mail: [tomoko.muth@shorinjikempo.ch](mailto:tomoko.muth@shorinjikempo.ch)
+- E-mail : [tomoko.muth@shorinjikempo.ch](mailto:tomoko.muth@shorinjikempo.ch)
 
-## Beiträge
+## Cotisations
 
-Verrechnet auf Quartalbasis:
+Facturées sur une base trimestrielle :
 
-- für Mitglieder des Müzes: 14 CHF pro Lektion
-- für Nichtmitglieder des Müzes: 18 CHF pro Lektion
+- pour les membres du MüZe : 14 CHF par leçon
+- pour les non-membres du MüZe : 18 CHF par leçon
 
-## Beschreibung des Dojos
+## Description du dojo
 
-Das Dojo Muri bietet im Rahmen des Angebots von Familienzentrum-Müze einen Kurs für Kinder an. Es richtet sich vor allem an Primarschüler, jedoch können auch Kindergartenkinder in Begleitung eines Elternteils teilnehmen. Teilnahme von Schüler ab der Sekundarstufe oder Erwachsene ist je nach Bedarf möglich.
+Le Dojo Muri propose, dans le cadre de l’offre du centre familial MüZe, un cours destiné aux enfants. Il s’adresse principalement aux élèves du primaire ; les enfants de l’école enfantine peuvent toutefois y participer accompagnés d’un parent. La participation d’élèves du secondaire ou d’adultes est possible selon les besoins.
