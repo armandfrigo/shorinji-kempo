@@ -6,3 +6,4 @@ dist/
 .env
 shorinjikempo.ch/
 *.mp4
+Claude/*

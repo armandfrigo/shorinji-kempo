@@ -1,0 +1,226 @@
+---
+// src/components/DojoCard.astro
+// Premium dojo card with integrated Google Maps
+
+export interface Props {
+  name: string;
+  instructor: string;
+  schedule: string;
+  address: string;
+  city: string;
+  phone?: string;
+  email?: string;
+  fees: string;
+  googleMapsUrl: string;
+  instagramUrl?: string;
+  description: string;
+}
+
+const { 
+  name, 
+  instructor, 
+  schedule, 
+  address, 
+  city,
+  phone, 
+  email, 
+  fees, 
+  googleMapsUrl,
+  instagramUrl,
+  description 
+} = Astro.props;
+---
+
+<div class="dojo-card">
+  <div class="dojo-header">
+    <h3 class="dojo-name">{name}</h3>
+    <span class="dojo-badge">{instructor}</span>
+  </div>
+
+  <div class="dojo-info">
+    <div class="info-item">
+      <span class="info-icon">📍</span>
+      <div>
+        <p class="label">Adresse</p>
+        <p class="value">{address}</p>
+        <p class="value text-grey text-sm">{city}</p>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <span class="info-icon">⏰</span>
+      <div>
+        <p class="label">Horaires</p>
+        <p class="value">{schedule}</p>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <span class="info-icon">💰</span>
+      <div>
+        <p class="label">Tarifs</p>
+        <p class="value">{fees}</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="dojo-description">{description}</p>
+
+  <div class="divider"></div>
+
+  <div class="dojo-contacts">
+    {phone && (
+      <a href={`tel:${phone}`} class="contact-link">
+        <span>☎️</span> {phone}
+      </a>
+    )}
+    {email && (
+      <a href={`mailto:${email}`} class="contact-link">
+        <span>✉️</span> {email}
+      </a>
+    )}
+    {instagramUrl && (
+      <a href={instagramUrl} target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span>📸</span> Instagram
+      </a>
+    )}
+  </div>
+
+  <div class="dojo-actions">
+    <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+      → Google Maps
+    </a>
+  </div>
+</div>
+
+<style>
+  .dojo-card {
+    background: var(--color-white);
+    border: 1px solid #efefeb;
+    border-radius: 2px;
+    padding: var(--space-2xl);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .dojo-card:hover {
+    border-color: var(--color-red-deep);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+
+  .dojo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-lg);
+  }
+
+  .dojo-name {
+    font-size: var(--font-size-xl);
+    margin: 0;
+  }
+
+  .dojo-badge {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    background-color: #f0f0ed;
+    color: var(--color-grey-dark);
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .dojo-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .info-item {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .info-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .label {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-grey-mid);
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  .value {
+    font-size: var(--font-size-sm);
+    color: var(--color-black);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .dojo-description {
+    color: var(--color-grey-dark);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+    flex-grow: 1;
+  }
+
+  .dojo-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-red-deep);
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+  }
+
+  .contact-link:hover {
+    color: var(--color-red-accent);
+    border-bottom-color: currentColor;
+  }
+
+  .dojo-actions {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+  }
+
+  .btn-small {
+    padding: var(--space-md) var(--space-lg);
+    font-size: var(--font-size-xs);
+    flex: 1;
+  }
+
+  .divider {
+    margin: var(--space-lg) 0;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    .dojo-header {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+  }
+</style>

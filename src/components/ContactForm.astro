@@ -1,0 +1,305 @@
+---
+// src/components/ContactForm.astro
+// Premium contact form with Formspree backend (free)
+
+export interface Props {
+  lang: 'de' | 'fr' | 'en' | 'it';
+  email?: string; // Formspree email or default
+}
+
+const { 
+  lang = 'de',
+  email = 'contact@shorinjikempo.ch' // Change to real email
+} = Astro.props;
+
+const formspreeAction = `https://formspree.io/f/YOUR_FORM_ID`; // Get from formspree.io
+
+const copy = {
+  de: {
+    heading: 'Kontaktiere Uns',
+    subheading: 'Stelle deine Fragen oder vereinbare ein kostenloses Probetraining',
+    name: 'Name',
+    email: 'E-Mail',
+    phone: 'Telefon',
+    message: 'Nachricht',
+    submit: 'Nachricht Senden',
+    success: 'Vielen Dank! Wir werden dich bald kontaktieren.'
+  },
+  fr: {
+    heading: 'Nous Contacter',
+    subheading: 'Posez vos questions ou prenez rendez-vous pour un essai gratuit',
+    name: 'Nom',
+    email: 'E-Mail',
+    phone: 'Téléphone',
+    message: 'Message',
+    submit: 'Envoyer',
+    success: 'Merci ! Nous vous recontacterons bientôt.'
+  },
+  en: {
+    heading: 'Contact Us',
+    subheading: 'Ask your questions or book a free trial class',
+    name: 'Name',
+    email: 'Email',
+    phone: 'Phone',
+    message: 'Message',
+    submit: 'Send Message',
+    success: 'Thank you! We will contact you soon.'
+  },
+  it: {
+    heading: 'Contattaci',
+    subheading: 'Fai le tue domande o prenota una lezione di prova gratuita',
+    name: 'Nome',
+    email: 'Email',
+    phone: 'Telefono',
+    message: 'Messaggio',
+    submit: 'Invia',
+    success: 'Grazie! Ti contatteremo presto.'
+  }
+};
+
+const t = copy[lang] || copy['de'];
+---
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-header text-center mb-4">
+      <h2>{t.heading}</h2>
+      <p class="text-grey">{t.subheading}</p>
+    </div>
+
+    <div class="contact-container">
+      <form id="contact-form" action={formspreeAction} method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="form-label">{t.name}</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+            class="form-input"
+            placeholder="Dein Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">{t.email}</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            class="form-input"
+            placeholder="deine@email.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">{t.phone}</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone"
+            class="form-input"
+            placeholder="+41 XX XXX XX XX"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dojo" class="form-label">Dojo (Optional)</label>
+          <select id="dojo" name="dojo" class="form-input">
+            <option value="">-- Wähle einen Dojo --</option>
+            <option value="Basel">Basel</option>
+            <option value="Aubonne">Aubonne</option>
+            <option value="Muri">Muri</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">{t.message}</label>
+          <textarea 
+            id="message" 
+            name="message"
+            rows="6"
+            class="form-input"
+            placeholder="Schreib deine Nachricht hier..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-large">
+            {t.submit} →
+          </button>
+        </div>
+
+        <p class="form-note text-sm text-grey">
+          Wir antworten normalerweise innerhalb von 24 Stunden.
+        </p>
+      </form>
+
+      <div id="success-message" class="success-message" style="display: none;">
+        <div class="success-content">
+          <span class="success-icon">✓</span>
+          <p>{t.success}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const successMsg = document.getElementById('success-message');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Collect form data
+      const formData = new FormData(form);
+      
+      // Send via Formspree
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+          successMsg.scrollIntoView({ behavior: 'smooth' });
+        }
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  }
+</script>
+
+<style>
+  .contact-section {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, #fafaf8 0%, #f5f5f2 100%);
+  }
+
+  .contact-header {
+    margin-bottom: var(--space-3xl);
+  }
+
+  .contact-header h2 {
+    margin-bottom: var(--space-md);
+  }
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 800ms var(--transition-base);
+  }
+
+  .contact-form {
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border: 1px solid #efefeb;
+    border-radius: 2px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .form-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-grey-mid);
+    margin-bottom: var(--space-sm);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    font-family: var(--font-jp);
+    font-size: var(--font-size-base);
+    border: 1px solid #dcdcc8;
+    border-radius: 2px;
+    background-color: #fafaf8;
+    color: var(--color-black);
+    transition: all var(--transition-fast);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-red-deep);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 3px rgba(139, 26, 26, 0.1);
+  }
+
+  textarea.form-input {
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--font-size-base);
+  }
+
+  .form-note {
+    text-align: center;
+    margin-top: var(--space-lg);
+  }
+
+  .success-message {
+    background: var(--color-white);
+    border: 1px solid #dcdcc8;
+    border-radius: 2px;
+    padding: var(--space-2xl);
+    text-align: center;
+    animation: fadeInUp 400ms var(--transition-base);
+  }
+
+  .success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+
+  .success-icon {
+    font-size: 3rem;
+    display: inline-block;
+    animation: scaleIn 400ms var(--transition-base);
+  }
+
+  .success-message p {
+    font-size: var(--font-size-lg);
+    color: var(--color-red-deep);
+    margin: 0;
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: var(--space-2xl) 0;
+    }
+
+    .contact-form {
+      padding: var(--space-lg);
+    }
+  }
+</style>

@@ -1,0 +1,186 @@
+---
+// src/components/HeroPremium.astro
+// Modern minimal Japanese-inspired hero with CTA
+
+export interface Props {
+  lang: 'de' | 'fr' | 'en' | 'it';
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  ctaHref: string;
+  imageUrl?: string;
+  imageAlt?: string;
+}
+
+const { lang, title, subtitle, ctaText, ctaHref, imageUrl, imageAlt = 'Hero' } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-accent">
+        <span class="accent-line"></span>
+        <span class="accent-text">拳士</span>
+      </div>
+      
+      <h1 class="hero-title">{title}</h1>
+      <p class="hero-subtitle">{subtitle}</p>
+      
+      <div class="hero-cta">
+        <a href={ctaHref} class="btn btn-primary">{ctaText}</a>
+      </div>
+      
+      <p class="hero-footer">
+        <span class="text-grey">Kostenlos • Keine Verpflichtung • Anfänger Willkommen</span>
+      </p>
+    </div>
+    
+    {imageUrl && (
+      <div class="hero-image">
+        <img src={imageUrl} alt={imageAlt} loading="eager" decoding="async" />
+        <div class="hero-image-overlay"></div>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, #fafaf8 0%, #f5f5f2 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    width: 100%;
+  }
+
+  .hero-content {
+    animation: fadeInUp 800ms var(--transition-base);
+  }
+
+  .hero-accent {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .accent-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-red-deep);
+  }
+
+  .accent-text {
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    color: var(--color-grey-mid);
+    letter-spacing: 2px;
+    font-family: var(--font-jp);
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+    color: var(--color-black);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-grey-dark);
+    margin-bottom: var(--space-2xl);
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  .hero-cta {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .hero-cta .btn {
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--font-size-sm);
+  }
+
+  .hero-footer {
+    font-size: var(--font-size-sm);
+    color: var(--color-grey-mid);
+  }
+
+  .hero-image {
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    animation: fadeIn 1000ms var(--transition-base);
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms var(--transition-base);
+  }
+
+  .hero-image:hover img {
+    transform: scale(1.02);
+  }
+
+  .hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(0,0,0,0.08) 100%);
+    pointer-events: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-title {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 60vh;
+      padding: var(--space-2xl) 0;
+    }
+
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: var(--font-size-lg);
+    }
+
+    .hero-image {
+      aspect-ratio: 16/9;
+      max-height: 300px;
+    }
+  }
+</style>
