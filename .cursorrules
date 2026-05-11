@@ -1,0 +1,32 @@
+Tech stack:
+- Astro
+- TypeScript
+- Tailwind CSS
+- Keystatic
+- Cloudflare Pages
+
+Principles:
+- Static-first.
+- Minimize JavaScript.
+- Accessibility WCAG 2.1 AA.
+- Mobile-first responsive design.
+- SEO optimized.
+- Reusable components.
+- No unnecessary dependencies.
+
+Code quality:
+- Strict TypeScript.
+- ESLint clean.
+- Prettier formatting.
+
+Performance targets:
+- Lighthouse score > 95.
+- Total JS < 100 KB where practical.
+
+Content:
+- All editable content must be managed through Keystatic.
+
+Branch strategy:
+- develop = dev
+- qa = staging
+- main = production

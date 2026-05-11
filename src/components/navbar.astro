@@ -1,21 +1,47 @@
 ---
 import { languages, ui, defaultLang } from '../i18n/ui.ts';
+import { stripBaseFromPath, withBase } from '../utils/paths.ts';
 
 const { lang = defaultLang, currentPath = '/' } = Astro.props;
 
 const t = ui[lang] || ui.de;
 
 const getCleanPath = (path: string): string => {
-    return path.replace(/^\/(fr|en|it)\//, '/').replace(/^\/(fr|en|it)$/, '/');
+  return path.replace(/^\/(fr|en|it)\//, '/').replace(/^\/(fr|en|it)$/, '/');
 };
 
-const cleanPath = getCleanPath(currentPath);
+const pathWithoutBase = stripBaseFromPath(currentPath);
+const cleanPath = getCleanPath(pathWithoutBase);
+
+const localizePath = (path: string): string => {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  if (lang === 'de') return withBase(normalized);
+  if (normalized === '/') return withBase(`/${lang}`);
+  return withBase(`/${lang}${normalized}`);
+};
+
+const isActive = (targetPath: string): boolean => {
+  if (targetPath === '/') return cleanPath === '/';
+  return cleanPath === targetPath || cleanPath.startsWith(`${targetPath}/`);
+};
+
+const shorinjiPaths = [
+  '/entstehung',
+  '/gruender',
+  '/shorinji-kempo',
+  '/techniken',
+  '/vorstand',
+];
+
+const dojoPaths = ['/dojo', '/basel', '/aubonne', '/muri'];
+const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 ---
 
 <nav class="navbar">
     <div class="container">
-        <a href={lang === 'de' ? '/' : `/${lang}`} class="logo">
-            拳士 Shorinji Kempo
+        <a href={localizePath('/')} class="logo">
+            <img class="logo-img" src={logoSrc} alt="" width="60" height="45" decoding="async" />
+            <span class="logo-title">{t['nav.siteTitle']}</span>
         </a>
 
         <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -25,50 +51,51 @@ const cleanPath = getCleanPath(currentPath);
         </button>
 
         <div class="nav-links">
-            <a href={lang === 'de' ? '/' : `/${lang}`} class="nav-item">
+            <a href={localizePath('/')} class={`nav-item ${isActive('/') ? 'active' : ''}`}>
                 {t['nav.home']}
             </a>
 
             <div class="dropdown">
-                <a href="#" class="nav-item dropdown-toggle">
+                <a href="#" class={`nav-item dropdown-toggle ${shorinjiPaths.some(isActive) ? 'active' : ''}`}>
                     {t['nav.shorinji']}
                 </a>
                 <div class="dropdown-menu">
-                    <a href={lang === 'de' ? '/entstehung' : `/${lang}/entstehung`} class="dropdown-item">Entstehung</a>
-                    <a href={lang === 'de' ? '/gruender' : `/${lang}/gruender`} class="dropdown-item">Gründer</a>
-                    <a href={lang === 'de' ? '/shorinji-kempo' : `/${lang}/shorinji-kempo`} class="dropdown-item">Philosophie</a>
-                    <a href={lang === 'de' ? '/techniken' : `/${lang}/techniken`} class="dropdown-item">Techniken</a>
-                    <a href={lang === 'de' ? '/vorstand' : `/${lang}/vorstand`} class="dropdown-item">Vorstand</a>
+                    <a href={localizePath('/entstehung')} class="dropdown-item">{t['nav.entstehung']}</a>
+                    <a href={localizePath('/gruender')} class="dropdown-item">{t['nav.gruender']}</a>
+                    <a href={localizePath('/shorinji-kempo')} class="dropdown-item">{t['nav.philosophie']}</a>
+                    <a href={localizePath('/techniken')} class="dropdown-item">{t['nav.techniken']}</a>
+                    <a href={localizePath('/vorstand')} class="dropdown-item">{t['nav.vorstand']}</a>
                 </div>
             </div>
 
             <div class="dropdown">
-                <a href="#" class="nav-item dropdown-toggle">
+                <a href="#" class={`nav-item dropdown-toggle ${dojoPaths.some(isActive) ? 'active' : ''}`}>
                     {t['nav.dojo']}
                 </a>
                 <div class="dropdown-menu">
-                    <a href={lang === 'de' ? '/dojo' : `/${lang}/dojo`} class="dropdown-item">Alle Dojos</a>
-                    <a href={lang === 'de' ? '/basel' : `/${lang}/basel`} class="dropdown-item">Basel</a>
-                    <a href={lang === 'de' ? '/aubonne' : `/${lang}/aubonne`} class="dropdown-item">Aubonne</a>
-                    <a href={lang === 'de' ? '/muri' : `/${lang}/muri`} class="dropdown-item">Muri</a>
+                    <a href={localizePath('/dojo')} class="dropdown-item">{t['nav.dojo.all']}</a>
+                    <a href={localizePath('/basel')} class="dropdown-item">{t['nav.dojo.basel']}</a>
+                    <a href={localizePath('/aubonne')} class="dropdown-item">{t['nav.dojo.aubonne']}</a>
+                    <a href={localizePath('/muri')} class="dropdown-item">{t['nav.dojo.muri']}</a>
                 </div>
             </div>
 
-            <a href={lang === 'de' ? '/aktuell' : `/${lang}/aktuell`} class="nav-item">
+            <a href={localizePath('/aktuell')} class={`nav-item ${isActive('/aktuell') ? 'active' : ''}`}>
                 {t['nav.news']}
             </a>
-            <a href={lang === 'de' ? '/links' : `/${lang}/links`} class="nav-item">
+            <a href={localizePath('/links')} class={`nav-item ${isActive('/links') ? 'active' : ''}`}>
                 {t['nav.links']}
             </a>
         </div>
 
         <div class="language-switcher">
             {Object.entries(languages).map(([code]) => {
-                const href = code === 'de' 
-                    ? cleanPath 
-                    : `/${code}${cleanPath === '/' ? '' : cleanPath}`;
+                const href =
+                    code === 'de'
+                        ? withBase(cleanPath)
+                        : withBase(cleanPath === '/' ? `/${code}` : `/${code}${cleanPath}`);
                 return (
-                    <a 
+                    <a
                         href={href}
                         class={`lang-btn ${lang === code ? 'active' : ''}`}
                     >
@@ -82,7 +109,7 @@ const cleanPath = getCleanPath(currentPath);
 
 <style>
     .navbar {
-        background: #111;
+        background: var(--sk-header-bg, #111);
         color: white;
         padding: 0.75rem 0;
         position: sticky;
@@ -106,6 +133,18 @@ const cleanPath = getCleanPath(currentPath);
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        min-width: 0;
+    }
+    .logo-title {
+        min-width: 0;
+        line-height: 1.25;
+        hyphens: auto;
+    }
+    .logo-img {
+        display: block;
+        height: 36px;
+        width: auto;
+        object-fit: contain;
     }
     .mobile-menu-btn {
         display: none;
@@ -167,7 +206,7 @@ const cleanPath = getCleanPath(currentPath);
     }
     .dropdown-item:hover {
         background: #f8f9fa;
-        color: #c00;
+        color: var(--sk-accent, #c00);
     }
     .nav-item {
         color: white;
@@ -176,8 +215,11 @@ const cleanPath = getCleanPath(currentPath);
         font-size: 0.9rem;
         white-space: nowrap;
     }
+    .nav-item.active {
+        color: var(--sk-accent, #c00);
+    }
     .nav-item:hover {
-        color: #c00;
+        color: var(--sk-accent, #c00);
     }
     .language-switcher {
         display: flex;
@@ -192,12 +234,16 @@ const cleanPath = getCleanPath(currentPath);
         border-radius: 3px;
     }
     .lang-btn:hover, .lang-btn.active {
-        background: #c00;
-        border-color: #c00;
+        background: var(--sk-accent, #c00);
+        border-color: var(--sk-accent, #c00);
     }
 
     /* Mobile styles */
     @media (max-width: 768px) {
+        .logo {
+            font-size: 1rem;
+            flex: 1 1 0;
+        }
         .mobile-menu-btn {
             display: flex;
         }
@@ -223,7 +269,7 @@ const cleanPath = getCleanPath(currentPath);
             background: rgba(255,255,255,0.1);
             margin-left: 1rem;
             margin-top: 0.5rem;
-            border-left: 2px solid #c00;
+            border-left: 2px solid var(--sk-accent, #c00);
         }
         .dropdown-item {
             color: #ddd;
@@ -232,7 +278,7 @@ const cleanPath = getCleanPath(currentPath);
         }
         .dropdown-item:hover {
             background: rgba(255,255,255,0.1);
-            color: #c00;
+            color: var(--sk-accent, #c00);
         }
         .language-switcher {
             margin-top: 0.5rem;

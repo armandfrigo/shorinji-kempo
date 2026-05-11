@@ -1,48 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import InstagramFeed from '../../components/InstagramFeed.jsx';
-import { ui } from '../../i18n/ui.ts';
+import HomeHero from '../../components/HomeHero.astro';
+import HomeStorySection from '../../components/HomeStorySection.astro';
 
-const t = ui.it || ui.de;
+const lang = 'it' as const;
 ---
 
-<Layout lang='it'>
-    <div class="hero">
-        <div class="container">
-            <h1>{t['hero.title']}</h1>
-            <p class="hero-text">{t['hero.text']}</p>
-            <a href="/it/dojo" class="btn">{t['hero.cta']}</a>
-        </div>
-    </div>
+<Layout lang="it">
+    <HomeHero lang={lang} />
 
-    <div class="container content">
-        <h2>{t['section.about']}</h2>
-        <p>{t['section.philosophy']}</p>
-    </div>
-
-    <div class="container">
-        <h2>Instagram</h2>
-        <InstagramFeed url="https://www.instagram.com/shorinjikempo.aubonne/" client:visible />
-    </div>
+    <HomeStorySection lang={lang} />
 </Layout>
-
-<style>
-    .hero {
-        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
-                    url('images/juniperphoton-734577-unsplash-Kopie-1024x683.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 160px 0 120px;
-        text-align: center;
-    }
-    .hero-text {
-        font-size: 1.35rem;
-        max-width: 720px;
-        margin: 0 auto 2rem;
-    }
-    .content {
-        margin-top: 5rem;
-        padding-bottom: 5rem;
-    }
-</style>

@@ -1,5 +1,8 @@
+/archive/
 node_modules/
 dist/
 .astro/
 .DS_Store
 .env
+shorinjikempo.ch/
+*.mp4

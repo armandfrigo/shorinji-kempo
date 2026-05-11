@@ -1,73 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { ui } from '../i18n/ui.ts';
+import { getCollection } from 'astro:content';
+import { withBase } from '../utils/paths.ts';
 
-const t = ui.de || ui.de;
+const posts = (await getCollection('news')).filter((p) => p.data.lang === 'de');
+posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout lang='de'>
-    <div class="container">
-        <h1>Aktuell</h1>
-        
-        <article class="news-item">
-            <img src="/images/ATT45591.jpg" alt="Schwarzgurttrainings 2026" />
-            <div class="news-content">
-                <h2>Schwarzgurttrainings 2026</h2>
-                <p class="meta">Von Silvan Buchecker | 3. November 2025</p>
-                <p>Die Schwarzgurttrainings finden im Jahr 2026 an den folgenden Daten statt: Achtung! Wir sind umgezogen. Das Dojo Basel befindet sich nun am Winkelriedplatz 6, 4053 Basel. Die Schwarzgurttrainings kosten 20 CHF pro Kenshi.</p>
-            </div>
-        </article>
+  <div class="mx-auto max-w-[1100px] px-5 py-8">
+    <h1 class="mb-8 text-4xl text-neutral-900">Aktuell</h1>
 
-        <article class="news-item">
-            <img src="/images/IMG-20250602-WA0018-1-1024x768.jpg" alt="Taikai Portugal" />
-            <div class="news-content">
-                <h2>Schweizer Delegation am Taikai in Portugal</h2>
-                <p class="meta">Von Silvan Buchecker | 3. November 2025</p>
-                <p>Eine Schweizer Delegation hat am Taikai am 23. bis 25. Oktober in Lissabon teilgenommen. Die dreitägige Trainingsveranstaltung wurde anlässlich des 50-Jahr-Jubiläums von Shorinji Kempo Portugal veranstaltet.</p>
-            </div>
-        </article>
+    <div class="space-y-8">
+      {posts.map((post) => (
+        <article class="flex gap-6 border-b border-neutral-200 pb-8">
+          {post.data.image ? (
+            <img
+              src={withBase(post.data.image)}
+              alt={post.data.imageAlt ?? post.data.title}
+              class="h-[100px] w-[150px] rounded object-cover"
+              loading="lazy"
+            />
+          ) : null}
 
-        <article class="news-item">
-            <img src="/images/Gruppe_5-1-768x512.jpeg" alt="Japanfest Bern" />
-            <div class="news-content">
-                <h2>Japanfest Bern 22.05.2022</h2>
-                <p class="meta">Von Silvan Buchecker | 24. Mai 2022</p>
-                <p>Am 22. Mai 2022 hat Dojo Muri, mit Unterstützung von Dojo Basel und Dojo Aubonne, die Möglichkeit, sich beim Japanfest (Historisches Museum Bern) durch einen Workshop zu präsentieren.</p>
-            </div>
+          <div class="min-w-0">
+            <h2 class="mb-2 text-2xl text-red-700">
+              <a class="hover:underline" href={withBase(`/${post.data.wpSlug ?? post.slug}`)}>
+                {post.data.title}
+              </a>
+            </h2>
+            <p class="mb-2 text-sm text-neutral-600">
+              {post.data.author ? `Von ${post.data.author} | ` : ''}
+              {post.data.date.toLocaleDateString('de-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <p class="text-neutral-800">{post.data.excerpt ?? ''}</p>
+          </div>
         </article>
+      ))}
     </div>
+  </div>
 </Layout>
-
-<style>
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 2rem 20px;
-    }
-    h1 {
-        margin-bottom: 2rem;
-        color: #111;
-    }
-    .news-item {
-        display: flex;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 2rem;
-    }
-    .news-item img {
-        width: 150px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-    .news-content h2 {
-        margin: 0 0 0.5rem 0;
-        color: #c00;
-    }
-    .meta {
-        font-size: 0.85rem;
-        color: #666;
-        margin-bottom: 0.5rem;
-    }
-</style>

@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { ui } from '../../i18n/ui.ts';
+import { withBase } from '../../utils/paths.ts';
 
 const t = ui.it || ui.de;
+const philosophyImg = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg');
 ---
 
 <Layout lang='it'>
@@ -40,7 +42,7 @@ const t = ui.it || ui.de;
         <p>Nello Shorinji Kempo, l'addestramento con un compagno è la regola. Questo serve per praticare tecniche praticabili per poter reagire in modo appropriato e flessibile ai movimenti del compagno. È solo attraverso la cooperazione dei due compagni che si possono ottenere progressi.</p>
 
         <div class="philosophy-image">
-            <img src="images/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg" alt="Filosofia del Shorinji Kempo" />
+            <img src={philosophyImg} alt="Filosofia del Shorinji Kempo" />
         </div>
     </div>
 </Layout>

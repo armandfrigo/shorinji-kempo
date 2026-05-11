@@ -1,9 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import InstagramFeed from '../../components/InstagramFeed.jsx';
+import InstagramLink from '../../components/InstagramLink.astro';
 import { ui } from '../../i18n/ui.ts';
+import { withBase } from '../../utils/paths.ts';
 
 const t = ui.fr || ui.de;
+const imgBasel = withBase('/uploads/2025/01/IMG_0737-rotated.jpg');
+const imgAubonne = withBase('/uploads/2026/05/IMG_7175.jpeg');
+const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f06ff5d56f08f7f0bb52a757e-5d849ada2e833.jpeg');
 ---
 
 <Layout lang='fr'>
@@ -12,7 +16,7 @@ const t = ui.fr || ui.de;
         
         <h2>Basel</h2>
         <div class="dojo-card">
-            <img src="images/IMG_0737-rotated.jpg" alt="Dojo Basel" />
+            <img src={imgBasel} alt="Dojo Basel" />
             <div class="dojo-info">
                 <p><strong>Lieu et horaire d'entraînement</strong></p>
                 <p>Winkelriedplatz 6<br>CH-4053 Bâle</p>
@@ -23,11 +27,11 @@ const t = ui.fr || ui.de;
             </div>
         </div>
 
-        <InstagramFeed url="https://www.instagram.com/shorinjikempo.basel/" client:visible />
+        <InstagramLink href="https://www.instagram.com/shorinjikempo.basel/" label="Basel" />
 
         <h2>Aubonne</h2>
         <div class="dojo-card">
-            <img src="images/IMG_7175.jpeg" alt="Dojo Aubonne" />
+            <img src={imgAubonne} alt="Dojo Aubonne" />
             <div class="dojo-info">
                 <p><strong>Adresse et horaire</strong></p>
                 <p>Collège du Chêne, Salle de rythmique,<br>
@@ -39,11 +43,11 @@ const t = ui.fr || ui.de;
             </div>
         </div>
 
-        <InstagramFeed url="https://www.instagram.com/shorinjikempo.aubonne/" client:visible />
+        <InstagramLink href="https://www.instagram.com/shorinjikempo.aubonne/" label="Aubonne" />
 
         <h2>Muri (enfants)</h2>
         <div class="dojo-card">
-            <img src="images/Dojo-Muri-landscape.jpeg" alt="Dojo Muri" />
+            <img src={imgMuri} alt="Dojo Muri" />
             <div class="dojo-info">
                 <p><strong>Lieu et horaire pour enfants</strong></p>
                 <p>MüZe Familien- und Weiterbildungszentrum<br>
@@ -55,7 +59,7 @@ const t = ui.fr || ui.de;
             </div>
         </div>
 
-        <InstagramFeed url="https://www.instagram.com/shorinjikempo.muri/" client:visible />
+        <InstagramLink href="https://www.instagram.com/shorinjikempo.muri/" label="Muri" />
     </div>
 </Layout>
 

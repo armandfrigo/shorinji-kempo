@@ -1,0 +1,23 @@
+---
+interface Props {
+  href: string;
+  label?: string;
+}
+
+const { href, label = 'Instagram' } = Astro.props;
+---
+
+<p class="mt-2">
+  <a class="insta-link" href={href} target="_blank" rel="noopener noreferrer">{label} →</a>
+</p>
+
+<style>
+  .insta-link {
+    color: #c00;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .insta-link:hover {
+    text-decoration: underline;
+  }
+</style>

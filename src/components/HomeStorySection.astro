@@ -1,0 +1,183 @@
+---
+/**
+ * Home story + video block aligned with the German index layout.
+ * Used by locale home pages (en/fr/it); DE keeps markup in `pages/index.astro`.
+ */
+import { ui } from '../i18n/ui.ts';
+import { homeStoryBlocks, type HomeStoryLang } from '../i18n/homeStoryBlocks.ts';
+import { withBase } from '../utils/paths.ts';
+
+interface Props {
+    lang: HomeStoryLang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const body = homeStoryBlocks[lang];
+
+const storyImg1 = withBase('/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683.jpg');
+const storyImg1Srcset = [
+    `${withBase('/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-300x200.jpg')} 300w`,
+    `${withBase('/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg')} 768w`,
+    `${withBase('/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683.jpg')} 1024w`,
+].join(', ');
+const storyImg2 = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684-768x513.jpg');
+const storyImg2Srcset = [
+    `${withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684-300x200.jpg')} 300w`,
+    `${withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684-768x513.jpg')} 768w`,
+    `${withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg')} 1024w`,
+].join(', ');
+---
+
+<div class="container home-story">
+    <div class="video-wrap">
+        <iframe
+            class="video-iframe"
+            src="https://www.youtube.com/embed/xSRnaiXFsGs"
+            title={t['home.videoTitle']}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+    </div>
+
+    <section class="story-block">
+        <div class="story-text">
+            <p class="japanese">剣士</p>
+            <h2>{t['home.story.block1.h2']}</h2>
+            <p>{body.kenZen2}</p>
+            <p>{body.block1p1}</p>
+        </div>
+        <figure class="story-figure story-figure--tilt">
+            <img
+                src={storyImg1}
+                srcset={storyImg1Srcset}
+                sizes="(max-width: 767px) 100vw, 50vw"
+                alt={t['home.story.img1.alt']}
+                width="1024"
+                height="683"
+                loading="lazy"
+            />
+            <figcaption class="story-figure__caption">{t['home.story.img1.caption']}</figcaption>
+        </figure>
+    </section>
+
+    <section class="story-block story-block--reverse">
+        <figure class="story-figure story-figure--tilt">
+            <img
+                src={storyImg2}
+                srcset={storyImg2Srcset}
+                sizes="(max-width: 767px) 100vw, 50vw"
+                alt={t['home.story.img2.alt']}
+                width="768"
+                height="513"
+                loading="lazy"
+            />
+            <figcaption class="story-figure__caption">{t['home.story.img2.caption']}</figcaption>
+        </figure>
+        <div class="story-text">
+            <h2>{t['home.story.block2.h2']}</h2>
+            <p>{body.block2p1}</p>
+            <p>{body.block2p2}</p>
+            <p class="japanese">戦い</p>
+            <h3>{t['home.story.block2.h3']}</h3>
+        </div>
+    </section>
+</div>
+
+<script>
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!reduceMotion.matches) {
+        document.querySelectorAll('.story-figure--tilt').forEach((figure) => {
+            const img = figure.querySelector('img');
+            if (!img) return;
+            figure.addEventListener('pointermove', (e) => {
+                const r = figure.getBoundingClientRect();
+                const px = (e.clientX - r.left) / r.width - 0.5;
+                const py = (e.clientY - r.top) / r.height - 0.5;
+                img.style.transform = `perspective(900px) rotateY(${px * 6}deg) rotateX(${-py * 6}deg) scale3d(1.02,1.02,1)`;
+            });
+            figure.addEventListener('pointerleave', () => {
+                img.style.transform = '';
+            });
+        });
+    }
+</script>
+
+<style>
+    .home-story {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 3rem 20px 0;
+    }
+    .video-wrap {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 2.5rem;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    .video-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .story-block {
+        display: grid;
+        gap: 2rem;
+        align-items: start;
+        margin-bottom: 4rem;
+    }
+    @media (min-width: 768px) {
+        .story-block {
+            grid-template-columns: 1fr 1fr;
+        }
+        .story-block--reverse .story-figure {
+            order: -1;
+        }
+    }
+    .story-text h2 {
+        color: #111;
+        margin-top: 0;
+    }
+    .story-text h3 {
+        color: #c00;
+        margin-top: 1.5rem;
+    }
+    .story-text p {
+        line-height: 1.65;
+        color: #333;
+    }
+    .japanese {
+        font-size: 1.25rem;
+        margin: 1rem 0 0.25rem;
+        color: #111;
+    }
+    .story-figure {
+        margin: 0;
+        perspective: 900px;
+    }
+    .story-figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transition: transform 0.15s ease-out;
+        transform-style: preserve-3d;
+        will-change: transform;
+    }
+    .story-figure__caption {
+        margin-top: 0.65rem;
+        font-size: 0.82rem;
+        line-height: 1.5;
+        color: #777;
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,262 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../utils/paths.ts';
+
+interface Props {
+  isSitePage: boolean;
+  pageEntry?: CollectionEntry<'pages'>;
+  postEntry?: CollectionEntry<'news'>;
+  lang: 'de' | 'fr' | 'en' | 'it';
+  /** URL segment for slug-scoped layout (e.g. `muri`, `basel`). */
+  routeSlug: string;
+}
+
+const { isSitePage, pageEntry, postEntry, lang, routeSlug } = Astro.props;
+---
+
+{
+  isSitePage ? (
+    <article class="slug-article slug-article--site px-5 py-10" data-route-slug={routeSlug}>
+      <div class="slug-article__inner mx-auto w-full max-w-3xl">
+        <header class="slug-article__header">
+          <h1 class="slug-article__title">{pageEntry!.data.title}</h1>
+        </header>
+        <div class="slug-article__prose prose max-w-none prose-neutral prose-img:rounded-lg">
+          <slot />
+        </div>
+      </div>
+    </article>
+  ) : (
+    <article class="slug-article px-5 py-10" data-route-slug={routeSlug}>
+      <div class="slug-article__inner mx-auto w-full max-w-[31.25rem]">
+        <header class="slug-article__header">
+          <h1 class="slug-article__title">{postEntry!.data.title}</h1>
+          <p class="slug-article__meta">
+            {postEntry!.data.author ? (lang === 'de' ? `Von ${postEntry!.data.author} | ` : `By ${postEntry!.data.author} | `) : ''}
+            {postEntry!.data.date.toLocaleDateString(lang === 'de' ? 'de-CH' : lang === 'fr' ? 'fr-CH' : lang === 'it' ? 'it-CH' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+        </header>
+
+        {postEntry!.data.image ? (
+          <img
+            src={withBase(postEntry!.data.image)}
+            alt={postEntry!.data.imageAlt ?? postEntry!.data.title}
+            class="slug-article__featured-img mb-8 w-full rounded-lg object-cover"
+            loading="lazy"
+          />
+        ) : null}
+
+        <div class="slug-article__prose prose max-w-none prose-neutral">
+          <slot />
+        </div>
+      </div>
+    </article>
+  )
+}
+
+<style is:global>
+  .slug-article .slug-article__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .slug-article .slug-article__title {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.25rem, 5vw, 2.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #171717;
+    margin: 0 0 0.35rem;
+  }
+
+  .slug-article .slug-article__meta {
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: #525252;
+    margin: 0;
+  }
+
+  .slug-article .slug-article__prose {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--sk-body-text, #1f2937);
+  }
+
+  /* Sous-titre / accroche : premier h2 du contenu (sans migration de contenu) */
+  .slug-article .slug-article__prose > h2:first-child {
+    text-align: center;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.35rem, 2.8vw, 1.65rem);
+    line-height: 1.35;
+    color: #404040;
+    margin: 0 0 1.5rem;
+  }
+
+  .slug-article .slug-article__prose > p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1.1em;
+  }
+
+  .slug-article .slug-article__prose > ul,
+  .slug-article .slug-article__prose > ol {
+    text-align: left;
+    margin: 0 0 1.1em;
+    padding-left: 1.35em;
+  }
+
+  .slug-article .slug-article__prose > h2:not(:first-child) {
+    text-align: left;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-top: 1.75rem;
+    margin-bottom: 0.65rem;
+    color: #262626;
+  }
+
+  .slug-article .slug-article__prose > h3 {
+    text-align: left;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #262626;
+  }
+
+  .slug-article .slug-article__prose img {
+    display: block;
+    margin-inline: auto;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    max-height: 70vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.5rem;
+  }
+
+  .slug-article[data-route-slug='muri'] .slug-article__prose img {
+    margin-inline: 0;
+  }
+
+  /* Basel dojo: instructor portrait under copy, left-aligned (scoped via markdown wrapper) */
+  .slug-article .slug-article__prose .basel-instructor-photo {
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .slug-article .slug-article__prose .basel-instructor-photo img {
+    margin-inline: 0;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .slug-article .slug-article__featured-img {
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Variante "page de site" : mise en page enrichie pour les pages     */
+  /* statiques (dojos, vorstand, etc.).                                  */
+  /* Objectifs :                                                         */
+  /*   - image d'en-tête plein largeur quand la page commence par une   */
+  /*     image (basel/aubonne/muri),                                     */
+  /*   - portrait d'instructeur en carte flottée à droite, avec le      */
+  /*     texte à gauche et un espace généreux entre les deux,           */
+  /*   - blocs d'information visuellement distincts via un filet fin    */
+  /*     et un espacement uniforme.                                      */
+  /* Tout passe par des sélecteurs structurels (:has, sibling +) afin   */
+  /* de n'affecter que les pages dont la structure le justifie ;        */
+  /* entstehung/gruender (1er enfant = <h2>) restent inchangées.        */
+  /* ------------------------------------------------------------------ */
+
+  /* Image d'en-tête : 1er enfant si c'est un paragraphe qui ne contient */
+  /* qu'une image (cas basel/aubonne/muri).                              */
+  .slug-article--site .slug-article__prose > p:first-child:has(> img:only-child) {
+    margin: 0 0 2rem;
+  }
+
+  .slug-article--site .slug-article__prose > p:first-child:has(> img:only-child) > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 22rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin: 0;
+  }
+
+  /* Chaque <h2> isole son bloc : on s'assure qu'aucun élément flotté   */
+  /* du bloc précédent ne déborde dans la section suivante.              */
+  .slug-article--site .slug-article__prose > h2 {
+    clear: both;
+  }
+
+  /* Séparateur visuel entre blocs d'information (filet + espacement).  */
+  /* On préserve la règle existante pour le tout premier <h2> qui sert  */
+  /* de sous-titre centré (entstehung/gruender).                        */
+  .slug-article--site .slug-article__prose > h2:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 1.75rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.85rem;
+  }
+
+  /* Espacement uniforme des paragraphes et listes à l'intérieur d'un   */
+  /* bloc.                                                               */
+  .slug-article--site .slug-article__prose > p,
+  .slug-article--site .slug-article__prose > ul,
+  .slug-article--site .slug-article__prose > ol {
+    margin-top: 0;
+    margin-bottom: 1.1em;
+  }
+
+  /* Carte portrait : une image isolée placée immédiatement après un    */
+  /* <h2> (cas Instruktor/Instructeur, ou chaque membre du Vorstand).   */
+  /* Sur md+, on flotte le portrait à droite avec une marge gauche      */
+  /* généreuse pour aérer le texte ; sur mobile, on conserve une        */
+  /* taille raisonnable centrée.                                         */
+  @media (min-width: 768px) {
+    .slug-article--site .slug-article__prose > h2 + p:has(> img:only-child) {
+      float: right;
+      width: 11rem;
+      max-width: 40%;
+      margin: 0.25rem 0 1.5rem 3rem;
+      shape-outside: margin-box;
+    }
+
+    .slug-article--site .slug-article__prose > h2 + p:has(> img:only-child) > img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      max-height: none;
+      border-radius: 0.75rem;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .slug-article--site .slug-article__prose > h2 + p:has(> img:only-child) > img {
+      display: block;
+      margin-inline: auto;
+      width: 12rem;
+      max-width: 60%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      max-height: none;
+      border-radius: 0.75rem;
+    }
+  }
+</style>

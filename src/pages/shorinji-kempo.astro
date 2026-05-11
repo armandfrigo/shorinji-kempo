@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { ui } from '../i18n/ui.ts';
+import { withBase } from '../utils/paths.ts';
 
 const t = ui.de || ui.de;
+const philosophyImg = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg');
 ---
 
 <Layout lang='de'>
@@ -31,7 +33,7 @@ const t = ui.de || ui.de;
         <p>Die Kampftechniken des Shorinji Kempo sind dafür da, sich vor ungerechter Gewalt zu schützen. Daher ist es ein Techniksystem, bei dem zuerst die Verteidigung kommt und danach der Gegenangriff erfolgt. Durch das Einnehmen einer sicheren Verteidigungsstellung kann der Angriff des Gegners abgewartet und ein effektiver Gegenangriff ausgeführt werden.</p>
 
         <h3>4) Fusatsu Katsujin (Schütze Menschen, ohne jemanden zu verletzen)</h3>
-        <p>Die Kampftechniken des Shorinji Kempo sind so entwickelt, dass niemandem Verletzungen zugefügt werden, sondern das man sich selbst und andere schützen und leben lässt. Man trainiert die Kampftechniken des Shorinji Kempo, damit man das Entwicklungspotenzial der Menschen entdeckt und Freude an seinen Fortschritten haben kann.</p>
+        <p>Die Kampftechniken des Shorinji Kempo sind so entwickelt, dass niemandem Verletzungen zugefügt werden, sondern dass man sich selbst und andere schützen und leben lassen kann. Man trainiert die Kampftechniken des Shorinji Kempo, damit man das Entwicklungspotenzial der Menschen entdeckt und Freude an seinen Fortschritten haben kann.</p>
 
         <h3>5) Go Ju Ittai (Hart und weich gehören zusammen)</h3>
         <p>Die Kampftechniken des Shorinji Kempo bestehen aus "harten Techniken" (Goho) wie abwehren, ausweichen und Gegenangriff mit dem Körper gegen Faustschläge und Tritte sowie den "sanften Techniken" (Juho) wie ausweichen, werfen, festhalten, hebeln oder Drehbewegungen an Gelenken gegen einen Angreifer der ein Handgelenk oder die Kleidung greift. Durch geschickte Kombination der harten und der sanften Techniken, bei der sich die Besonderheiten beider gegenseitig ergänzen, lässt sich deren Wirksamkeit verdoppeln.</p>
@@ -40,7 +42,7 @@ const t = ui.de || ui.de;
         <p>Im Shorinji Kempo ist das Training mit Partner die Regel. Das dient dazu, praxisnahe Techniken zu trainieren, um passend und flexibel auf die Bewegungen des Partners zu reagieren. Nur mit der Zusammenarbeit der Partner können beide Fortschritte erzielen.</p>
 
         <div class="philosophy-image">
-            <img src="images/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg" alt="Shorinji Kempo Philosophy" />
+            <img src={philosophyImg} alt="Shorinji Kempo Philosophie" />
         </div>
     </div>
 </Layout>

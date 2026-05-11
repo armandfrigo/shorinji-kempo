@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { ui } from '../../i18n/ui.ts';
+import { withBase } from '../../utils/paths.ts';
 
 const t = ui.fr || ui.de;
+const philosophyImg = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg');
 ---
 
 <Layout lang='fr'>
@@ -40,7 +42,7 @@ const t = ui.fr || ui.de;
         <p>Dans le Shorinji Kempo, l'entraînement avec un partenaire est la règle. Cela permet de pratiquer des techniques pratiques pour pouvoir réagir de manière appropriée et flexible aux mouvements du partenaire. Ce n'est que par la coopération des deux partenaires que les progrès peuvent être atteints.</p>
 
         <div class="philosophy-image">
-            <img src="images/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg" alt="Philosophie du Shorinji Kempo" />
+            <img src={philosophyImg} alt="Philosophie du Shorinji Kempo" />
         </div>
     </div>
 </Layout>

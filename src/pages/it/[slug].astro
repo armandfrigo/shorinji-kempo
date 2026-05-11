@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SlugRouteBody from '../../components/SlugRouteBody.astro';
+import { getSlugStaticPaths } from '../../lib/get-slug-static-paths';
+import { resolveSlugPage } from '../../lib/get-slug-page-data';
+
+export async function getStaticPaths() {
+  return getSlugStaticPaths();
+}
+
+const lang = 'it';
+const { slug } = Astro.params;
+
+const result = await resolveSlugPage(slug!, lang);
+if ('redirect' in result) {
+  return Astro.redirect(result.redirect, 302);
+}
+
+const { Content, isSitePage, pageEntry, postEntry } = result;
+---
+
+<Layout lang={lang}>
+  <SlugRouteBody isSitePage={isSitePage} pageEntry={pageEntry} postEntry={postEntry} lang={lang} routeSlug={slug!}>
+    <Content />
+  </SlugRouteBody>
+</Layout>

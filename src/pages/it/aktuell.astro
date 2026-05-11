@@ -1,73 +1,38 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { ui } from '../../i18n/ui.ts';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../utils/paths.ts';
 
-const t = ui.it || ui.de;
+const posts = (await getCollection('news')).filter((p) => p.data.lang === 'it');
+posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout lang='it'>
-    <div class="container">
-        <h1>Notizie</h1>
-        
-        <article class="news-item">
-            <img src="/images/ATT44591.jpg" alt="Allenamenti cintura nera 2026" />
-            <div class="news-content">
-                <h2>Allenamenti cintura nera 2026</h2>
-                <p class="meta">Di Silvan Buchecker | 3 novembre 2025</p>
-                <p>Gli allenamenti per cinture nere si terranno nelle seguenti date nel 2026: Attenzione! Ci siamo trasferiti. Il Dojo di Basilea si trova ora in Winkelriedplatz 6, 4053 Basilea. Gli allenamenti costano 20 CHF a persona.</p>
-            </div>
-        </article>
+  <div class="mx-auto max-w-[1100px] px-5 py-8">
+    <h1 class="mb-8 text-4xl text-neutral-900">Notizie</h1>
 
-        <article class="news-item">
-            <img src="/images/IMG-20250602-WA0018-1-1024x768.jpg" alt="Taikai Portogallo" />
-            <div class="news-content">
-                <h2>Delegazione svizzera al Taikai in Portogallo</h2>
-                <p class="meta">Di Silvan Buchecker | 3 novembre 2025</p>
-                <p>Una delegazione svizzera ha partecipato al Taikai dal 23 al 25 ottobre a Lisbona. L'evento di tre giorni è stato organizzato per celebrare il 50° anniversario di Shorinji Kempo Portogallo.</p>
-            </div>
-        </article>
+    <div class="space-y-8">
+      {posts.map((post) => (
+        <article class="flex gap-6 border-b border-neutral-200 pb-8">
+          {post.data.image ? (
+            <img
+              src={withBase(post.data.image)}
+              alt={post.data.imageAlt ?? post.data.title}
+              class="h-[100px] w-[150px] rounded object-cover"
+              loading="lazy"
+            />
+          ) : null}
 
-        <article class="news-item">
-            <img src="/images/Gruppe_5-1-768x512.jpg" alt="Japanfest Berna" />
-            <div class="news-content">
-                <h2>Japanfest Berna 22.05.2022</h2>
-                <p class="meta">Di Silvan Buchecker | 24 maggio 2022</p>
-                <p>Il 22 maggio 2022, il Dojo Muri, con il supporto dei Dojo di Basilea e Aubonne, ha avuto l'opportunità di partecipare al Japanfest (Museo storico di Berna) attraverso un workshop.</p>
-            </div>
+          <div class="min-w-0">
+            <h2 class="mb-2 text-2xl text-red-700">{post.data.title}</h2>
+            <p class="mb-2 text-sm text-neutral-600">
+              {post.data.author ? `Di ${post.data.author} | ` : ''}
+              {post.data.date.toLocaleDateString('it-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <p class="text-neutral-800">{post.body}</p>
+          </div>
         </article>
+      ))}
     </div>
+  </div>
 </Layout>
-
-<style>
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 2rem 20px;
-    }
-    h1 {
-        margin-bottom: 2rem;
-        color: #111;
-    }
-    .news-item {
-        display: flex;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 2rem;
-    }
-    .news-item img {
-        width: 150px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-    .news-content h2 {
-        margin: 0 0 0.5rem 0;
-        color: #c00;
-    }
-    .meta {
-        font-size: 0.85rem;
-        color: #666;
-        margin-bottom: 0.5rem;
-    }
-</style>

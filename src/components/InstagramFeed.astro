@@ -1,0 +1,74 @@
+---
+interface Props {
+  url: string;
+  limit?: number;
+}
+
+const { url, limit = 6 } = Astro.props;
+const indices = Array.from({ length: limit }, (_, i) => i);
+---
+
+<section class="instagram-section">
+  <div class="instagram-grid">
+    {
+      indices.map((i) => (
+        <div class="instagram-item">
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink={`${url}?img_index=${i}`}
+            data-instgrm-max-width="300"
+          />
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .instagram-section {
+    padding: 2rem 0;
+  }
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .instagram-item {
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 300px;
+  }
+</style>
+
+<script>
+  function processEmbeds() {
+    setTimeout(() => {
+      window.instgrm?.Embeds?.process();
+    }, 100);
+  }
+
+  for (const root of document.querySelectorAll('.instagram-section')) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          obs.unobserve(entry.target);
+          if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+            const s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.instagram.com/embed.js';
+            s.addEventListener('load', processEmbeds, { once: true });
+            document.body.appendChild(s);
+          } else {
+            processEmbeds();
+          }
+        }
+      },
+      { rootMargin: '120px' }
+    );
+    observer.observe(root);
+  }
+</script>

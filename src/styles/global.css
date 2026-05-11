@@ -4,9 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Legacy-aligned shell (Beaver Builder export: #020202 rules, black CTAs; header #111 + red accents; footer is light in `Footer.astro`) */
+:root {
+  --sk-accent: #c40000;
+  --sk-header-bg: #111111;
+  --sk-body-bg: #f5f3ef;
+  --sk-body-text: #1f2937;
+  --sk-border-strong: #020202;
+}
+
 html { scroll-behavior: smooth; }
-body { font-family: 'Source Sans Pro', system-ui, sans-serif; color: #1f2937; }
+body {
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
+  color: var(--sk-body-text);
+  background-color: var(--sk-body-bg);
+}
 h1, h2, h3, h4 { font-family: 'Crimson Text', Georgia, serif; font-weight: 400; }
+
+.site-header {
+  border-bottom: 3px solid var(--sk-accent);
+}
 
 .fade-in { animation: fadeIn 0.5s ease-in; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.instagram-section { padding: 2rem 0; }
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.instagram-item {
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 300px;
+}

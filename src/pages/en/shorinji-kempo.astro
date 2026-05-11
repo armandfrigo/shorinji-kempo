@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { ui } from '../../i18n/ui.ts';
+import { withBase } from '../../utils/paths.ts';
 
 const t = ui.en || ui.de;
+const philosophyImg = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg');
 ---
 
 <Layout lang='en'>
@@ -40,7 +42,7 @@ const t = ui.en || ui.de;
         <p>In Shorinji Kempo, training with a partner is the rule. This serves to practice practical techniques so as to be able to respond appropriately and flexibly to the partner's movements. Only through cooperation of both partners can progress be achieved.</p>
 
         <div class="philosophy-image">
-            <img src="images/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg" alt="Shorinji Kempo Philosophy" />
+            <img src={philosophyImg} alt="Shorinji Kempo Philosophy" />
         </div>
     </div>
 </Layout>

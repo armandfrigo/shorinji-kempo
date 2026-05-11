@@ -1,8 +1,14 @@
 ---
 import Navbar from '../components/navbar.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import { withBase } from '../utils/paths.ts';
 
-const lang = Astro.currentLocale || 'de';
+/** Pages pass explicit `lang`; prefer it over `currentLocale` (not always set for prefixed routes). */
+const lang = (Astro.props.lang ?? Astro.currentLocale ?? 'de') as 'de' | 'fr' | 'en' | 'it';
+
+/** Subtle hero texture (same Figma asset as homepage hero); full `url("…")` for Vite + `base`-safe path */
+const bodyBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-21-14_26_56-Shorinji-Kempo-Entwurf-Figma-1024x575.png'))})`;
 ---
 
 <!doctype html>
@@ -11,10 +17,9 @@ const lang = Astro.currentLocale || 'de';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schweizerische Shorinji Kempo Föderation</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
+<body class="site-shell">
+    <header class="site-header">
         <Navbar lang={lang} currentPath={Astro.url.pathname} />
     </header>
 
@@ -25,3 +30,22 @@ const lang = Astro.currentLocale || 'de';
     <Footer lang={lang} />
 </body>
 </html>
+
+<style is:global define:vars={{ bodyBgTexture }}>
+  body.site-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sk-body-bg);
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(245, 243, 239, 0.94) 22rem, transparent 100%),
+      var(--bodyBgTexture);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, center top;
+    background-size: auto, min(100vw, 960px) auto;
+    background-attachment: scroll, fixed;
+  }
+  body.site-shell > main {
+    flex: 1 1 auto;
+  }
+</style>
