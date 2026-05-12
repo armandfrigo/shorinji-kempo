@@ -1,5 +1,5 @@
 ---
-import { languages, ui, defaultLang } from '../i18n/ui.ts';
+import { languageDisplayOrder, ui, defaultLang } from '../i18n/ui.ts';
 import { stripBaseFromPath, withBase } from '../utils/paths.ts';
 import { getCollection } from 'astro:content';
 
@@ -50,7 +50,6 @@ const newsPaths = newsPosts
     .filter((p) => p.length > 1);
 const isNewsSubtreeActive = isActive('/aktuell') || newsPaths.some((p) => isActive(p));
 
-const mailHref = 'mailto:marco.pellegrino@shorinjikempo.ch';
 const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 ---
 
@@ -133,13 +132,10 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
             <a href={localizePath('/faq')} class={`nav-item ${isActive('/faq') ? 'active' : ''}`}>
                 {t['nav.faq']}
             </a>
-            <a href={mailHref} class="nav-item">
-                {t['nav.contact']}
-            </a>
         </div>
 
         <div class="language-switcher">
-            {Object.entries(languages).map(([code]) => {
+            {languageDisplayOrder.map((code) => {
                 const href =
                     code === 'de'
                         ? withBase(cleanPath)

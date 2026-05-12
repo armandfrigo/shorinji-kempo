@@ -19,6 +19,9 @@ const pageDescription =
 /** Subtle Figma texture (same asset as homepage hero); full `url("…")` for Vite + `base`-safe path.
  *  Scoped to the main content wrapper (`.site-main`) and anchored on the right per design request. */
 const mainBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-21-14_26_56-Shorinji-Kempo-Entwurf-Figma-1024x575.png'))})`;
+
+/** PNG set under `public/images/favicons/` (deploy base applied via `withBase`). */
+const faviconPngSizes = [16, 32, 48, 64, 128, 256] as const;
 ---
 
 <!doctype html>
@@ -26,6 +29,18 @@ const mainBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-2
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href={withBase('/favicon.ico')} sizes="any" />
+    {
+      faviconPngSizes.map((size) => (
+        <link
+          rel="icon"
+          type="image/png"
+          sizes={`${size}x${size}`}
+          href={withBase(`/images/favicons/favicon_${size}x${size}.png`)}
+        />
+      ))
+    }
+    <link rel="apple-touch-icon" href={withBase('/images/favicons/favicon_256x256.png')} />
     <title>{pageTitle}</title>
     {pageDescription ? <meta name="description" content={pageDescription} /> : null}
 </head>

@@ -7,6 +7,9 @@ export const languages = {
   it: 'Italiano',
 };
 
+/** Navbar language buttons only; does not affect `defaultLang` or URLs. */
+export const languageDisplayOrder = ['en', 'de', 'fr', 'it'] as const satisfies readonly (keyof typeof languages)[];
+
 export const ui = {
   de: {
     'nav.siteTitle': 'Schweizerische Shorinji Kempo Föderation (SSKF)',
@@ -24,7 +27,6 @@ export const ui = {
     'nav.dojoMuri': 'Muri',
     'nav.news': 'Aktuell',
     'nav.faq': 'FAQ',
-    'nav.contact': 'Kontakt',
     'hero.title': 'Schweizerische Shorinji Kempo Föderation',
     'hero.text': 'Bei Interesse kannst du uns gerne kontaktieren! Stelle uns deine Fragen oder verabrede einen Termin für ein gratis Probetraining. Du kannst aber auch spontan ohne Voranmeldung vorbeikommen. Wir freuen uns auf dich!',
     'hero.cta': 'Gratis Probetraining',
@@ -82,7 +84,6 @@ export const ui = {
     'nav.dojoMuri': 'Muri',
     'nav.news': 'Actualités',
     'nav.faq': 'FAQ',
-    'nav.contact': 'Contact',
     'hero.title': 'Fédération Suisse de Shorinji Kempo',
     'hero.text': "Si vous êtes intéressé, contactez-nous! Posez-nous vos questions ou prenez rendez-vous pour un cours d'essai gratuit. Vous pouvez aussi venir spontanément sans réservation. Au plaisir de vous rencontrer!",
     'hero.cta': 'Cours d\'essai gratuit',
@@ -140,7 +141,6 @@ export const ui = {
     'nav.dojoMuri': 'Muri',
     'nav.news': 'News',
     'nav.faq': 'FAQ',
-    'nav.contact': 'Contact',
     'hero.title': 'Swiss Shorinji Kempo Federation',
     'hero.text': "If you're interested, feel free to contact us! Ask us your questions or schedule an appointment for a free trial class. You can also drop by spontaneously without prior registration. We look forward to seeing you!",
     'hero.cta': 'Free Trial Class',
@@ -198,7 +198,6 @@ export const ui = {
     'nav.dojoMuri': 'Muri',
     'nav.news': 'Notizie',
     'nav.faq': 'FAQ',
-    'nav.contact': 'Contatto',
     'hero.title': 'Federazione Svizzera Shorinji Kempo',
     'hero.text': "Se sei interessato, contattaci pure! Fatti le tue domande o prenota un appuntamento per una lezione di prova gratuita. Puoi anche passare spontaneamente senza prenotazione. Non vediamo l'ora di darti il benvenuto!",
     'hero.cta': 'Lezione di prova gratuita',
