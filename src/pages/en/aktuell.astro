@@ -3,14 +3,19 @@ import Layout from '../../layouts/Layout.astro';
 import InstagramNewsCarousel from '../../components/InstagramNewsCarousel.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../utils/paths.ts';
+import { ui } from '../../i18n/ui.ts';
+
+const lang = 'en';
+const t = ui[lang];
 
 const posts = (await getCollection('news')).filter((p) => p.data.lang === 'en');
 posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Layout lang='en'>
+<Layout lang="en" title={t['news.hubMetaTitle']} description={t['news.hubMetaDescription']}>
   <div class="mx-auto max-w-[1100px] px-5 py-8">
-    <h1 class="mb-8 text-4xl text-neutral-900">News</h1>
+    <h1 class="mb-3 text-4xl text-neutral-900">{t['nav.news']}</h1>
+    <p class="mb-8 max-w-3xl text-lg text-neutral-700">{t['news.hubIntro']}</p>
 
     <InstagramNewsCarousel lang="en" />
 

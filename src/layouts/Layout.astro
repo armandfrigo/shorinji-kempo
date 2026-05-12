@@ -7,6 +7,15 @@ import { withBase } from '../utils/paths.ts';
 /** Pages pass explicit `lang`; prefer it over `currentLocale` (not always set for prefixed routes). */
 const lang = (Astro.props.lang ?? Astro.currentLocale ?? 'de') as 'de' | 'fr' | 'en' | 'it';
 
+const pageTitle =
+  typeof Astro.props.title === 'string' && Astro.props.title.length > 0
+    ? Astro.props.title
+    : 'Schweizerische Shorinji Kempo Föderation';
+const pageDescription =
+  typeof Astro.props.description === 'string' && Astro.props.description.length > 0
+    ? Astro.props.description
+    : undefined;
+
 /** Subtle Figma texture (same asset as homepage hero); full `url("…")` for Vite + `base`-safe path.
  *  Scoped to the main content wrapper (`.site-main`) and anchored on the right per design request. */
 const mainBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-21-14_26_56-Shorinji-Kempo-Entwurf-Figma-1024x575.png'))})`;
@@ -17,7 +26,8 @@ const mainBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-2
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schweizerische Shorinji Kempo Föderation</title>
+    <title>{pageTitle}</title>
+    {pageDescription ? <meta name="description" content={pageDescription} /> : null}
 </head>
 <body class="site-shell">
     <header class="site-header">

@@ -1,6 +1,7 @@
 ---
 import { languages, ui, defaultLang } from '../i18n/ui.ts';
 import { stripBaseFromPath, withBase } from '../utils/paths.ts';
+import { getCollection } from 'astro:content';
 
 const { lang = defaultLang, currentPath = '/' } = Astro.props;
 
@@ -25,8 +26,30 @@ const isActive = (targetPath: string): boolean => {
   return cleanPath === targetPath || cleanPath.startsWith(`${targetPath}/`);
 };
 
-const aboutPath = '/shorinji-kempo';
-const dojoPaths = ['/dojo', '/basel', '/aubonne', '/muri'];
+const aboutMenuItems = [
+    { path: '/entstehung', labelKey: 'nav.entstehung' as const },
+    { path: '/gruender', labelKey: 'nav.gruender' as const },
+    { path: '/shorinji-kempo', labelKey: 'nav.shorinjiKempo' as const },
+    { path: '/techniken', labelKey: 'nav.techniken' as const },
+    { path: '/vorstand', labelKey: 'nav.vorstand' as const },
+];
+
+const isAboutSubtreeActive = aboutMenuItems.some((item) => isActive(item.path));
+
+const dojoMenuItems = [
+    { path: '/dojo', labelKey: 'nav.dojoOverview' as const },
+    { path: '/basel', labelKey: 'nav.dojoBasel' as const },
+    { path: '/aubonne', labelKey: 'nav.dojoAubonne' as const },
+    { path: '/muri', labelKey: 'nav.dojoMuri' as const },
+];
+const isDojoSubtreeActive = dojoMenuItems.some((item) => isActive(item.path));
+
+const newsPosts = (await getCollection('news')).filter((p) => p.data.lang === lang);
+const newsPaths = newsPosts
+    .map((p) => `/${p.data.wpSlug ?? p.slug}`)
+    .filter((p) => p.length > 1);
+const isNewsSubtreeActive = isActive('/aktuell') || newsPaths.some((p) => isActive(p));
+
 const mailHref = 'mailto:marco.pellegrino@shorinjikempo.ch';
 const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 ---
@@ -34,7 +57,7 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 <nav class="navbar">
     <div class="container">
         <a href={localizePath('/')} class="logo">
-            <img class="logo-img" src={logoSrc} alt="" width="60" height="45" decoding="async" />
+            <img class="logo-img" src={logoSrc} alt="" width="120" height="91" decoding="async" />
             <span class="logo-title">{t['nav.siteTitle']}</span>
         </a>
 
@@ -48,14 +71,64 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
             <a href={localizePath('/')} class={`nav-item ${isActive('/') ? 'active' : ''}`}>
                 {t['nav.home']}
             </a>
-            <a href={localizePath(aboutPath)} class={`nav-item ${isActive(aboutPath) ? 'active' : ''}`}>
-                {t['nav.about']}
-            </a>
-            <a
-                href={localizePath('/dojo')}
-                class={`nav-item ${dojoPaths.some((p) => isActive(p)) ? 'active' : ''}`}
-            >
-                {t['nav.findDojo']}
+            <div class="nav-dropdown" data-initial-open={isAboutSubtreeActive ? 'true' : 'false'}>
+                <button
+                    type="button"
+                    class:list={['nav-item', 'nav-dropdown-toggle', { active: isAboutSubtreeActive }]}
+                    aria-expanded="false"
+                    aria-controls="nav-about-submenu"
+                    aria-haspopup="true"
+                    id="nav-about-trigger"
+                >
+                    {t['nav.about']}
+                    <span class="nav-dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div
+                    class="nav-dropdown-panel"
+                    id="nav-about-submenu"
+                    role="group"
+                    aria-labelledby="nav-about-trigger"
+                >
+                    {aboutMenuItems.map((item) => (
+                        <a
+                            href={localizePath(item.path)}
+                            class:list={['nav-dropdown-link', { active: isActive(item.path) }]}
+                        >
+                            {t[item.labelKey]}
+                        </a>
+                    ))}
+                </div>
+            </div>
+            <div class="nav-dropdown" data-initial-open={isDojoSubtreeActive ? 'true' : 'false'}>
+                <button
+                    type="button"
+                    class:list={['nav-item', 'nav-dropdown-toggle', { active: isDojoSubtreeActive }]}
+                    aria-expanded="false"
+                    aria-controls="nav-dojo-submenu"
+                    aria-haspopup="true"
+                    id="nav-dojo-trigger"
+                >
+                    {t['nav.findDojo']}
+                    <span class="nav-dropdown-chevron" aria-hidden="true"></span>
+                </button>
+                <div
+                    class="nav-dropdown-panel"
+                    id="nav-dojo-submenu"
+                    role="group"
+                    aria-labelledby="nav-dojo-trigger"
+                >
+                    {dojoMenuItems.map((item) => (
+                        <a
+                            href={localizePath(item.path)}
+                            class:list={['nav-dropdown-link', { active: isActive(item.path) }]}
+                        >
+                            {t[item.labelKey]}
+                        </a>
+                    ))}
+                </div>
+            </div>
+            <a href={localizePath('/aktuell')} class:list={['nav-item', { active: isNewsSubtreeActive }]}>
+                {t['nav.news']}
             </a>
             <a href={localizePath('/faq')} class={`nav-item ${isActive('/faq') ? 'active' : ''}`}>
                 {t['nav.faq']}
@@ -88,7 +161,8 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     .navbar {
         background: var(--sk-header-bg, #fff);
         color: var(--sk-header-text, #111);
-        padding: 0.75rem 0;
+        padding: 0.5rem 0;
+        min-height: clamp(64px, 7vw, 104px);
         position: sticky;
         top: 0;
         z-index: 100;
@@ -121,9 +195,11 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     }
     .logo-img {
         display: block;
-        height: 36px;
+        height: clamp(48px, 7vw, 88px);
+        max-height: 88px;
         width: auto;
         object-fit: contain;
+        flex-shrink: 0;
     }
     .logo:focus-visible {
         outline: 2px solid var(--sk-header-focus-ring, #111);
@@ -175,6 +251,98 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     .nav-item:hover {
         color: var(--sk-accent, #c00);
     }
+    .nav-dropdown {
+        position: relative;
+    }
+    .nav-dropdown-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: inherit;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 0;
+    }
+    .nav-dropdown-chevron {
+        display: inline-block;
+        width: 0.35rem;
+        height: 0.35rem;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg);
+        margin-top: -0.15rem;
+        opacity: 0.75;
+    }
+    .nav-dropdown-panel {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        min-width: 12rem;
+        padding: 0.35rem 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        top: calc(100% + 0.35rem);
+        left: 0;
+        background: var(--sk-header-bg, #fff);
+        border: 1px solid var(--sk-header-border, #e5e5e5);
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        z-index: 200;
+    }
+    .nav-dropdown-link {
+        color: var(--sk-header-text, #111);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.85rem;
+        padding: 0.45rem 0.85rem;
+        white-space: nowrap;
+    }
+    .nav-dropdown-link:hover {
+        color: var(--sk-accent, #c00);
+        background: rgba(0, 0, 0, 0.03);
+    }
+    .nav-dropdown-link:focus-visible {
+        outline: 2px solid var(--sk-header-focus-ring, #111);
+        outline-offset: -2px;
+    }
+    .nav-dropdown-link.active {
+        color: var(--sk-accent, #c00);
+    }
+    @media (min-width: 769px) {
+        .nav-dropdown:hover .nav-dropdown-panel,
+        .nav-dropdown:focus-within .nav-dropdown-panel {
+            display: flex;
+        }
+    }
+    @media (max-width: 768px) {
+        .nav-dropdown {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nav-dropdown-panel {
+            position: static;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            padding: 0.25rem 0 0.25rem 0.75rem;
+            margin-top: 0.25rem;
+            border-left: 2px solid var(--sk-header-border, #e5e5e5);
+            margin-left: 0.35rem;
+        }
+        .nav-dropdown.open .nav-dropdown-panel {
+            display: flex;
+        }
+        .nav-dropdown-link {
+            white-space: normal;
+            padding: 0.35rem 0.5rem;
+        }
+    }
     .language-switcher {
         display: flex;
         gap: 4px;
@@ -198,9 +366,16 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     }
 
     @media (max-width: 768px) {
+        .navbar {
+            min-height: max(56px, 14vw);
+        }
         .logo {
             font-size: 1rem;
             flex: 1 1 0;
+        }
+        .logo-img {
+            height: clamp(40px, 12vw, 56px);
+            max-height: 56px;
         }
         .mobile-menu-btn {
             display: flex;
@@ -235,6 +410,58 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 
         menuBtn?.addEventListener('click', () => {
             navLinks?.classList.toggle('active');
+        });
+
+        const desktopMq = window.matchMedia('(min-width: 769px)');
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+        const syncDropdownAria = (dd) => {
+            const toggle = dd.querySelector('.nav-dropdown-toggle');
+            if (!toggle) return;
+            toggle.setAttribute('aria-expanded', dd.classList.contains('open') ? 'true' : 'false');
+        };
+
+        const applyInitialMobileOpen = () => {
+            if (desktopMq.matches) return;
+            dropdowns.forEach((dd) => {
+                if (dd.getAttribute('data-initial-open') === 'true') {
+                    dd.classList.add('open');
+                }
+            });
+        };
+
+        applyInitialMobileOpen();
+
+        dropdowns.forEach((dd) => {
+            const toggle = dd.querySelector('.nav-dropdown-toggle');
+            toggle?.addEventListener('click', (e) => {
+                if (desktopMq.matches) return;
+                e.preventDefault();
+                e.stopPropagation();
+                dd.classList.toggle('open');
+                syncDropdownAria(dd);
+            });
+            syncDropdownAria(dd);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key !== 'Escape' || desktopMq.matches) return;
+            dropdowns.forEach((dd) => {
+                dd.classList.remove('open');
+                syncDropdownAria(dd);
+            });
+        });
+
+        desktopMq.addEventListener('change', () => {
+            if (desktopMq.matches) {
+                dropdowns.forEach((dd) => {
+                    dd.classList.remove('open');
+                    syncDropdownAria(dd);
+                });
+            } else {
+                applyInitialMobileOpen();
+                dropdowns.forEach(syncDropdownAria);
+            }
         });
     });
 </script>
