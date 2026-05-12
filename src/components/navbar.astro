@@ -282,11 +282,13 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
         flex-direction: column;
         gap: 0;
         min-width: 12rem;
-        padding: 0.35rem 0;
+        /* Spacing below toggle lives in padding so the cursor stays over the panel
+           (gap from top: calc(100% + X) is not part of .nav-dropdown hit-testing). */
+        padding: 0.5rem 0 0.35rem;
         margin: 0;
         list-style: none;
         position: absolute;
-        top: calc(100% + 0.35rem);
+        top: calc(100% - 1px);
         left: 0;
         background: var(--sk-header-bg, #fff);
         border: 1px solid var(--sk-header-border, #e5e5e5);
@@ -317,6 +319,15 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
         .nav-dropdown:hover .nav-dropdown-panel,
         .nav-dropdown:focus-within .nav-dropdown-panel {
             display: flex;
+        }
+        /* Bridge any subpixel seam between toggle and panel for hover continuity */
+        .nav-dropdown-panel::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -0.5rem;
+            height: 0.5rem;
         }
     }
     @media (max-width: 768px) {
