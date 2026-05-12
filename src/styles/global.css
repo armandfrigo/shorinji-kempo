@@ -49,6 +49,14 @@
   --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Header chrome (scoped to `.site-header` so body/footer tokens stay independent) */
+.site-header {
+  --sk-header-bg: #ffffff;
+  --sk-header-text: #111111;
+  --sk-header-border: #e5e5e5;
+  --sk-header-focus-ring: #1a1a1a;
+}
+
 /* Base Styles */
 * {
   margin: 0;
@@ -176,7 +184,7 @@ a:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-lg);
+  padding: 0 2rem;
 }
 
 /* Grid */

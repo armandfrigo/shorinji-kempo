@@ -29,7 +29,7 @@ const trialMailHref = heroTrialMailHref(t['hero.ctaMail.subject'], t['hero.ctaMa
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 160px 0 120px;
+    padding: clamp(4.5rem, 9vw, 7rem) 0 clamp(3.5rem, 7vw, 5.5rem);
     text-align: center;
   }
   .hero-text {
@@ -74,5 +74,10 @@ const trialMailHref = heroTrialMailHref(t['hero.ctaMail.subject'], t['hero.ctaMa
   }
   .hero-cta:active {
     transform: translateY(0);
+  }
+  @media (max-width: 767px) {
+    .hero {
+      padding: 4rem 0 3.25rem;
+    }
   }
 </style>

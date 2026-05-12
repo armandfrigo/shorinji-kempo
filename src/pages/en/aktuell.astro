@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import InstagramNewsCarousel from '../../components/InstagramNewsCarousel.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../utils/paths.ts';
 
@@ -10,6 +11,8 @@ posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 <Layout lang='en'>
   <div class="mx-auto max-w-[1100px] px-5 py-8">
     <h1 class="mb-8 text-4xl text-neutral-900">News</h1>
+
+    <InstagramNewsCarousel lang="en" />
 
     <div class="space-y-8">
       {posts.map((post) => (

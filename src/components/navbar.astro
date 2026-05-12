@@ -25,15 +25,9 @@ const isActive = (targetPath: string): boolean => {
   return cleanPath === targetPath || cleanPath.startsWith(`${targetPath}/`);
 };
 
-const shorinjiPaths = [
-  '/entstehung',
-  '/gruender',
-  '/shorinji-kempo',
-  '/techniken',
-  '/vorstand',
-];
-
+const aboutPath = '/shorinji-kempo';
 const dojoPaths = ['/dojo', '/basel', '/aubonne', '/muri'];
+const mailHref = 'mailto:marco.pellegrino@shorinjikempo.ch';
 const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 ---
 
@@ -54,37 +48,20 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
             <a href={localizePath('/')} class={`nav-item ${isActive('/') ? 'active' : ''}`}>
                 {t['nav.home']}
             </a>
-
-            <div class="dropdown">
-                <a href="#" class={`nav-item dropdown-toggle ${shorinjiPaths.some(isActive) ? 'active' : ''}`}>
-                    {t['nav.shorinji']}
-                </a>
-                <div class="dropdown-menu">
-                    <a href={localizePath('/entstehung')} class="dropdown-item">{t['nav.entstehung']}</a>
-                    <a href={localizePath('/gruender')} class="dropdown-item">{t['nav.gruender']}</a>
-                    <a href={localizePath('/shorinji-kempo')} class="dropdown-item">{t['nav.philosophie']}</a>
-                    <a href={localizePath('/techniken')} class="dropdown-item">{t['nav.techniken']}</a>
-                    <a href={localizePath('/vorstand')} class="dropdown-item">{t['nav.vorstand']}</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="#" class={`nav-item dropdown-toggle ${dojoPaths.some(isActive) ? 'active' : ''}`}>
-                    {t['nav.dojo']}
-                </a>
-                <div class="dropdown-menu">
-                    <a href={localizePath('/dojo')} class="dropdown-item">{t['nav.dojo.all']}</a>
-                    <a href={localizePath('/basel')} class="dropdown-item">{t['nav.dojo.basel']}</a>
-                    <a href={localizePath('/aubonne')} class="dropdown-item">{t['nav.dojo.aubonne']}</a>
-                    <a href={localizePath('/muri')} class="dropdown-item">{t['nav.dojo.muri']}</a>
-                </div>
-            </div>
-
-            <a href={localizePath('/aktuell')} class={`nav-item ${isActive('/aktuell') ? 'active' : ''}`}>
-                {t['nav.news']}
+            <a href={localizePath(aboutPath)} class={`nav-item ${isActive(aboutPath) ? 'active' : ''}`}>
+                {t['nav.about']}
             </a>
-            <a href={localizePath('/links')} class={`nav-item ${isActive('/links') ? 'active' : ''}`}>
-                {t['nav.links']}
+            <a
+                href={localizePath('/dojo')}
+                class={`nav-item ${dojoPaths.some((p) => isActive(p)) ? 'active' : ''}`}
+            >
+                {t['nav.findDojo']}
+            </a>
+            <a href={localizePath('/faq')} class={`nav-item ${isActive('/faq') ? 'active' : ''}`}>
+                {t['nav.faq']}
+            </a>
+            <a href={mailHref} class="nav-item">
+                {t['nav.contact']}
             </a>
         </div>
 
@@ -109,12 +86,14 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
 
 <style>
     .navbar {
-        background: var(--sk-header-bg, #111);
-        color: white;
+        background: var(--sk-header-bg, #fff);
+        color: var(--sk-header-text, #111);
         padding: 0.75rem 0;
         position: sticky;
         top: 0;
         z-index: 100;
+        border-bottom: 1px solid var(--sk-header-border, #e5e5e5);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
     }
     .container {
         max-width: 1200px;
@@ -128,7 +107,7 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     .logo {
         font-size: 1.3rem;
         font-weight: bold;
-        color: white;
+        color: var(--sk-header-text, #111);
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -146,6 +125,11 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
         width: auto;
         object-fit: contain;
     }
+    .logo:focus-visible {
+        outline: 2px solid var(--sk-header-focus-ring, #111);
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
     .mobile-menu-btn {
         display: none;
         flex-direction: column;
@@ -158,62 +142,32 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     .mobile-menu-btn span {
         width: 24px;
         height: 2px;
-        background: white;
+        background: var(--sk-header-text, #111);
         transition: 0.3s;
+    }
+    .mobile-menu-btn:focus-visible {
+        outline: 2px solid var(--sk-header-focus-ring, #111);
+        outline-offset: 3px;
+        border-radius: 4px;
     }
     .nav-links {
         display: flex;
-        gap: 1.5rem;
+        gap: 1.25rem;
         align-items: center;
         position: relative;
-    }
-    .dropdown {
-        position: relative;
-    }
-    .dropdown-toggle {
-        cursor: pointer;
-    }
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        min-width: 200px;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: all 0.2s ease;
-        z-index: 1000;
-    }
-    .dropdown:hover .dropdown-menu,
-    .dropdown-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    .dropdown-item {
-        display: block;
-        padding: 0.75rem 1rem;
-        color: #333;
-        text-decoration: none;
-        border-bottom: 1px solid #eee;
-    }
-    .dropdown-item:last-child {
-        border-bottom: none;
-    }
-    .dropdown-item:hover {
-        background: #f8f9fa;
-        color: var(--sk-accent, #c00);
+        flex-wrap: wrap;
     }
     .nav-item {
-        color: white;
+        color: var(--sk-header-text, #111);
         text-decoration: none;
         font-weight: 500;
         font-size: 0.9rem;
         white-space: nowrap;
+    }
+    .nav-item:focus-visible {
+        outline: 2px solid var(--sk-header-focus-ring, #111);
+        outline-offset: 4px;
+        border-radius: 2px;
     }
     .nav-item.active {
         color: var(--sk-accent, #c00);
@@ -227,18 +181,22 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     }
     .lang-btn {
         padding: 4px 8px;
-        border: 1px solid #555;
-        color: white;
+        border: 1px solid var(--sk-header-border, #e5e5e5);
+        color: var(--sk-header-text, #111);
         text-decoration: none;
         font-size: 0.75rem;
         border-radius: 3px;
     }
+    .lang-btn:focus-visible {
+        outline: 2px solid var(--sk-header-focus-ring, #111);
+        outline-offset: 2px;
+    }
     .lang-btn:hover, .lang-btn.active {
         background: var(--sk-accent, #c00);
         border-color: var(--sk-accent, #c00);
+        color: #fff;
     }
 
-    /* Mobile styles */
     @media (max-width: 768px) {
         .logo {
             font-size: 1rem;
@@ -250,41 +208,21 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
         .nav-links {
             display: none;
             flex-direction: column;
+            align-items: flex-start;
             width: 100%;
             margin-top: 1rem;
             gap: 0.5rem;
             padding: 0.5rem 0;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--sk-header-border, #e5e5e5);
         }
         .nav-links.active {
             display: flex;
-        }
-        .dropdown-menu {
-            position: static;
-            opacity: 1;
-            visibility: visible;
-            transform: none;
-            box-shadow: none;
-            border: none;
-            background: rgba(255,255,255,0.1);
-            margin-left: 1rem;
-            margin-top: 0.5rem;
-            border-left: 2px solid var(--sk-accent, #c00);
-        }
-        .dropdown-item {
-            color: #ddd;
-            padding: 0.5rem 1rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .dropdown-item:hover {
-            background: rgba(255,255,255,0.1);
-            color: var(--sk-accent, #c00);
         }
         .language-switcher {
             margin-top: 0.5rem;
             width: 100%;
             justify-content: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--sk-header-border, #e5e5e5);
             padding-top: 0.5rem;
         }
     }
@@ -294,7 +232,7 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
     document.addEventListener('DOMContentLoaded', () => {
         const menuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
+
         menuBtn?.addEventListener('click', () => {
             navLinks?.classList.toggle('active');
         });

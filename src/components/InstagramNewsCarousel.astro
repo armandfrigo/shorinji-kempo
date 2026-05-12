@@ -1,0 +1,198 @@
+---
+import { ui } from '../i18n/ui.ts';
+import { withBase } from '../utils/paths.ts';
+
+type Lang = 'de' | 'en' | 'fr' | 'it';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+
+const IG_URL = 'https://www.instagram.com/shorinjikempo.aubonne';
+
+/** Curated dojo / Aubonne / event photos from `public/uploads` (not a live IG feed). */
+const slides: { src: string }[] = [
+  { src: '/uploads/2026/05/IMG_7175-1024x768.jpeg' },
+  { src: '/uploads/2022/05/Aubonne_-1-1024x683.jpeg' },
+  { src: '/uploads/2022/05/Aubonne_1-1-1024x683.jpeg' },
+  { src: '/uploads/2022/05/workshop_6-1-1024x683.jpeg' },
+  { src: '/uploads/2022/05/embu-1024x683.jpeg' },
+  { src: '/uploads/2022/05/Gruppe_5-2-1024x683.jpeg' },
+];
+---
+
+<section class="ig-carousel-section" aria-labelledby="ig-carousel-heading" data-ig-carousel-root>
+  <div class="ig-carousel-section__head">
+    <h2 id="ig-carousel-heading" class="ig-carousel-section__title">
+      {t['news.instagramCarouselTitle']}
+    </h2>
+    <div class="ig-carousel-section__controls">
+      <button
+        type="button"
+        class="ig-carousel-nav"
+        data-ig-carousel-prev
+        aria-label={t['news.instagramCarouselPrev']}
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        class="ig-carousel-nav"
+        data-ig-carousel-next
+        aria-label={t['news.instagramCarouselNext']}
+      >
+        ›
+      </button>
+    </div>
+  </div>
+
+  <div class="ig-carousel" data-ig-carousel-track tabindex="0">
+    {
+      slides.map((slide) => (
+        <a
+          class="ig-carousel__slide"
+          href={IG_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={withBase(slide.src)}
+            alt={t['news.instagramCarouselPhotoAlt']}
+            class="ig-carousel__img"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      ))
+    }
+  </div>
+
+  <p class="ig-carousel-section__cta">
+    <a class="insta-link" href={IG_URL} target="_blank" rel="noopener noreferrer">
+      {t['news.instagramCarouselCta']} →
+    </a>
+  </p>
+</section>
+
+<style>
+  .ig-carousel-section {
+    margin-bottom: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(229 229 229);
+    background: rgb(250 250 250);
+    padding: 1rem 1rem 1.25rem;
+  }
+
+  .ig-carousel-section__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .ig-carousel-section__title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(23 23 23);
+  }
+
+  .ig-carousel-section__controls {
+    display: flex;
+    gap: 0.35rem;
+  }
+
+  .ig-carousel-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid rgb(212 212 212);
+    border-radius: 0.35rem;
+    background: white;
+    color: rgb(64 64 64);
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .ig-carousel-nav:hover {
+    border-color: rgb(180 180 180);
+    color: rgb(23 23 23);
+  }
+
+  .ig-carousel {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0.5rem;
+    padding: 0.25rem 0 0.5rem;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ig-carousel__slide {
+    flex: 0 0 min(32rem, 88%);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    border-radius: 0.35rem;
+    overflow: hidden;
+    outline: none;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+  }
+
+  .ig-carousel__slide:focus-visible {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #c00;
+  }
+
+  .ig-carousel__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .ig-carousel-section__cta {
+    margin: 0.75rem 0 0;
+  }
+
+  .insta-link {
+    color: #c00;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .insta-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  function initIgCarousel() {
+    document.querySelectorAll('[data-ig-carousel-root]').forEach((root) => {
+      const track = root.querySelector('[data-ig-carousel-track]');
+      const prev = root.querySelector('[data-ig-carousel-prev]');
+      const next = root.querySelector('[data-ig-carousel-next]');
+      if (!(track instanceof HTMLElement) || !(prev instanceof HTMLElement) || !(next instanceof HTMLElement)) {
+        return;
+      }
+      const step = () => Math.max(280, track.clientWidth * 0.88);
+      prev.addEventListener('click', () => {
+        track.scrollBy({ left: -step(), behavior: 'smooth' });
+      });
+      next.addEventListener('click', () => {
+        track.scrollBy({ left: step(), behavior: 'smooth' });
+      });
+    });
+  }
+
+  initIgCarousel();
+</script>
