@@ -4,7 +4,7 @@ wpSlug: die-schweizer-delegation-am-40-jahre-jubilaeum-des-deutschen-shorinji-ke
 title: Die Schweizer Delegation am 40 Jahre Jubiläum des Deutschen Shorinji Kempo Verbandes (Oktober 2019)
 date: 2019-11-22
 author: Silvan Buchecker
-image: /uploads/2019/11/IMAG0395-1.jpg
+image: /uploads/2019/11/IMAG0395-1-1024x768.jpg
 excerpt: "*   [![](/uploads/2019/11/IMG_0070-1024x768.jpg)](/uploads/2019/11/IMG_0070-1024x768.jpg)"
 ---
 *   [![](/uploads/2019/11/IMG_0070-1024x768.jpg)](/uploads/2019/11/IMG_0070-1024x768.jpg)

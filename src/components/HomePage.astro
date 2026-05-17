@@ -4,6 +4,8 @@ import DojoCard from './DojoCard.astro';
 import ContactForm from './ContactForm.astro';
 import { homeCopy, homeDojos, type HomeLang } from '../i18n/homePage';
 import { withBase, localizePath } from '../utils/paths';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/images/IMAG0395-1.jpg';
 
 export interface Props {
   lang: HomeLang;
@@ -21,7 +23,7 @@ const dojos = homeDojos[lang];
   ctaText={t.hero.cta}
   footerNote={t.hero.footer}
   ctaHref={localizePath('/#contact', lang)}
-  imageUrl={withBase('/images/hero-main.jpg')}
+  imageUrl={withBase('/images/IMAG0395-1.jpg')}
   imageAlt="Shorinji Kempo Training"
 />
 

@@ -66,7 +66,7 @@
      subtitle="Körper & Geist — Kraft & Liebe"
      ctaText="Kostenloses Probetraining"
      ctaHref="/#contact"
-     imageUrl={withBase('/images/hero-main.jpg')}
+     imageUrl={withBase('/images/IMAG0395-1.jpg')}
    />
    
    <!-- Dojos Section -->
