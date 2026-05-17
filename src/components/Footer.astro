@@ -1,5 +1,6 @@
 ---
 import { defaultLang, ui } from '../i18n/ui.ts';
+import { localizePath } from '../utils/paths.ts';
 
 type Lang = keyof typeof ui;
 
@@ -10,8 +11,8 @@ const t = ui[locale];
 const year = new Date().getFullYear();
 
 const hrefWsko = 'https://www.shorinjikempo.or.jp/wsko/';
-const hrefImprint = 'https://shorinjikempo.ch/index.php/startseite/impressum/';
-const hrefPrivacy = 'https://shorinjikempo.ch/index.php/startseite/datenschutzerklaerung/';
+const hrefImprint = localizePath('/impressum', locale);
+const hrefPrivacy = localizePath('/datenschutzerklaerung', locale);
 /** Same URL as `src/pages/links.astro` and documentation. */
 const hrefFacebook = 'https://www.facebook.com/ShorinjiKempoSchweiz/';
 const telHref = 'tel:+41796365682';
@@ -62,10 +63,10 @@ const phoneDisplay = '+41 79 636 56 82';
                         <a class="site-footer__link" href={hrefWsko} target="_blank" rel="noopener noreferrer">{t['footer.linkWsko']}</a>
                     </li>
                     <li>
-                        <a class="site-footer__link" href={hrefImprint} target="_blank" rel="noopener noreferrer">{t['footer.linkImprint']}</a>
+                        <a class="site-footer__link" href={hrefImprint}>{t['footer.linkImprint']}</a>
                     </li>
                     <li>
-                        <a class="site-footer__link" href={hrefPrivacy} target="_blank" rel="noopener noreferrer">{t['footer.linkPrivacy']}</a>
+                        <a class="site-footer__link" href={hrefPrivacy}>{t['footer.linkPrivacy']}</a>
                     </li>
                 </ul>
             </section>

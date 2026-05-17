@@ -1,7 +1,7 @@
 ---
 import { ui, languages } from '../i18n/ui.ts';
 import { withBase } from '../utils/paths.ts';
-import { heroTrialMailHref } from '../utils/heroTrialMailto.ts';
+import { CONTACT_FORM_ANCHOR } from '../utils/heroTrialMailto.ts';
 
 type Lang = keyof typeof languages;
 
@@ -12,14 +12,13 @@ interface Props {
 const { lang } = Astro.props;
 const t = ui[lang];
 const heroBgUrl = `url('${withBase('/uploads/2019/09/2019-04-21-14_26_56-Shorinji-Kempo-Entwurf-Figma-1024x575.png')}')`;
-const trialMailHref = heroTrialMailHref(t['hero.ctaMail.subject'], t['hero.ctaMail.body']);
 ---
 
 <div class="hero">
   <div class="container">
     <h1>{t['hero.title']}</h1>
     <p class="hero-text">{t['hero.text']}</p>
-    <a class="hero-cta" href={trialMailHref}>{t['hero.cta']}</a>
+    <a class="hero-cta" href={CONTACT_FORM_ANCHOR}>{t['hero.cta']}</a>
   </div>
 </div>
 

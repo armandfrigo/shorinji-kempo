@@ -34,9 +34,12 @@ export function localizePath(path: string, lang: string = 'de'): string {
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // Handle anchor links (e.g., "/#contact" → stay as is)
+  // Handle anchor links (e.g., "/#contact" → locale-prefixed /fr/#contact)
   if (path.startsWith('/#')) {
-    return withBase(path);
+    const hash = path.slice(1);
+    const localizedPath =
+      lang === 'de' ? `/${hash}` : `/${lang}/${hash}`;
+    return withBase(localizedPath.replace(/\/+/g, '/'));
   }
 
   // Default locale (de) has no URL prefix (see astro.config i18n.prefixDefaultLocale)
