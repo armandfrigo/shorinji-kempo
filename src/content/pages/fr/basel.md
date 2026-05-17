@@ -71,7 +71,7 @@ Mardi, 19 h 00 – 21 h 00
 2. **Tenue** : T-shirt et jogging suffisent
 3. **Venez simplement** : vers 19 h 00 ; la porte est ouverte
 
-Après quelques semaines vous pourrez acheter un **gi** (uniforme, env. CHF 100).
+Après quelques semaines vous pourrez acheter un **Dogi** (uniforme, env. CHF 100).
 
 ---
 

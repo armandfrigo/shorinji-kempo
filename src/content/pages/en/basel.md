@@ -71,7 +71,7 @@ Tuesday, 19:00 – 21:00
 2. **Clothing**: T-shirt and sweatpants are enough
 3. **Just come**: arrive around 19:00; the door is open
 
-After a few weeks you can buy a **gi** (training uniform, about CHF 100).
+After a few weeks you can buy a **Dogi** (training uniform, about CHF 100).
 
 ---
 

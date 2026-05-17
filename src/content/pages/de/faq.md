@@ -50,7 +50,7 @@ Zum ersten Kurs brauchst du nur:
 - **Socken** (wir trainieren barfuß oder in Socken)
 - **Wasser** (zum Trinken)
 
-Nach ein paar Wochen wirst du einen **Gi** kaufen (das traditionelle Shorinji Kempo Trainingsanzug). Das kostet etwa CHF 80-150.
+Nach ein paar Wochen wirst du einen **Dogi** kaufen (das traditionelle Shorinji Kempo Trainingsanzug). Das kostet etwa CHF 80-150.
 
 ### Wie oft sollte ich trainieren?
 

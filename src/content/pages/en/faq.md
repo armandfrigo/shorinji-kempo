@@ -50,7 +50,7 @@ For your first visit you only need:
 - **socks** (we train barefoot or in socks)
 - **water**
 
-After a few weeks you will want a **gi** (the traditional Shorinji Kempo uniform), roughly CHF 80–150.
+After a few weeks you will want a **Dogi** (the traditional Shorinji Kempo uniform), roughly CHF 80–150.
 
 ### How often should I train?
 

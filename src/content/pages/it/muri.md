@@ -94,7 +94,7 @@ Rispetto ad altre attività, gli infortuni sono **molto rari**.
 - calzini
 - acqua
 
-Dopo qualche settimana: un gi (circa CHF 80–120)
+Dopo qualche settimana: un dogi (circa CHF 80–120)
 
 ### Posso assistere?
 

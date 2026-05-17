@@ -94,7 +94,7 @@ Les blessures restent **très rares** comparées à d’autres activités.
 - chaussettes
 - eau
 
-Après quelques semaines : un gi (env. CHF 80–120)
+Après quelques semaines : un dogi (env. CHF 80–120)
 
 ### Puis-je assister ?
 

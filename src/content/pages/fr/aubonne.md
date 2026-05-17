@@ -89,7 +89,7 @@ Le dojo est reconnu pour :
 - chaussettes (pieds nus ou en chaussettes)
 - eau
 
-Après une ou deux semaines : achat d’un gi (env. CHF 100–150)
+Après une ou deux semaines : achat d’un dogi (env. CHF 100–150)
 
 ---
 

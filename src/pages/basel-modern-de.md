@@ -71,7 +71,7 @@ Dienstag, 19:00 – 21:00
 2. **Sportkleidung**: T-Shirt + Jogginghose reicht
 3. **Einfach hingehen**: Komm einfach um 19:00 vorbei, die Tür ist offen
 
-Nach ein paar Wochen kaufst du einen **Gi** (Trainingsanzug, ~CHF 100).
+Nach ein paar Wochen kaufst du einen **Dogi** (Trainingsanzug, ~CHF 100).
 
 ---
 

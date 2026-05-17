@@ -202,6 +202,16 @@ const { isSitePage, pageEntry, postEntry, lang, routeSlug } = Astro.props;
     clear: both;
   }
 
+  /* Vorstand: every member is an h2 — no centered “subtitle” on Marco (first child). */
+  .slug-article--site[data-route-slug='vorstand'] .slug-article__prose > h2:first-child {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.65rem;
+    color: #262626;
+  }
+
   /* Séparateur visuel entre blocs d'information (filet + espacement).  */
   /* On préserve la règle existante pour le tout premier <h2> qui sert  */
   /* de sous-titre centré (entstehung/gruender).                        */

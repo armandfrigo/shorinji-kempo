@@ -19,8 +19,6 @@ Pourtant le Goho n’est pas la brutalité. C’est une **application intelligen
 
 **En dehors du dojo** : parfois il faut agir avec clarté, directement et avec puissance. Ce besoin n’est pas un défaut — il est nécessaire.
 
-![Photo : entraînement Goho — frappes et parades](/images/placeholder-goho.jpg)
-
 ---
 
 ### Juho (柔法) — la force de l’adaptation
@@ -35,8 +33,6 @@ L’inverse de la force n’est pas la faiblesse — c’est la **souplesse**. L
 Le Juho t’apprend à **aller dans le flux plutôt qu’à lutter contre lui**.
 
 **Dans la vie** : tout problème ne se résout pas par la puissance brute. Parfois il faut patience, compréhension, capacité à pivoter face au changement.
-
-![Photo : entraînement Juho — clés et projections](/images/placeholder-juho.jpg)
 
 ---
 
@@ -71,8 +67,6 @@ Le Shorinji Kempo s’adresse à chacun :
 - **Confirmés** : les techniques peuvent nourrir une compréhension toute la vie durant
 
 L’âge, la morphologie, la force brute — rien de cela ne ferme la porte. **Le Shorinji Kempo te correspond.**
-
-![Photo : groupe à l’entraînement — tous âges](/images/placeholder-training-group.jpg)
 
 ---
 

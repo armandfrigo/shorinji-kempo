@@ -19,8 +19,6 @@ Yet Goho is not brutality. It is **intelligent use of force**. You rely on dynam
 
 **Outside the dōjō**: sometimes you must act directly, clearly, and with power. That is not wrong — it is necessary.
 
-![Photo: Goho training — striking and blocking techniques](/images/placeholder-goho.jpg)
-
 ---
 
 ### Juho (柔法) — the strength of adaptation
@@ -35,8 +33,6 @@ The opposite of force is not weakness — it is **adaptability**. Water is not h
 Juho teaches you to **move with the flow instead of fighting it**.
 
 **In daily life**: not every problem yields to blunt force. Sometimes you need patience, understanding, and the ability to adapt to change.
-
-![Photo: Juho training — joint and throwing techniques](/images/placeholder-juho.jpg)
 
 ---
 
@@ -71,8 +67,6 @@ Shorinji Kempo welcomes all:
 - **Advanced students**: the techniques can deepen insight for a lifetime
 
 Age, build, raw strength — none of that decides your path. **Shorinji Kempo works for you.**
-
-![Photo: group in training — all ages](/images/placeholder-training-group.jpg)
 
 ---
 

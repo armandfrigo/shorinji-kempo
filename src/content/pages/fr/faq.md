@@ -50,7 +50,7 @@ Pour la première fois, il vous suffit de :
 - **chaussettes** (pieds nus ou en chaussettes)
 - **de l’eau**
 
-Après quelques semaines vous achèterez un **gi** (l’uniforme traditionnel du Shorinji Kempo), environ CHF 80–150.
+Après quelques semaines vous achèterez un **Dogi** (l’uniforme traditionnel du Shorinji Kempo), environ CHF 80–150.
 
 ### Combien de fois par semaine ?
 

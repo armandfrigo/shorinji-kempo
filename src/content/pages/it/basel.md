@@ -71,7 +71,7 @@ Martedì, 19:00 – 21:00
 2. **Abbigliamento**: maglietta e tuta bastano
 3. **Vieni e basta**: verso le 19:00; la porta è aperta
 
-Dopo qualche settimana potrai acquistare un **gi** (uniforme, circa CHF 100).
+Dopo qualche settimana potrai acquistare un **Dogi** (uniforme, circa CHF 100).
 
 ---
 

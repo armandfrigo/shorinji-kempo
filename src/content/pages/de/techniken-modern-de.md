@@ -19,8 +19,6 @@ Aber: Goho ist nicht Brutalität. Es ist **intelligente Kraftanwendung**. Du nut
 
 **In deinem Leben außerhalb des Dojos**: Manchmal musst du direkt, klar und kraftvoll handeln. Das ist kein Problem — es ist notwendig.
 
-![Foto: Goho Training - Schlag- und Blocktechniken](/images/placeholder-goho.jpg)
-
 ---
 
 ### Juho (柔法) — Die Kraft der Anpassung
@@ -35,8 +33,6 @@ Das Gegenteil von Kraft ist nicht Schwäche — es ist **Geschmeidigkeit**. Wass
 Juho lehrt dich, **mit dem Fluss zu gehen statt dagegen anzukämpfen**.
 
 **In deinem Leben**: Nicht jedes Problem löst man mit direkter Kraft. Manchmal brauchst du Geduld, Verständnis, und die Fähigkeit, dich an Veränderungen anzupassen.
-
-![Foto: Juho Training - Hebel- und Wurftechniken](/images/placeholder-juho.jpg)
 
 ---
 
@@ -71,8 +67,6 @@ Shorinji Kempo ist für jeden da:
 - **Für Fortgeschrittene**: Die Techniken werden dein Leben lang tiefe Einsichten bieten
 
 Alter, Körpertyp, Kraft — das spielt keine Rolle. **Shorinji Kempo funktioniert für dich.**
-
-![Foto: Gruppe im Training - alle Altersgruppen](/images/placeholder-training-group.jpg)
 
 ---
 
