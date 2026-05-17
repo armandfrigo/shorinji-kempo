@@ -1,10 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import InstagramLink from '../../components/InstagramLink.astro';
-import { ui } from '../../i18n/ui.ts';
-import { withBase } from '../../utils/paths.ts';
+import { withBase, localizePath } from '../../utils/paths.ts';
 
-const t = ui.fr || ui.de;
+const lang = 'fr';
 const imgBasel = withBase('/uploads/2025/01/IMG_0737-rotated.jpg');
 const imgAubonne = withBase('/uploads/2026/05/IMG_7175.jpeg');
 const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f06ff5d56f08f7f0bb52a757e-5d849ada2e833.jpeg');
@@ -27,7 +25,9 @@ const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f0
             </div>
         </div>
 
-        <InstagramLink href="https://www.instagram.com/shorinjikempo.basel/" label="Basel" />
+        <p class="mt-2">
+            <a class="dojo-detail-link" href={localizePath('/basel', lang)}>En savoir plus sur le dojo de Bâle →</a>
+        </p>
 
         <h2>Aubonne</h2>
         <div class="dojo-card">
@@ -43,7 +43,9 @@ const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f0
             </div>
         </div>
 
-        <InstagramLink href="https://www.instagram.com/shorinjikempo.aubonne/" label="Aubonne" />
+        <p class="mt-2">
+            <a class="dojo-detail-link" href={localizePath('/aubonne', lang)}>En savoir plus sur le dojo d'Aubonne →</a>
+        </p>
 
         <h2>Muri (enfants)</h2>
         <div class="dojo-card">
@@ -59,7 +61,9 @@ const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f0
             </div>
         </div>
 
-        <InstagramLink href="https://www.instagram.com/shorinjikempo.muri/" label="Muri" />
+        <p class="mt-2">
+            <a class="dojo-detail-link" href={localizePath('/muri', lang)}>En savoir plus sur le dojo de Muri →</a>
+        </p>
     </div>
 </Layout>
 
@@ -91,5 +95,13 @@ const imgMuri = withBase('/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f0
     }
     .dojo-info {
         padding: 1rem;
+    }
+    .dojo-detail-link {
+        color: #c00;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .dojo-detail-link:hover {
+        text-decoration: underline;
     }
 </style>

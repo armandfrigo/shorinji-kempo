@@ -1,17 +1,29 @@
 ---
 lang: it
 routeSlug: entstehung
-title: Origine
+title: Le origini
 ---
 
-## Motivazione e obiettivi alla base della fondazione dello SHORINJI KEMPO
+## Dal caos alla forza: le radici dello Shorinji Kempo
 
-Il fondatore dello Shorinji Kempo, So Doshin, nel caos del dopoguerra è giunto, sulla base delle proprie esperienze, alla convinzione che gli obiettivi e il carattere di un gruppo o di una società cambiano notevolmente a seconda della qualità di chi li guida. Ha mostrato così che un vero atteggiamento da leader si fonda su ottimismo, senso di giustizia e capacità di agire.
+Era il 1947 in Giappone. La guerra aveva lasciato ferite profonde. I giovani perdevano orientamento. In quel tempo So Doshin colse qualcosa di fondamentale:
 
-So Doshin era convinto che dovesse formare persone con autentiche qualità di leadership, affinché gli esseri umani potessero convivere in pace e felicità.
+**Non sono le leggi a trasformare le società. Sono le persone.**
 
-So Doshin ha iniziato a indicare ai giovani — che nel caos del dopoguerra sembravano smarrirsi — una via che può condurre a una vita felice. Ha insegnato loro tecniche di combattimento attraverso le quali hanno potuto riacquistare fiducia in sé stessi.
+Aveva visto cosa succede quando singoli individui agiscono con vera forza interiore e compassione. Era convinto: si può allenare questa bussola interiore — come i muscoli, ma più in profondità. Da quella intuizione nacque lo Shorinji Kempo.
 
-Nel corso dell’allenamento, So Doshin ha mostrato loro la via giusta, risvegliando in tal modo la loro sicurezza e la fiducia in sé. Ha inoltre illustrato agli allievi le possibilità di sviluppo che ognuno di noi porta in sé fin dalla nascita. Si sono così formate personalità dotate di fiducia in sé, coraggio e capacità di agire, capaci di dare un contributo alla nostra società.
+## Un cammino, non solo una tecnica
 
-![Shorinji Kempo](/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg)
+So Doshin non voleva limitarsi a insegnare tecniche di combattimento. Voleva aiutare le persone a **scoprire se stesse**:
+
+- **Corpo e mente come un solo essere** (Ken Zen Ichinyo) — il corpo non è separato dalla mente
+- **Forza con amore** (Riki Ai Funi) — la vera potenza significa aiutare gli altri, non dominarli
+- **Autodifesa invece dell’aggressione** — ci si allena per proteggere sé e gli altri
+
+## Il viaggio fino a oggi
+
+Il sistema fondato nel 1947 si è poi diffuso in oltre quaranta Paesi. Persone di ogni cultura, età e corporatura scoprono di poter diventare **più forti di quanto credessero** — nella mente e nel corpo.
+
+Lo Shorinji Kempo non è una gara. Non è una corsa contro gli altri. È un **cammino personale**, insieme a chi condivide lo stesso intento: crescere e favorire più pace intorno a noi.
+
+Questa è l’eredità di So Doshin, ancora viva.

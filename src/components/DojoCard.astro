@@ -3,6 +3,7 @@
 // Premium dojo card with integrated Google Maps
 
 export interface Props {
+  lang?: 'de' | 'fr' | 'en' | 'it';
   name: string;
   instructor: string;
   schedule: string;
@@ -12,11 +13,26 @@ export interface Props {
   email?: string;
   fees: string;
   googleMapsUrl: string;
-  instagramUrl?: string;
+  href?: string;
   description: string;
 }
 
+const detailCta = {
+  de: 'Mehr erfahren',
+  fr: 'En savoir plus',
+  en: 'Learn more',
+  it: 'Scopri di più',
+};
+
+const labels = {
+  de: { address: 'Adresse', schedule: 'Trainingszeit', fees: 'Beiträge' },
+  fr: { address: 'Adresse', schedule: 'Horaires', fees: 'Tarifs' },
+  en: { address: 'Address', schedule: 'Training times', fees: 'Fees' },
+  it: { address: 'Indirizzo', schedule: 'Orari', fees: 'Quote' },
+};
+
 const { 
+  lang = 'de',
   name, 
   instructor, 
   schedule, 
@@ -26,9 +42,12 @@ const {
   email, 
   fees, 
   googleMapsUrl,
-  instagramUrl,
+  href,
   description 
 } = Astro.props;
+
+const l = labels[lang] ?? labels.de;
+const ctaLabel = detailCta[lang] ?? detailCta.de;
 ---
 
 <div class="dojo-card">
@@ -41,7 +60,7 @@ const {
     <div class="info-item">
       <span class="info-icon">📍</span>
       <div>
-        <p class="label">Adresse</p>
+        <p class="label">{l.address}</p>
         <p class="value">{address}</p>
         <p class="value text-grey text-sm">{city}</p>
       </div>
@@ -50,7 +69,7 @@ const {
     <div class="info-item">
       <span class="info-icon">⏰</span>
       <div>
-        <p class="label">Horaires</p>
+        <p class="label">{l.schedule}</p>
         <p class="value">{schedule}</p>
       </div>
     </div>
@@ -58,7 +77,7 @@ const {
     <div class="info-item">
       <span class="info-icon">💰</span>
       <div>
-        <p class="label">Tarifs</p>
+        <p class="label">{l.fees}</p>
         <p class="value">{fees}</p>
       </div>
     </div>
@@ -79,14 +98,14 @@ const {
         <span>✉️</span> {email}
       </a>
     )}
-    {instagramUrl && (
-      <a href={instagramUrl} target="_blank" rel="noopener noreferrer" class="contact-link">
-        <span>📸</span> Instagram
-      </a>
-    )}
   </div>
 
   <div class="dojo-actions">
+    {href && (
+      <a href={href} class="btn btn-primary btn-small">
+        {ctaLabel} →
+      </a>
+    )}
     <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
       → Google Maps
     </a>

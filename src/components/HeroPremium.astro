@@ -8,11 +8,12 @@ export interface Props {
   subtitle: string;
   ctaText: string;
   ctaHref: string;
+  footerNote: string;
   imageUrl?: string;
   imageAlt?: string;
 }
 
-const { lang, title, subtitle, ctaText, ctaHref, imageUrl, imageAlt = 'Hero' } = Astro.props;
+const { title, subtitle, ctaText, ctaHref, footerNote, imageUrl, imageAlt = 'Hero' } = Astro.props;
 ---
 
 <section class="hero">
@@ -31,7 +32,7 @@ const { lang, title, subtitle, ctaText, ctaHref, imageUrl, imageAlt = 'Hero' } =
       </div>
       
       <p class="hero-footer">
-        <span class="text-grey">Kostenlos • Keine Verpflichtung • Anfänger Willkommen</span>
+        <span class="text-grey">{footerNote}</span>
       </p>
     </div>
     
@@ -63,7 +64,7 @@ const { lang, title, subtitle, ctaText, ctaHref, imageUrl, imageAlt = 'Hero' } =
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding-inline: var(--container-padding-inline);
     width: 100%;
   }
 
@@ -128,6 +129,8 @@ const { lang, title, subtitle, ctaText, ctaHref, imageUrl, imageAlt = 'Hero' } =
     border-radius: 2px;
     overflow: hidden;
     aspect-ratio: 4/5;
+    width: 150px;
+    height: 350px;
     animation: fadeIn 1000ms var(--transition-base);
   }
 

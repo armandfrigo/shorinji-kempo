@@ -4,14 +4,39 @@ routeSlug: gruender
 title: Fondatore
 ---
 
-## Biografia del fondatore dello SHORINJI KEMPO, So Doshin
+## So Doshin — l’uomo delle foreste di pino
 
-Il fondatore è nato nel febbraio 1911 nel comune di Sakuto, prefettura di Okayama (oggi città di Mimasaka). All’età di 17 anni ha viaggiato a lungo per la Cina. Lì è diventato allievo di Wen Laoshi presso il tempio Shaolin del Songshan e ha appreso diverse tecniche di combattimento. Ha vissuto la fine della guerra nel nord-est della Cina (Manciuria), sotto l’occupazione sovietica.
+**Nato l’11 febbraio 1911, Okayama • Morto nel maggio 1980**
 
-Nei tumulti dell’immediato dopoguerra ha visto con i propri occhi, nel modo più estremo, di che cosa siano capaci gli esseri umani. Ciò lo ha convinto che il diritto, l’esercito e la politica dipendono dalla «qualità umana» di chi guida. Ha perciò deciso di formare persone dotate di bontà, coraggio e di un forte senso di giustizia, per raggiungere una pace autentica.
+### Un’infanzia tra le culture
 
-Tornato in Giappone ha sviluppato un sistema che, come detto, plasma gli individui in personalità utili alla società: da un lato l’insegnamento del Riki Ai Funi (forza e amore in armonia), dall’altro le tecniche di combattimento per acquisire fiducia in sé stessi e vivere i progressi compiuti come un successo.
+A diciassette anni So Doshin lasciò il Giappone per la Cina — allora una scelta rarissima. Cercò saggezza. La trovò presso maestri dei templi Shaolin, in particolare con Wen Laoshi alla celebre accademia Shaolin del Songshan.
 
-Nell’ottobre 1947, sotto il principio del «Ken Zen Ichinyo» (unità di corpo e mente), ha fondato lo «Shorinji Kempo». È deceduto nel maggio 1980.
+Non furono solo le **tecniche** dell’arte marziale a segnarlo. **Fu il *perché* che le accompagna** — la filosofia buddhista per cui forza interiore e gesti esterni sono inseparabili.
 
-![So Doshin](/uploads/2019/09/img-716102751-0001-723x1024.jpg)
+### Il trauma che cambiò tutto
+
+1945: fine della seconda guerra mondiale. So Doshin era in Manciuria, sotto occupazione sovietica. Vide l’orrore: esseri umani che si distruggono a vicenda; intere società che crollano.
+
+**In quel momento capì: non basta conoscere tecnicine. Bisogna formare esseri umani con vera forza interiore — con compassione, coraggio e senso di giustizia.**
+
+### La fondazione: ottobre 1947
+
+Tornato in Giappone, nella città di Tadotsu (prefettura di Kagawa), So Doshin aprì il primo dōjō di Shorinji Kempo. Non era un luogo di competizione o dominio. **Era un luogo di trasformazione.**
+
+Il suo principio era semplice e profondo:
+
+> **Ken Zen Ichinyo — corpo e mente come uno**
+
+Non ci si allena solo a calci e pugni. Si allena il modo di pensare, di decidere, di incontrare la paura. Il corpo insegna alla mente.
+
+### L’eredità
+
+So Doshin morì nel 1980. Ma il sistema che creò vive. Oggi più di **tre milioni di persone** praticano Shorinji Kempo nel mondo — non come rivali, ma come allievi.
+
+Il suo pensiero centrale è senza tempo:
+
+> **Metà per la tua felicità, metà per la felicità degli altri**
+> (Half for one's own happiness, half for the happiness of others)
+
+Questo è lo Shorinji Kempo.

@@ -1,17 +1,29 @@
 ---
 lang: en
 routeSlug: entstehung
-title: Origin
+title: Origins
 ---
 
-## Motivation and aims behind the founding of SHORINJI KEMPO
+## From chaos to strength: the roots of Shorinji Kempo
 
-The founder of Shorinji Kempo, So Doshin, came to realise during the chaos of the post-war years — based on his own experiences — that the goals and character of a group or society change markedly depending on the quality of its leaders. He showed in this way that good leadership rests on optimism, a sense of justice and the ability to act.
+It was 1947 in Japan. The war had left deep wounds. Young people were losing their bearings. In that time, So Doshin realised something fundamental:
 
-So Doshin was convinced that he had to train people with genuine leadership qualities so that human beings could live together peacefully and happily.
+**Laws do not transform societies. People do.**
 
-So Doshin began to show the young people who seemed to be losing themselves in the post-war chaos a path that could lead to a happy life. He taught them fighting techniques through which they could regain their self-confidence.
+He had seen what becomes possible when individuals act with genuine inner strength and compassion. He was convinced: you can train this inner compass — much like muscles, yet far deeper. That insight became the birth of Shorinji Kempo.
 
-In the course of training, So Doshin demonstrated the right way to them and thereby awakened their self-assurance and belief in themselves. Beyond that, he revealed to his students the potential for development that lies within each of us from birth. In this way, personalities were shaped that possess self-confidence, courage and the ability to act — and who contribute to our society.
+## A path, not merely a set of techniques
 
-![Shorinji Kempo](/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg)
+So Doshin did not simply want to teach fighting techniques. He wanted to help people **discover themselves**:
+
+- **Body and mind as one** (Ken Zen Ichinyo) — your body is not separate from your mind
+- **Strength with love** (Riki Ai Funi) — true power means helping others, not dominating them
+- **Self-defence instead of aggression** — you train to protect yourself and to protect others
+
+## The journey to today
+
+The system founded in 1947 has since spread to more than forty countries. People of every culture, age, and build discover that they can become **stronger than they believed** — mentally and physically.
+
+Shorinji Kempo is not a contest. It is not a race against others. It is a **personal journey**, alongside people who share the same aim: to grow, and to create more peace around us.
+
+That is the legacy of So Doshin, alive to this day.

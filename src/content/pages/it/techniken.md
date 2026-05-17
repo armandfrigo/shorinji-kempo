@@ -4,18 +4,84 @@ routeSlug: techniken
 title: Tecniche
 ---
 
-## Goho — 剛法
+## Potenza ed equilibrio: le due vie dell’autodifesa
 
-I **metodi Goho** sono tecniche destinate a deviare o bloccare pugni, calci o attacchi simili dell’avversario, per poi sopraffarlo con un contrattacco basato a sua volta su pugni, calci e simili.
+Nello Shorinji Kempo non esistono “mosse segrete”. Esiste però una comprensione profonda di **come funziona davvero la forza**.
 
-![Goho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
+### Goho (剛法) — la forza della direzione
 
-## Juho — 柔法
+Il **Goho** comprende le tecniche dirette e potenti:
+- colpi di pugno e calci che trasmettono energia
+- parate che deviano la forza in arrivo
+- contrattacchi che rispondono all’istante
 
-I **metodi Juho** sono le tecniche da utilizzare quando l’avversario afferra il braccio o l’abbigliamento. Permettono di liberarsi dalla presa, applicare una leva o proiettare l’avversario.
+Eppure il Goho non è brutalità. È **uso intelligente della forza**. Ci si affida a dinamica e fisica, non solo alla muscolatura. Per questo anche chi è meno possente può controllare chi è più forte.
 
-![Juho](/uploads/2019/09/juniperphoton-734577-unsplash-Kopie-1024x683-768x512.jpg)
+**Fuori dal dōjō**: a volte bisogna agire in modo diretto, chiaro e risoluto. Non è un difetto — è necessario.
 
-## In sintesi
+![Foto: allenamento Goho — colpi e parate](/images/placeholder-goho.jpg)
 
-Goho e Juho possono essere distinti in questo modo, ma con il progredire dell’allenamento tendono a confluire in un unico insieme di tecniche. La ragione risiede nella natura stessa dell’autodifesa: per controllare l’avversario è necessario reagire ai suoi movimenti e alla situazione specifica. Per farlo bisogna padroneggiare e adattare sia le tecniche dure sia quelle morbide, in modo da poterle applicare in modo efficace.
+---
+
+### Juho (柔法) — la forza dell’adattamento
+
+Il **Juho** comprende le tecniche morbide e fluide:
+- leve che governano le articolazioni
+- proiezioni che rompono l’equilibrio
+- movimenti elusivi che smistano la forza
+
+L’opposto della forza non è debolezza — è **adattabilità**. L’acqua non è dura come la pietra, eppure col tempo la consuma.
+
+Il Juho insegna ad **andare con il flusso invece di opporsi**.
+
+**Nella vita quotidiana**: non ogni problema cede alla forza bruta. A volte servono pazienza, comprensione, capacità di adattarsi al cambiamento.
+
+![Foto: allenamento Juho — leve e proiezioni](/images/placeholder-juho.jpg)
+
+---
+
+### L’equilibrio: Ken Zen Ichinyo
+
+La grande intuizione dello Shorinji Kempo è che **Goho e Juho non sono separati — si completano**.
+
+Immagina:
+- **I denti sono duri (Goho)** — possono mordere
+- **Le labbra sono morbide (Juho)** — possono muoversi
+- **Insieme tengono il cibo**
+
+Servono entrambi.
+
+Col passare degli anni le due vie si fondono:
+- impari quando la forza è giusta
+- impari quando conviene adattarsi
+- sviluppi un **senso interno** — intuizione del momento presente
+
+**Non è solo tecnica. È un modo di leggere il mondo.**
+
+---
+
+### Allenamento per tutti
+
+Lo Shorinji Kempo è aperto a tutti:
+
+- **Bambini**: fiducia in sé e forma fisica
+- **Adolescenti**: scoperta della forza interiore e dell’autostima
+- **Adulti**: salute, equilibrio, calma interiore
+- **Principianti**: nessuna esperienza richiesta
+- **Avanzati**: le tecniche possono approfondire la comprensione per tutta la vita
+
+Età, corporatura, forza grezza — nulla di tutto questo chiude la porta. **Lo Shorinji Kempo funziona per te.**
+
+![Foto: gruppo in allenamento — tutte le età](/images/placeholder-training-group.jpg)
+
+---
+
+## Il senso profondo
+
+Tutte queste tecniche, tutto questo equilibrio — **a che serve?**
+
+Non per la gara. Non per dominare.
+
+**Per proteggere te stesso. Per proteggere gli altri. Per diventare più forte — nel corpo e nella mente.**
+
+Questo è lo Shorinji Kempo.

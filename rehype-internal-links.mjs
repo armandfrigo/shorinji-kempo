@@ -37,7 +37,16 @@ export default function rehypeInternalLinks(options = {}) {
 export function normalizeAssetUrl(url) {
   if (typeof url !== 'string') return url;
   let u = url.trim();
-  u = u.replace(/^https?:\/\/[^/]+\//i, '/');
+
+  // Keep external URLs (Google Maps, social, etc.) — only rewrite WP uploads on any host.
+  const absolute = u.match(/^https?:\/\/[^/]+(\/.*)?$/i);
+  if (absolute) {
+    const path = absolute[1] ?? '/';
+    const wpUploads = path.replace(/^\/wp-content\/uploads\//i, '/uploads/');
+    if (wpUploads !== path) return wpUploads;
+    return u;
+  }
+
   u = u.replace(/^\/?wp-content\/uploads\//i, '/uploads/');
   u = u.replace(/^\.\.\/wp-content\/uploads\//i, '/uploads/');
   if (/^wp-content\/uploads\//i.test(u)) u = `/${u}`;
@@ -63,6 +72,8 @@ function prefixSrcset(value, prefix) {
 
 function prefixUrl(url, prefix) {
   if (!prefix || typeof url !== 'string') return url;
-  if (!url.startsWith('/') || url.startsWith('//')) return url;
+  if (/^https?:\/\//i.test(url) || !url.startsWith('/') || url.startsWith('//')) {
+    return url;
+  }
   return `${prefix}${url}`;
 }

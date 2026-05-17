@@ -1,39 +1,106 @@
 ---
 lang: en
 routeSlug: basel
-title: Basel
+title: Basel dōjō
 ---
 
-![Dojo Basel](/uploads/2025/01/IMG_0737-rotated.jpg)
+## Shorinji Kempo Basel
 
-## Location and training time
+Basel is the **oldest and largest** of our Swiss dōjō. Founded in 2014, it hosts a lively community from beginners to black belts.
 
+---
+
+## 📍 Where & when
+
+**Address:**  
 Winkelriedplatz 6  
-CH-4053 Basel  
+CH-4053 Basel (near SBB station)
 
-**Tuesday, 7:00 p.m. – 9:00 p.m.**
+**Training:**  
+Tuesday, 19:00 – 21:00
 
-## Instructor
+**Fees:**
+- Adults: CHF 90/month
+- Apprentices and students: CHF 60/month
+- Children: CHF 50/month
+- Family discount: on request
 
-**Marco Pellegrino (5th Dan)**
+---
 
-- Mobile: [+41 79 636 56 82](tel:+41796365682)
-- E-mail: [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
+## 👨‍🏫 Your instructor: Marco Pellegrino
 
-<div class="basel-instructor-photo">
+![Marco Pellegrino - 5th dan, president](/images/marco-pellegrino.jpg)
 
-![Marco Pellegrino](/uploads/bb-plugin/cache/IMG_4654-200x300-square-7a02de406db8559584ca5a494e7c855e-5da58ca89e1ac.jpg)
+**Marco Pellegrino** is **instructor and president** of the Swiss Shorinji Kempo association.
 
-</div>
+- **Rank**: 5th dan (Seikenshi) — the highest grade in Switzerland
+- **Experience**: 30+ years in Shorinji Kempo (since 1993)
+- **Background**: Italian heritage; living in Basel since 2000
+- **Focus**: Marco builds the dōjō on **solid fundamentals**. Beginner or advanced — with Marco you study genuine Shorinji Kempo.
 
-## Fees
+**Contact:**  
+📞 +41 79 636 56 82  
+📧 marco.pellegrino@shorinjikempo.ch
 
-- Adults CHF 90.– per month
-- Apprentices/students CHF 60.– per month
-- School pupils/children CHF 50.– per month
+---
 
-## About the dojo
+## 🤝 What awaits you in Basel
 
-We have moved! The old dojo at the Budo Academy near the Heuwaage has been given up. The new dojo is located at Winkelriedplatz 6, 4053 Basel — right by Basel SBB station in the Gundeldingen neighbourhood. It is therefore excellently accessible by public transport. Parking is available in the neighbourhood and at the nearby Bahnhof Süd car park.
+**Beginners (kyu grades)**
+- learn core techniques
+- build fitness
+- connect with fellow students
+- regular training: one to two sessions per week
 
-The new dojo is fully equipped with mats and features large windows, a ventilation system and sun blinds. There are also separate showers and changing rooms.
+**Advanced (dan grades)**
+- deeper techniques and subtle application
+- mental training and inner balance
+- preparation for higher examinations
+- often join regional sessions (e.g. black-belt training)
+
+**Culture:**
+- respect, discipline, mutual support
+- training is always **with** others, not **against** them
+- regular community events (e.g. year-end gatherings)
+
+---
+
+## 🚀 How to start
+
+1. **First trial class**: free, no obligation
+2. **Clothing**: T-shirt and sweatpants are enough
+3. **Just come**: arrive around 19:00; the door is open
+
+After a few weeks you can buy a **gi** (training uniform, about CHF 100).
+
+---
+
+## 📸 Social media
+
+Follow Basel for updates, events, and community photos:
+
+📸 **Instagram**: [@shorinjikempo.basel](https://www.instagram.com/shorinjikempo.basel/)
+
+---
+
+## 🗺️ Getting there
+
+[Google Maps: Winkelriedplatz 6, Basel](https://www.google.ch/maps/place/Winkelriedpl.+6,+4053+Basel/@47.542933,7.585576,742m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4791b84ffb2be12d:0x13114d98b9dde83a!8m2!3d47.5429294!4d7.5881509!16s%2Fg%2F11c2b6bg2l!5m1!1e3?entry=ttu)
+
+**Public transport:**  
+- Tram 1, 2, 10 → SBB station  
+- SBB station → five minutes on foot  
+
+**By car:**  
+- SBB car park (opposite the station)
+
+---
+
+## 💬 Questions?
+
+Contact Marco directly:
+
+📧 marco.pellegrino@shorinjikempo.ch  
+📞 +41 79 636 56 82
+
+Or simply visit next Tuesday at 19:00. No commitment. 🥋

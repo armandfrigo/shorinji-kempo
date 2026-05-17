@@ -1,39 +1,106 @@
 ---
 lang: fr
 routeSlug: basel
-title: Bâle
+title: Dojo Bâle
 ---
 
-![Dojo Bâle](/uploads/2025/01/IMG_0737-rotated.jpg)
+## Shorinji Kempo Bâle
 
-## Lieu et horaire d’entraînement
+Le dojo de Bâle est le **plus ancien et le plus grand** de nos dojos suisses. Fondé en 2014, il rassemble une communauté vivante, des débutants aux ceintures noires.
 
+---
+
+## 📍 Où & quand
+
+**Adresse :**  
 Winkelriedplatz 6  
-CH-4053 Bâle  
+CH-4053 Bâle (près de la gare CFF)
 
-**Mardi 19h00 – 21h00**
+**Entraînement :**  
+Mardi, 19 h 00 – 21 h 00
 
-## Instructeur
+**Tarifs :**
+- Adultes : CHF 90 / mois
+- Apprentis et étudiants : CHF 60 / mois
+- Enfants : CHF 50 / mois
+- Tarif famille : sur demande
 
-**Marco Pellegrino (5e Dan)**
+---
 
-- Téléphone mobile : [+41 79 636 56 82](tel:+41796365682)
-- E-mail : [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
+## 👨‍🏫 Votre instructeur : Marco Pellegrino
 
-<div class="basel-instructor-photo">
+![Marco Pellegrino - 5e dan, président](/images/marco-pellegrino.jpg)
 
-![Marco Pellegrino](/uploads/bb-plugin/cache/IMG_4654-200x300-square-7a02de406db8559584ca5a494e7c855e-5da58ca89e1ac.jpg)
+**Marco Pellegrino** est **instructeur et président** de l’association suisse de Shorinji Kempo.
 
-</div>
+- **Grade** : 5e dan (Seikenshi) — le plus haut grade en Suisse
+- **Expérience** : plus de 30 ans de Shorinji Kempo (depuis 1993)
+- **Parcours** : origines italiennes ; vit à Bâle depuis 2000
+- **Approche** : Marco construit le dojo sur des **fondations solides**. Débutant ou confirmé — avec lui, vous travaillez un Shorinji Kempo authentique.
 
-## Cotisations
+**Contact :**  
+📞 +41 79 636 56 82  
+📧 marco.pellegrino@shorinjikempo.ch
 
-- Adultes : CHF 90.– par mois
-- Apprenti·e·s/étudiant·e·s : CHF 60.– par mois
-- Écolier·ère·s/enfants : CHF 50.– par mois
+---
 
-## Description du dojo
+## 🤝 Ce qui vous attend à Bâle
 
-Nous avons déménagé ! L’ancien dojo, situé à la Budo-Akademie près de la Heuwaage, a été abandonné. Le nouveau dojo se trouve au Winkelriedplatz 6, 4053 Bâle — juste à côté de la gare de Bâle CFF, dans le quartier du Gundeldingen. Il est donc parfaitement accessible en transports publics. Des places de stationnement sont disponibles dans le quartier ainsi qu’au parking « Bahnhof Süd » à proximité.
+**Débutants (kyu)**
+- apprentissage des bases techniques
+- mise en forme
+- premiers liens avec les autres pratiquants
+- entraînement régulier : 1 à 2 fois par semaine
 
-Le nouveau dojo est entièrement équipé de tatamis et dispose de grandes fenêtres, d’un système de ventilation et de stores. Il comprend également des douches et des vestiaires séparés.
+**Confirmés (dan)**
+- techniques plus profondes, application nuancée
+- travail mental et équilibre intérieur
+- préparation aux examens supérieurs
+- participation souvent aux entraînements régionaux (par ex. séances ceinture noire)
+
+**Culture :**
+- respect, discipline, entraide
+- on s’entraîne **avec** les autres, pas **contre** eux
+- événements conviviaux réguliers (par ex. repas de fin d’année)
+
+---
+
+## 🚀 Comment commencer
+
+1. **Premier cours d’essai** : gratuit, sans engagement
+2. **Tenue** : T-shirt et jogging suffisent
+3. **Venez simplement** : vers 19 h 00 ; la porte est ouverte
+
+Après quelques semaines vous pourrez acheter un **gi** (uniforme, env. CHF 100).
+
+---
+
+## 📸 Réseaux sociaux
+
+Suivez Bâle pour l’actualité, les événements et les photos :
+
+📸 **Instagram** : [@shorinjikempo.basel](https://www.instagram.com/shorinjikempo.basel/)
+
+---
+
+## 🗺️ Accès
+
+[Google Maps : Winkelriedplatz 6, Bâle](https://www.google.ch/maps/place/Winkelriedpl.+6,+4053+Basel/@47.542933,7.585576,742m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4791b84ffb2be12d:0x13114d98b9dde83a!8m2!3d47.5429294!4d7.5881509!16s%2Fg%2F11c2b6bg2l!5m1!1e3?entry=ttu)
+
+**Transports publics :**  
+- Tram 1, 2, 10 → gare CFF  
+- Gare CFF → 5 minutes à pied  
+
+**En voiture :**  
+- Parking CFF (en face)
+
+---
+
+## 💬 Des questions ?
+
+Contactez Marco directement :
+
+📧 marco.pellegrino@shorinjikempo.ch  
+📞 +41 79 636 56 82
+
+Ou passez simplement le mardi suivant à 19 h 00. Sans obligation. 🥋

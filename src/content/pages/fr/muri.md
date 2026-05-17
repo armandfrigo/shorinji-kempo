@@ -1,37 +1,150 @@
 ---
 lang: fr
 routeSlug: muri
-title: Muri
+title: Dojo Muri — enfants
 ---
 
-![Dojo Muri](/uploads/bb-plugin/cache/Dojo-Muri-landscape-7f9d8d7f06ff5d56f08f7f0bb52a757e-5d849ada2e833.jpeg)
+## Shorinji Kempo Muri — pour les enfants
 
-## Lieu et horaire — cours pour enfants
+Le dojo de Muri est spécialisé dans l’**entraînement des enfants**. À partir de six ans, ils apprennent dans un cadre sûr et ludique à devenir **forts — dans le corps et dans l’esprit**.
 
-**MüZe — centre familial et de formation continue**  
+Fondé en 2018, le groupe accueille des enfants de tous niveaux, débutants ou avancés.
+
+---
+
+## 📍 Où & quand
+
+**Lieu :**  
+MüZe, centre familial et de formation continue  
 Kranichweg 10  
-3074 Muri bei Bern  
+CH-3074 Muri bei Bern
 
-**Jeudi 16h20 – 17h00**
+**Entraînement :**  
+Jeudi, 16 h 20 – 17 h 00
 
-Le cours s’adresse aux enfants.  
-Pas d’entraînement pendant les vacances scolaires de Muri-Gümligen.
+**Tarifs :**
+- CHF 14 / séance (membres MüZe)
+- CHF 18 / séance (non-membres)
+- **Pas d’engagement long** — venez autant que vous le souhaitez
 
-## Instructrice
+**Pause :**
+- pas de cours pendant les vacances scolaires
 
-![Tomoko Muth-Akao](/uploads/bb-plugin/cache/IMG_4653-200x300-square-ba8f4c46405b5ebe3b2f31ac4499d7a9-5da58bd706bc4.jpg)
+---
 
-**Tomoko Muth-Akao (4e Dan)**
+## 👩‍🏫 Votre instructrice : Tomoko Muth-Akao
 
-- E-mail : [tomoko.muth@shorinjikempo.ch](mailto:tomoko.muth@shorinjikempo.ch)
+![Tomoko Muth-Akao - 4e dan](/images/Tomoko-Muth-Akao.jpg)
 
-## Cotisations
+**Tomoko Muth-Akao** est **instructrice et secrétaire générale** du Shorinji Kempo suisse.
 
-Facturées sur une base trimestrielle :
+- **Grade** : 4e dan (Seikenshi) — le plus haut grade féminin en Suisse
+- **Formation** : pratique à Tokyo, Japon (2002, université de Tokyo)
+- **Expérience** : plus de 20 ans de Shorinji Kempo
+- **Spécialité** : cours enfants axés sur le **plaisir et la confiance en soi**
 
-- pour les membres du MüZe : 14 CHF par leçon
-- pour les non-membres du MüZe : 18 CHF par leçon
+Tomoko crée un environnement où les enfants apprennent par le jeu, sans pression ni peur.
 
-## Description du dojo
+**Contact :**  
+📧 tomoko.muth@shorinjikempo.ch
 
-Le Dojo Muri propose, dans le cadre de l’offre du centre familial MüZe, un cours destiné aux enfants. Il s’adresse principalement aux élèves du primaire ; les enfants de l’école enfantine peuvent toutefois y participer accompagnés d’un parent. La participation d’élèves du secondaire ou d’adultes est possible selon les besoins.
+---
+
+## 🎯 Ce que les enfants découvrent à Muri
+
+**Physique :**
+- techniques de base (frappes, coups de pied, projections sûrs)
+- équilibre, souplesse, force
+- conscience du corps
+
+**Mental :**
+- **confiance** — « je peux y arriver ! »
+- **concentration** — attention et discipline
+- **respect** — envers les instructeurs, les règles, les autres enfants
+- **persévérance** — face aux défis
+
+**Social :**
+- amitiés entre enfants
+- coopération plutôt que rivalité
+- règles adaptées à l’âge
+
+---
+
+## 👨‍👩‍👧‍👦 Pour les parents
+
+### Le Shorinji Kempo est-il sûr pour mon enfant ?
+
+**Oui.** La pratique pour enfants est pensée ainsi :
+- **pas de compétition** — pas de tournois ni de mêlées dures
+- **travail en binôme** — toujours avec un partenaire, jamais seul
+- **techniques adaptées** — peu ou pas de contact dur
+- **encadrement constant** — Tomoko veille en permanence
+
+Les blessures restent **très rares** comparées à d’autres activités.
+
+### Quel âge est idéal ?
+
+- **À partir de six ans** : excellent pour débuter
+- **Six à douze ans** : âge privilégié pour les fondamentaux
+- **Adolescents (12+)** : peuvent aussi rejoindre les adultes à Aubonne ou Bâle
+
+### Que doit apporter mon enfant ?
+
+- tenue de sport (T-shirt et jogging)
+- chaussettes
+- eau
+
+Après quelques semaines : un gi (env. CHF 80–120)
+
+### Puis-je assister ?
+
+**Oui !** Les parents peuvent observer quand ils le souhaitent. Certains participent, d’autres regardent.
+
+---
+
+## 🚀 Première séance
+
+1. Venez à 16 h 20
+2. Tomoko expliquera tout
+3. **La première séance est gratuite**
+4. Votre enfant s’entraîne avec le groupe
+
+Pas de contrat, pas de pression — venez simplement !
+
+---
+
+## 📸 Réseaux sociaux
+
+📸 **Instagram** : [@shorinjikempo.muri](https://www.instagram.com/shorinjikempo.muri/)
+
+(Abonnés en croissance — bientôt plus d’activité !)
+
+---
+
+## 🗺️ Accès
+
+**Lieu :**  
+MüZe, centre familial et de formation continue  
+Kranichweg 10, CH-3074 Muri bei Bern
+
+[Google Maps](https://www.google.ch/maps/place/TreffPunkt+M%C3%BCZe+Familien-+und+Weiterbildungszentrum/@46.935267,7.4872301,750m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478e374df4099801:0x8dfb95b847b14aa4!8m2!3d46.9352634!4d7.489805!16s%2Fg%2F11kk9kqy4r!5m1!1e3?entry=ttu)
+
+**Transports publics :**
+- train jusqu’à Muri bei Bern
+- bus ou courte marche jusqu’à MüZe
+
+**En voiture :**
+- parking à MüZe
+
+---
+
+## 📞 Questions ?
+
+**Tomoko Muth-Akao** (instructrice)  
+📧 tomoko.muth@shorinjikempo.ch
+
+Écrivez un message ou passez le jeudi suivant !
+
+---
+
+**Bienvenue à Muri — là où les enfants découvrent la force.** 🥋

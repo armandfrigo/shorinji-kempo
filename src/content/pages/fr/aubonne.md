@@ -1,37 +1,124 @@
 ---
 lang: fr
 routeSlug: aubonne
-title: Aubonne
+title: Dojo Aubonne
 ---
 
-![Dojo Aubonne](/uploads/2026/05/IMG_7175.jpeg)
+## Shorinji Kempo Aubonne
 
-Le Dojo est dans la salle de rythmique de l’école D'Aubonne, au premier étage de l’établissement en face du terrain de foot.
+Le dojo d’Aubonne est le **cœur de la communauté Shorinji Kempo en Suisse romande**. Fondé en 2018, il accueille un groupe soudé et bienveillant — des enfants de huit ans aux adultes sexagénaires.
 
-## Adresse et horaire
+---
 
-**Collège du Chêne, Salle de rythmique**  
-Avenue du Mont-Blanc 53  
-CH-1170 Aubonne  
+## 📍 Où & quand
 
-**Horaire:** les mardis de 19h00 à 20h30
+**Adresse :**  
+Collège du Chêne, salle de rythmique  
+Ave du Mont-Blanc 53  
+CH-1170 Aubonne
 
-## Instructeur
+**Entraînement :**  
+Mardi, 19 h 00 – 20 h 30
 
-![Roberto Comino](/uploads/bb-plugin/cache/Roberto-Comino-2-square-1cd01aa2cbd6b3d9901ebb66186579b2-5da58c07d7b0c.jpg)
+**Tarifs :**
+- Adultes : CHF 150 / trimestre
+- Mineurs (moins de 16 ans) : CHF 100 / trimestre
+- Forfait famille : CHF 250 / trimestre (jusqu’à trois personnes)
 
-**Roberto Comino (4ème Dan)**
+---
 
-- E-Mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
+## 👨‍🏫 Votre instructeur : Roberto Comino
 
-## Cotisation
+![Roberto Comino - 4e dan](/images/Roberto-Comino.jpg)
 
-Adultes et ados (dès 10 ans): 2 semaines d'essai gratuit.
+**Roberto Comino** est **instructeur et sensei** du dojo d’Aubonne.
 
-**CHF 150.-** pour chaque trimestre (**CHF 100.-** par trimestre pour les mineurs de 13 ans):
+- **Grade** : 4e dan (Seikenshi)
+- **Expérience** : plus de 30 ans de Shorinji Kempo (depuis 1993 en Italie)
+- **4e dan depuis** : 2023
+- **Philosophie** : Roberto enseigne le Shorinji Kempo comme une **pratique globale** — pas seulement des techniques, mais une véritable transformation personnelle. Il crée une ambiance où chacun peut grandir en sécurité.
 
-La cotisation est réduite (**CHF 100.-** si >13 ans, **CHF 50.-** si < 13 ans) à partir du 2ème membre d’une même famille.
+**Contact :**  
+📧 comino.roberto@gmail.com
 
-## Description du dojo
+---
 
-La siège d'Aubonne a étée ouverte en Septembre 2018 par le présent instructeur, Roberto Comino, qui a commencé la pratique du Shorinji Kempo en 1993 dans le COMO ITALIA Branch en Italie, et qui a obtenu son degré actuel (4me Dan) en 2023.
+## 🤝 La communauté d’Aubonne
+
+Le dojo est reconnu pour :
+
+**Accueil familial**
+- de nombreuses familles s’entraînent ensemble
+- parents et enfants dans le même cours
+- adaptations pour les enfants, proposées par l’instructeur
+
+**Bienveillance et ouverture**
+- petits groupes — jamais surbondés
+- tout le monde se connaît
+- liens forts — bien plus qu’un simple « cours » : une **communauté**
+
+**Événements réguliers**
+- stage d’été (séminaire intensif sur plusieurs jours)
+- sorties et moments partagés
+- célébration commune des progrès
+
+---
+
+## 🎯 Niveaux d’entraînement
+
+**Débutants (enfants et adultes)**
+- techniques fondamentales
+- apprentissage ludique pour les enfants
+- progression pour les adultes
+
+**Confirmés**
+- formes de kata (enchaînements chorégraphiés)
+- échanges philosophiques approfondis
+- préparation aux examens de ceinture noire
+
+---
+
+## 🚀 Comment commencer
+
+1. **Premier cours d’essai** : gratuit
+2. Parlez avec Roberto — il expliquera tout
+3. **Venez simplement** : le mardi à 19 h 00
+
+**À apporter :**
+- tenue de sport (T-shirt et jogging)
+- chaussettes (pieds nus ou en chaussettes)
+- eau
+
+Après une ou deux semaines : achat d’un gi (env. CHF 100–150)
+
+---
+
+## 📸 Réseaux sociaux
+
+📸 **Instagram** : [@shorinjikempo.aubonne](https://www.instagram.com/shorinjikempo.aubonne/)
+
+Suivez la page pour des photos, des événements et l’actualité !
+
+---
+
+## 🗺️ Accès
+
+**Adresse** : Collège du Chêne, ave du Mont-Blanc 53, Aubonne
+
+[Google Maps](https://www.google.ch/maps/place/Middle+School+Du+Ch%C3%AAne/@46.4935217,6.3930569,756m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478c487789fda6e3:0x79c78a885f45bdf4!8m2!3d46.493518!4d6.3956318!16s%2Fg%2F1tfbxc2g!5m1!1e3?entry=ttu)
+
+**Transports publics :**
+- train jusqu’à Aubonne (environ 20 minutes depuis Genève)
+- bus ou courte marche jusqu’au collège
+
+**En voiture :**
+- places de parking disponibles sur le site
+
+---
+
+## 📞 Contact & infos
+
+**Roberto Comino** (instructeur)  
+📧 comino.roberto@gmail.com
+
+**Des questions ?** Passez le prochain mardi ou écrivez à Roberto. Au plaisir de vous accueillir ! 🥋

@@ -36,6 +36,10 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding-inline: clamp(1rem, 4vw, 2rem);
   
   /* Shadows - Subtle */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -47,14 +51,6 @@
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Header chrome (scoped to `.site-header` so body/footer tokens stay independent) */
-.site-header {
-  --sk-header-bg: #ffffff;
-  --sk-header-text: #111111;
-  --sk-header-border: #e5e5e5;
-  --sk-header-focus-ring: #1a1a1a;
 }
 
 /* Base Styles */
@@ -182,9 +178,10 @@ a:hover {
 
 /* Container */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
 }
 
 /* Grid */

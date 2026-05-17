@@ -166,9 +166,9 @@ const logoSrc = withBase('/uploads/2019/09/ATT45591-300x227.jpg');
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
     }
     .container {
-        max-width: 1200px;
+        max-width: var(--container-max-width, 1200px);
         margin: 0 auto;
-        padding: 0 1rem;
+        padding: 0 var(--container-padding-inline, 1rem);
         display: flex;
         justify-content: space-between;
         align-items: center;

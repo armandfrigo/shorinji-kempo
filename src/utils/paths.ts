@@ -28,3 +28,22 @@ export function stripBaseFromPath(pathname: string): string {
   }
   return pathname;
 }
+
+/** Generate locale-prefixed URL path. */
+export function localizePath(path: string, lang: string = 'de'): string {
+  // Remove leading slash if present
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  
+  // Handle anchor links (e.g., "/#contact" → stay as is)
+  if (path.startsWith('/#')) {
+    return withBase(path);
+  }
+
+  // Default locale (de) has no URL prefix (see astro.config i18n.prefixDefaultLocale)
+  const localizedPath =
+    lang === 'de'
+      ? `/${cleanPath}`.replace(/\/+/g, '/')
+      : `/${lang}/${cleanPath}`.replace(/\/+/g, '/');
+
+  return withBase(localizedPath);
+}

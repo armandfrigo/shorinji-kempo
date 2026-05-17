@@ -1,37 +1,124 @@
 ---
 lang: it
 routeSlug: aubonne
-title: Aubonne
+title: Dōjō Aubonne
 ---
 
-![Dojo Aubonne](/uploads/2026/05/IMG_7175.jpeg)
+## Shorinji Kempo Aubonne
 
-Il dojo si trova nella sala di ritmica della scuola di Aubonne, al primo piano dell’edificio di fronte al campo di calcio.
+Il dōjō di Aubonne è il **cuore della comunità Shorinji Kempo nella Svizzera occidentale**. Fondato nel 2018, riunisce un gruppo unito e accogliente — da bambini di otto anni ad adulti sulla sessantina.
 
-## Indirizzo e orario
+---
 
-**Collège du Chêne, Salle de rythmique**  
-Avenue du Mont-Blanc 53  
-CH-1170 Aubonne  
+## 📍 Dove & quando
 
-**Orario:** martedì dalle 19:00 alle 20:30
+**Indirizzo:**  
+Collège du Chêne, Salle de Rythmique  
+Ave du Mont-Blanc 53  
+CH-1170 Aubonne
 
-## Istruttore
+**Allenamento:**  
+Martedì, 19:00 – 20:30
 
-![Roberto Comino](/uploads/bb-plugin/cache/Roberto-Comino-2-square-1cd01aa2cbd6b3d9901ebb66186579b2-5da58c07d7b0c.jpg)
+**Quote:**
+- Adulti: CHF 150 per trimestre
+- Minorenni (sotto i 16 anni): CHF 100 per trimestre
+- Tariffa famiglia: CHF 250 per trimestre (fino a tre persone)
 
-**Roberto Comino (4° Dan)**
+---
 
-- E-mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
+## 👨‍🏫 Il tuo istruttore: Roberto Comino
 
-## Quote
+![Roberto Comino - 4° dan](/images/Roberto-Comino.jpg)
 
-Adulti e ragazzi (a partire dai 10 anni): 2 settimane di prova gratuita.
+**Roberto Comino** è **istruttore e sensei** del dōjō di Aubonne.
 
-**CHF 150.–** a trimestre (**CHF 100.–** a trimestre per i minori di 13 anni).
+- **Grado**: 4° dan (Seikenshi)
+- **Esperienza**: oltre 30 anni di Shorinji Kempo (dal 1993 in Italia)
+- **4° dan dal**: 2023
+- **Filosofia**: Roberto insegna lo Shorinji Kempo come **pratica olistica** — non solo tecniche ma reale trasformazione personale. Crea un clima dove ognuno può crescere in sicurezza.
 
-A partire dal secondo membro di una stessa famiglia, la quota è ridotta (**CHF 100.–** per gli over 13, **CHF 50.–** per gli under 13).
+**Contatto:**  
+📧 comino.roberto@gmail.com
 
-## Descrizione del dojo
+---
 
-La sede di Aubonne è stata aperta nel settembre 2018 dall’attuale istruttore Roberto Comino, che ha iniziato a praticare lo Shorinji Kempo nel 1993 presso il COMO ITALIA Branch in Italia e ha conseguito il grado attuale (4° Dan) nel 2023.
+## 🤝 La comunità di Aubonne
+
+Il dōjō è noto per:
+
+**Accoglienza familiare**
+- molte famiglie si allenano insieme
+- genitori e bambini nella stessa lezione
+- adattamenti per i più piccoli, curati dall’istruttore
+
+**Supporto e apertura**
+- gruppi contenuti — mai affollati
+- tutti si conoscono
+- legami forti — più di una semplice “lezione”: una vera **comunità**
+
+**Eventi regolari**
+- stage estivo (seminario intenso di più giorni)
+- uscite ed esperienze di gruppo
+- festeggiare insieme i progressi
+
+---
+
+## 🎯 Livelli di allenamento
+
+**Principianti (bambini e adulti)**
+- tecniche fondamentali
+- apprendimento giocoso per i bambini
+- progressione per gli adulti
+
+**Avanzati**
+- forme di kata (sequenze coreografate)
+- discussioni filosofiche approfondite
+- preparazione agli esami di cintura nera
+
+---
+
+## 🚀 Come iniziare
+
+1. **Prima prova**: gratuita
+2. Parla con Roberto — spiega tutto
+3. **Presentati**: martedì alle 19:00
+
+**Cosa portare:**
+- abbigliamento sportivo (maglietta e tuta)
+- calzini (piedi nudi o con calzini)
+- acqua
+
+Dopo una o due settimane: acquisto del gi (circa CHF 100–150)
+
+---
+
+## 📸 Social
+
+📸 **Instagram**: [@shorinjikempo.aubonne](https://www.instagram.com/shorinjikempo.aubonne/)
+
+Segui la pagina per foto, eventi e novità!
+
+---
+
+## 🗺️ Come arrivare
+
+**Indirizzo**: Collège du Chêne, ave du Mont-Blanc 53, Aubonne
+
+[Google Maps](https://www.google.ch/maps/place/Middle+School+Du+Ch%C3%AAne/@46.4935217,6.3930569,756m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478c487789fda6e3:0x79c78a885f45bdf4!8m2!3d46.493518!4d6.3956318!16s%2Fg%2F1tfbxc2g!5m1!1e3?entry=ttu)
+
+**Mezzi pubblici:**
+- treno per Aubonne (circa 20 minuti da Ginevra)
+- autobus o breve cammino fino al collège
+
+**In auto:**
+- parcheggi disponibili presso la scuola
+
+---
+
+## 📞 Contatto & info
+
+**Roberto Comino** (istruttore)  
+📧 comino.roberto@gmail.com
+
+**Domande?** Passa il prossimo martedì o scrivi a Roberto. Ti aspettiamo! 🥋

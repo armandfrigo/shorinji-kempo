@@ -1,13 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import HomeHero from '../../components/HomeHero.astro';
-import HomeStorySection from '../../components/HomeStorySection.astro';
+import HomePage from '../../components/HomePage.astro';
+import { homeCopy } from '../../i18n/homePage';
 
 const lang = 'en' as const;
+const t = homeCopy[lang];
 ---
 
-<Layout lang="en">
-    <HomeHero lang={lang} />
-
-    <HomeStorySection lang={lang} />
+<Layout title={t.hero.title} lang={lang}>
+  <HomePage lang={lang} />
 </Layout>

@@ -67,6 +67,7 @@ const faviconPngSizes = [16, 32, 48, 64, 128, 256] as const;
   body.site-shell > main.site-main {
     flex: 1 1 auto;
     position: relative;
+    padding-inline: var(--container-padding-inline);
     /* Background painted in two layers: the left-to-right white gradient sits ON TOP of the
        Figma texture so body copy stays readable while the artwork hugs the right edge. */
     background-image:
@@ -82,6 +83,21 @@ const faviconPngSizes = [16, 32, 48, 64, 128, 256] as const;
     background-position: left center, right center;
     background-size: 100% 100%, min(60vw, 720px) auto;
     background-attachment: scroll, fixed;
+  }
+  /* Width constraint only — horizontal gutters come from `.site-main`. */
+  body.site-shell > main.site-main .container {
+    padding-inline: 0;
+  }
+  body.site-shell > main.site-main > .hero .container,
+  body.site-shell > main.site-main > section.hero .container {
+    padding-inline: var(--container-padding-inline);
+  }
+  /* Full-bleed heroes escape main gutters; inner `.hero-container` keeps text inset. */
+  body.site-shell > main.site-main > .hero,
+  body.site-shell > main.site-main > section.hero {
+    margin-inline: calc(-1 * var(--container-padding-inline));
+    width: calc(100% + 2 * var(--container-padding-inline));
+    max-width: 100vw;
   }
   @media (max-width: 768px) {
     body.site-shell > main.site-main {

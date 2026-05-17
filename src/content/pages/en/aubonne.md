@@ -1,37 +1,124 @@
 ---
 lang: en
 routeSlug: aubonne
-title: Aubonne
+title: Aubonne dōjō
 ---
 
-![Dojo Aubonne](/uploads/2026/05/IMG_7175.jpeg)
+## Shorinji Kempo Aubonne
 
-The Dojo is located in the rhythmics hall of the school of Aubonne, on the first floor of the building opposite the football pitch.
+Aubonne is the **heart of the Shorinji Kempo community in western Switzerland**. Founded in 2018, it gathers a close, supportive group — from eight-year-olds to adults in their sixties.
 
-## Address and training time
+---
 
-**Collège du Chêne, Salle de rythmique**  
-Avenue du Mont-Blanc 53  
-CH-1170 Aubonne  
+## 📍 Where & when
 
-**Training time:** Tuesdays, 7:00 p.m. – 8:30 p.m.
+**Address:**  
+Collège du Chêne, Salle de Rythmique  
+Ave du Mont-Blanc 53  
+CH-1170 Aubonne
 
-## Instructor
+**Training:**  
+Tuesday, 19:00 – 20:30
 
-![Roberto Comino](/uploads/bb-plugin/cache/Roberto-Comino-2-square-1cd01aa2cbd6b3d9901ebb66186579b2-5da58c07d7b0c.jpg)
+**Fees:**
+- Adults: CHF 150 per term
+- Minors (under 16): CHF 100 per term
+- Family rate: CHF 250 per term (up to three people)
 
-**Roberto Comino (4th Dan)**
+---
 
-- E-mail: [comino.roberto@gmail.com](mailto:comino.roberto@gmail.com)
+## 👨‍🏫 Your instructor: Roberto Comino
 
-## Fees
+![Roberto Comino - 4th dan](/images/Roberto-Comino.jpg)
 
-Adults and teenagers (from age 10): 2 weeks free trial.
+**Roberto Comino** is **instructor and sensei** of the Aubonne dōjō.
 
-**CHF 150.–** per quarter (**CHF 100.–** per quarter for those under 13).
+- **Rank**: 4th dan (Seikenshi)
+- **Experience**: 30+ years in Shorinji Kempo (since 1993 in Italy)
+- **4th dan since**: 2023
+- **Approach**: Roberto teaches Shorinji Kempo as a **holistic practice** — not only techniques but real personal change. He fosters an atmosphere where everyone can grow safely.
 
-From the second member of the same family, the fee is reduced (**CHF 100.–** for those over 13, **CHF 50.–** for those under 13).
+**Contact:**  
+📧 comino.roberto@gmail.com
 
-## About the dojo
+---
 
-The Aubonne branch was opened in September 2018 by the current instructor, Roberto Comino, who began practising Shorinji Kempo in 1993 at the COMO ITALIA Branch in Italy and obtained his current rank (4th Dan) in 2023.
+## 🤝 The Aubonne community
+
+The dōjō is known for:
+
+**Family-friendly training**
+- many families train together
+- parents and children in the same class
+- age-appropriate guidance from the instructor
+
+**Supportive and open**
+- small groups — never overcrowded
+- everyone knows everyone
+- strong bonds — more than “just” training, a true **community**
+
+**Regular events**
+- summer intensive (multi-day seminar)
+- outings and shared experiences
+- celebrating progress together
+
+---
+
+## 🎯 Training levels
+
+**Beginners (children and adults)**
+- fundamental techniques
+- playful learning for children
+- progressive practice for adults
+
+**Advanced students**
+- kata forms (choreographed sequences)
+- deeper philosophical discussion
+- preparation for black-belt examinations
+
+---
+
+## 🚀 How to start
+
+1. **First trial class**: free
+2. Talk with Roberto — he will explain everything
+3. **Simply come**: Tuesday at 19:00
+
+**Bring:**
+- sport clothes (T-shirt and sweatpants)
+- socks (we train barefoot or in socks)
+- water
+
+After one or two weeks: purchase a gi (~CHF 100–150)
+
+---
+
+## 📸 Social media
+
+📸 **Instagram**: [@shorinjikempo.aubonne](https://www.instagram.com/shorinjikempo.aubonne/)
+
+Follow for photos, events, and news!
+
+---
+
+## 🗺️ Getting there
+
+**Address**: Collège du Chêne, Ave du Mont-Blanc 53, Aubonne
+
+[Google Maps](https://www.google.ch/maps/place/Middle+School+Du+Ch%C3%AAne/@46.4935217,6.3930569,756m/data=!3m2!1e3!4b1!4m6!3m5!1s0x478c487789fda6e3:0x79c78a885f45bdf4!8m2!3d46.493518!4d6.3956318!16s%2Fg%2F1tfbxc2g!5m1!1e3?entry=ttu)
+
+**Public transport:**
+- train to Aubonne (~20 minutes from Geneva)
+- bus or short walk to the collège
+
+**By car:**
+- parking available at the school
+
+---
+
+## 📞 Contact & info
+
+**Roberto Comino** (instructor)  
+📧 comino.roberto@gmail.com
+
+**Questions?** Drop in next Tuesday or send Roberto an email. We look forward to meeting you! 🥋

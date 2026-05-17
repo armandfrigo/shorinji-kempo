@@ -1,39 +1,106 @@
 ---
 lang: it
 routeSlug: basel
-title: Basilea
+title: Dōjō Basilea
 ---
 
-![Dojo Basilea](/uploads/2025/01/IMG_0737-rotated.jpg)
+## Shorinji Kempo Basilea
 
-## Sede e orario di allenamento
+Il dōjō di Basilea è il **più antico e il più grande** dei nostri dōjō svizzeri. Fondato nel 2014, ospita una comunità vivace — dai principianti alle cinture nere.
 
+---
+
+## 📍 Dove & quando
+
+**Indirizzo:**  
 Winkelriedplatz 6  
-CH-4053 Basilea  
+CH-4053 Basilea (vicino alla stazione FFS)
 
-**Martedì 19:00 – 21:00**
+**Allenamento:**  
+Martedì, 19:00 – 21:00
 
-## Istruttore
+**Quote:**
+- Adulti: CHF 90/mese
+- Apprendisti e studenti: CHF 60/mese
+- Bambini: CHF 50/mese
+- Sconto famiglia: su richiesta
 
-**Marco Pellegrino (5° Dan)**
+---
 
-- Cellulare: [+41 79 636 56 82](tel:+41796365682)
-- E-mail: [marco.pellegrino@shorinjikempo.ch](mailto:marco.pellegrino@shorinjikempo.ch)
+## 👨‍🏫 Il tuo istruttore: Marco Pellegrino
 
-<div class="basel-instructor-photo">
+![Marco Pellegrino - 5° dan, presidente](/images/marco-pellegrino.jpg)
 
-![Marco Pellegrino](/uploads/bb-plugin/cache/IMG_4654-200x300-square-7a02de406db8559584ca5a494e7c855e-5da58ca89e1ac.jpg)
+**Marco Pellegrino** è **istruttore e presidente** dell’associazione svizzera di Shorinji Kempo.
 
-</div>
+- **Grado**: 5° dan (Seikenshi) — il massimo grado in Svizzera
+- **Esperienza**: oltre 30 anni di Shorinji Kempo (dal 1993)
+- **Background**: origini italiane; vive a Basilea dal 2000
+- **Focus**: Marco costruisce il dōjō su **solide fondamenta**. Principiante o avanzato — con lui studi uno Shorinji Kempo autentico.
 
-## Quote
+**Contatto:**  
+📞 +41 79 636 56 82  
+📧 marco.pellegrino@shorinjikempo.ch
 
-- Adulti: CHF 90.– al mese
-- Apprendisti/studenti: CHF 60.– al mese
-- Scolari/bambini: CHF 50.– al mese
+---
 
-## Descrizione del dojo
+## 🤝 Cosa ti aspetta a Basilea
 
-Ci siamo trasferiti! Il vecchio dojo presso la Budo-Akademie alla Heuwaage è stato abbandonato. Il nuovo dojo si trova in Winkelriedplatz 6, 4053 Basilea — proprio accanto alla stazione di Basel SBB, nel quartiere di Gundeldingen. È quindi facilmente raggiungibile con i trasporti pubblici. Sono disponibili parcheggi nel quartiere e nell’autosilo «Bahnhof Süd» nelle vicinanze.
+**Principianti (kyu)**
+- apprendere le basi tecniche
+- costruire forma fisica
+- conoscere gli altri praticanti
+- allenamento regolare: 1–2 volte a settimana
 
-Il nuovo dojo è completamente dotato di tatami, è provvisto di grandi finestre, di un impianto di ventilazione e di tende parasole. Vi sono inoltre docce e spogliatoi separati.
+**Avanzati (dan)**
+- tecniche più profonde, applicazione ricercata
+- lavoro mentale ed equilibrio interiore
+- preparazione agli esami superiori
+- spesso anche ad allenamenti regionali (es. sessioni cintura nera)
+
+**Cultura:**
+- rispetto, disciplina, supporto reciproco
+- l’allenamento è sempre **con** gli altri, non **contro** gli altri
+- eventi di gruppo regolari (es. cena di Natale)
+
+---
+
+## 🚀 Come iniziare
+
+1. **Prima prova gratuita**: senza impegno
+2. **Abbigliamento**: maglietta e tuta bastano
+3. **Vieni e basta**: verso le 19:00; la porta è aperta
+
+Dopo qualche settimana potrai acquistare un **gi** (uniforme, circa CHF 100).
+
+---
+
+## 📸 Social
+
+Segui Basilea per aggiornamenti, eventi e foto:
+
+📸 **Instagram**: [@shorinjikempo.basel](https://www.instagram.com/shorinjikempo.basel/)
+
+---
+
+## 🗺️ Come arrivare
+
+[Google Maps: Winkelriedplatz 6, Basilea](https://www.google.ch/maps/place/Winkelriedpl.+6,+4053+Basel/@47.542933,7.585576,742m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4791b84ffb2be12d:0x13114d98b9dde83a!8m2!3d47.5429294!4d7.5881509!16s%2Fg%2F11c2b6bg2l!5m1!1e3?entry=ttu)
+
+**Mezzi pubblici:**  
+- Tram 1, 2, 10 → stazione FFS  
+- Stazione FFS → cinque minuti a piedi  
+
+**In auto:**  
+- Parcheggio FFS (di fronte)
+
+---
+
+## 💬 Domande?
+
+Scrivi o chiama Marco:
+
+📧 marco.pellegrino@shorinjikempo.ch  
+📞 +41 79 636 56 82
+
+O passa il prossimo martedì alle 19:00. Nessun obbligo. 🥋
