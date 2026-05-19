@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import markdoc from '@astrojs/markdoc';
 import rehypeInternalLinks from './rehype-internal-links.mjs';
 
+import cloudflare from '@astrojs/cloudflare';
+
 /** Published under https://armandfrigo.github.io/shorinji-kempo/ (no trailing slash; Astro normalizes). */
 function normalizeBase(raw) {
   if (raw == null || String(raw).trim() === '') return '/shorinji-kempo';
@@ -22,6 +24,7 @@ const base = astroSubcommand === 'dev' ? '/' : deployBase;
 export default defineConfig({
   site: 'https://armandfrigo.github.io',
   base,
+
   i18n: {
     defaultLocale: 'de',
     locales: ['de', 'fr', 'en', 'it'],
@@ -34,8 +37,12 @@ export default defineConfig({
       it: 'de',
     },
   },
+
   integrations: [markdoc()],
+
   markdown: {
     rehypePlugins: [[rehypeInternalLinks, { base }]],
   },
+
+  adapter: cloudflare()
 });
