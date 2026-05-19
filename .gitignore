@@ -7,3 +7,9 @@ dist/
 shorinjikempo.ch/
 *.mp4
 Claude/*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
