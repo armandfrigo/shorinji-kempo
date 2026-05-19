@@ -3,11 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import { ui } from '../i18n/ui.ts';
 import { withBase } from '../utils/paths.ts';
 
-const t = ui.de || ui.de;
+const lang = 'de' as const;
+const t = ui[lang];
 const philosophyImg = withBase('/uploads/2019/09/galen-crout-0_xMuEbpFAQ-unsplash-1024x684.jpg');
 ---
 
-<Layout lang='de'>
+<Layout lang={lang} title={t['seo.philosophyTitle']} description={t['seo.philosophyDescription']}>
     <div class="container">
         <h1>Philosophie</h1>
 

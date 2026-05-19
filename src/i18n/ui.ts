@@ -28,6 +28,14 @@ export const ui = {
     'nav.news': 'Aktuell',
     'nav.faq': 'FAQ',
     'hero.title': 'Schweizerische Shorinji Kempo Föderation',
+    'seo.homeDescription':
+      'Offizielle Website der SSKF: Shorinji Kempo in der Schweiz — Dojos Basel, Aubonne und Muri. Kostenloses Probetraining, Philosophie und aktuelle News.',
+    'seo.dojoTitle': 'Dojos — Schweizerische Shorinji Kempo Föderation',
+    'seo.dojoDescription':
+      'Trainingsorte und Zeiten: Dojo Basel (Winkelriedplatz), Aubonne und Muri. Kontakt zu Instruktoren und Monatsbeiträge der SSKF.',
+    'seo.philosophyTitle': 'Philosophie — Shorinji Kempo Schweiz',
+    'seo.philosophyDescription':
+      'Die sechs Grundpfeiler des Shorinji Kempo: Ken Zen Ichinyo, Riki Ai Funi und mehr — Körper und Geist gemeinsam trainieren.',
     'hero.text': 'Bei Interesse kannst du uns gerne kontaktieren! Stelle uns deine Fragen oder verabrede einen Termin für ein gratis Probetraining. Du kannst aber auch spontan ohne Voranmeldung vorbeikommen. Wir freuen uns auf dich!',
     'hero.cta': 'Gratis Probetraining',
     'hero.ctaMail.subject': 'Anfrage: Gratis Probetraining (SSKF)',
@@ -85,6 +93,14 @@ export const ui = {
     'nav.news': 'Actualités',
     'nav.faq': 'FAQ',
     'hero.title': 'Fédération Suisse de Shorinji Kempo',
+    'seo.homeDescription':
+      'Site officiel de la FSK : Shorinji Kempo en Suisse — dojos à Bâle, Aubonne et Muri. Cours d’essai gratuit, philosophie et actualités.',
+    'seo.dojoTitle': 'Dojos — Fédération suisse de Shorinji Kempo',
+    'seo.dojoDescription':
+      'Lieux et horaires d’entraînement : dojo de Bâle (Winkelriedplatz), Aubonne et Muri. Contacts des instructeurs et cotisations mensuelles.',
+    'seo.philosophyTitle': 'Philosophie — Shorinji Kempo Suisse',
+    'seo.philosophyDescription':
+      'Les six piliers du Shorinji Kempo : Ken Zen Ichinyo, Riki Ai Funi et plus — entraîner corps et esprit ensemble.',
     'hero.text': "Si vous êtes intéressé, contactez-nous! Posez-nous vos questions ou prenez rendez-vous pour un cours d'essai gratuit. Vous pouvez aussi venir spontanément sans réservation. Au plaisir de vous rencontrer!",
     'hero.cta': 'Cours d\'essai gratuit',
     'hero.ctaMail.subject': 'Demande : cours d’essai gratuit (FSK)',
@@ -142,6 +158,14 @@ export const ui = {
     'nav.news': 'News',
     'nav.faq': 'FAQ',
     'hero.title': 'Swiss Shorinji Kempo Federation',
+    'seo.homeDescription':
+      'Official SSKF website: Shorinji Kempo in Switzerland — dojos in Basel, Aubonne and Muri. Free trial class, philosophy and news.',
+    'seo.dojoTitle': 'Dojos — Swiss Shorinji Kempo Federation',
+    'seo.dojoDescription':
+      'Training locations and times: Basel dojo (Winkelriedplatz), Aubonne and Muri. Instructor contacts and monthly fees.',
+    'seo.philosophyTitle': 'Philosophy — Shorinji Kempo Switzerland',
+    'seo.philosophyDescription':
+      'The six pillars of Shorinji Kempo: Ken Zen Ichinyo, Riki Ai Funi and more — training body and mind together.',
     'hero.text': "If you're interested, feel free to contact us! Ask us your questions or schedule an appointment for a free trial class. You can also drop by spontaneously without prior registration. We look forward to seeing you!",
     'hero.cta': 'Free Trial Class',
     'hero.ctaMail.subject': 'Request: free trial class (SSKF)',
@@ -199,6 +223,14 @@ export const ui = {
     'nav.news': 'Notizie',
     'nav.faq': 'FAQ',
     'hero.title': 'Federazione Svizzera Shorinji Kempo',
+    'seo.homeDescription':
+      'Sito ufficiale della FSSK: Shorinji Kempo in Svizzera — dojo a Basilea, Aubonne e Muri. Lezione di prova gratuita, filosofia e notizie.',
+    'seo.dojoTitle': 'Dojos — Federazione svizzera di Shorinji Kempo',
+    'seo.dojoDescription':
+      'Luoghi e orari di allenamento: dojo di Basilea (Winkelriedplatz), Aubonne e Muri. Contatti degli istruttori e quote mensili.',
+    'seo.philosophyTitle': 'Filosofia — Shorinji Kempo Svizzera',
+    'seo.philosophyDescription':
+      'I sei pilastri dello Shorinji Kempo: Ken Zen Ichinyo, Riki Ai Funi e altro — allenare corpo e mente insieme.',
     'hero.text': "Se sei interessato, contattaci pure! Fatti le tue domande o prenota un appuntamento per una lezione di prova gratuita. Puoi anche passare spontaneamente senza prenotazione. Non vediamo l'ora di darti il benvenuto!",
     'hero.cta': 'Lezione di prova gratuita',
     'hero.ctaMail.subject': 'Richiesta: lezione di prova gratuita (FSSK)',

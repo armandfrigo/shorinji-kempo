@@ -3,24 +3,80 @@ import Navbar from '../components/navbar.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import { withBase } from '../utils/paths.ts';
+import {
+  absoluteSiteUrl,
+  buildHreflangAlternates,
+  DEFAULT_META_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  logicalPathForLocale,
+  parseLocalePath,
+  type HreflangLink,
+  type SiteLocale,
+} from '../utils/seo.ts';
 
-/** Pages pass explicit `lang`; prefer it over `currentLocale` (not always set for prefixed routes). */
-const lang = (Astro.props.lang ?? Astro.currentLocale ?? 'de') as 'de' | 'fr' | 'en' | 'it';
+interface Props {
+  lang?: SiteLocale;
+  title?: string;
+  description?: string;
+  /** When set, overrides auto hreflang (e.g. content pages grouped by routeSlug). */
+  hreflangLocales?: SiteLocale[];
+  ogImage?: string;
+}
+
+const props = Astro.props as Props;
+
+// Pages pass explicit lang; prefer it over currentLocale (not always set for prefixed routes).
+const lang = (props.lang ?? Astro.currentLocale ?? 'de') as SiteLocale;
 
 const pageTitle =
-  typeof Astro.props.title === 'string' && Astro.props.title.length > 0
-    ? Astro.props.title
+  typeof props.title === 'string' && props.title.length > 0
+    ? props.title
     : 'Schweizerische Shorinji Kempo Föderation';
 const pageDescription =
-  typeof Astro.props.description === 'string' && Astro.props.description.length > 0
-    ? Astro.props.description
-    : undefined;
+  typeof props.description === 'string' && props.description.length > 0
+    ? props.description
+    : DEFAULT_META_DESCRIPTION;
 
-/** Subtle Figma texture (same asset as homepage hero); full `url("…")` for Vite + `base`-safe path.
- *  Scoped to the main content wrapper (`.site-main`) and anchored on the right per design request. */
+const siteOrigin = (Astro.site?.href ?? import.meta.env.SITE ?? 'https://armandfrigo.github.io').replace(
+  /\/$/,
+  '',
+);
+const deployBase = import.meta.env.BASE_URL;
+
+const { logicalPath } = parseLocalePath(Astro.url.pathname);
+
+// Routes mirrored in all four locales: index, dojo, shorinji-kempo, aktuell.
+const STATIC_I18N_PATHS = new Set(['/', '/dojo', '/shorinji-kempo', '/aktuell']);
+const hreflangLocales: SiteLocale[] =
+  props.hreflangLocales && props.hreflangLocales.length > 0
+    ? props.hreflangLocales
+    : STATIC_I18N_PATHS.has(logicalPath)
+      ? (['de', 'fr', 'en', 'it'] as SiteLocale[])
+      : [];
+
+const hreflangLinks: HreflangLink[] =
+  hreflangLocales.length > 0
+    ? buildHreflangAlternates(logicalPath, hreflangLocales, siteOrigin, deployBase)
+    : [];
+
+const canonicalUrl = absoluteSiteUrl(logicalPathForLocale(logicalPath, lang), siteOrigin, deployBase);
+const ogImageUrl = absoluteSiteUrl(
+  props.ogImage ?? DEFAULT_OG_IMAGE,
+  siteOrigin,
+  deployBase,
+);
+
+const ogLocaleMap: Record<SiteLocale, string> = {
+  de: 'de_CH',
+  fr: 'fr_CH',
+  en: 'en_US',
+  it: 'it_CH',
+};
+
+/** Subtle Figma texture (same asset as homepage hero); CSS url() with base-safe path. */
 const mainBgTexture = `url(${JSON.stringify(withBase('/uploads/2019/09/2019-04-21-14_26_56-Shorinji-Kempo-Entwurf-Figma-1024x575.png'))})`;
 
-/** PNG set under `public/images/favicons/` (deploy base applied via `withBase`). */
+// PNG favicons under public/images/favicons (deploy base via withBase).
 const faviconPngSizes = [16, 32, 48, 64, 128, 256] as const;
 ---
 
@@ -42,7 +98,22 @@ const faviconPngSizes = [16, 32, 48, 64, 128, 256] as const;
     }
     <link rel="apple-touch-icon" href={withBase('/images/favicons/favicon_256x256.png')} />
     <title>{pageTitle}</title>
-    {pageDescription ? <meta name="description" content={pageDescription} /> : null}
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+    {hreflangLinks.map((link) => (
+      <link rel="alternate" hreflang={link.hreflang} href={link.href} />
+    ))}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Schweizerische Shorinji Kempo Föderation" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={ogLocaleMap[lang]} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
 </head>
 <body class="site-shell">
     <header class="site-header">

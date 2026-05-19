@@ -1,14 +1,16 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { ui } from '../../i18n/ui';
 import { withBase, localizePath } from '../../utils/paths.ts';
 
 const lang = 'it';
+const meta = ui[lang];
 const imgBasel = withBase('/uploads/2025/01/IMG_0737-rotated.jpg');
 const imgAubonne = withBase('/uploads/2026/05/IMG_7175.jpeg');
 const imgMuri = withBase('/images/Dojo-Muri-landscape-7f9d8d7f06ff5d56f08f7f0bb52a757e-5d849ada2e833.jpg');
 ---
 
-<Layout lang='it'>
+<Layout lang="it" title={meta['seo.dojoTitle']} description={meta['seo.dojoDescription']}>
     <div class="container">
         <h1>Dojos</h1>
         
